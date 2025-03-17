@@ -1,0 +1,22 @@
+{
+    "name": "acf/mansory",
+    "title": "Mansory",
+    "description": "Mansory section.",
+    "style": [ "file:./mansory.css" ],
+    "category": "lazarus-design-team",
+    "icon": "layout",
+    "keywords": ["mansory", "info slider"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "mansory.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/amenity-collective/theme/template-parts/blocks/mansory/screenshot.png"
+        }
+    }    
+}

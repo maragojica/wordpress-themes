@@ -1,0 +1,22 @@
+{
+    "name": "acf/faq",
+    "title": "FAQs",
+    "description": "A one column faq block with headlines.",
+    "style": [ "file:./faqs.css" ],
+    "category": "lazarus-design-team",
+    "icon": "format-quote",
+    "keywords": ["faqs", "accordions", "text"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "faqs.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/eric-scott-tailwind/theme/template-parts/blocks/faqs/screenshot.png"
+        }
+    }    
+}

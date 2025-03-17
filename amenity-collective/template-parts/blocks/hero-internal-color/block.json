@@ -1,0 +1,22 @@
+{
+    "name": "acf/hero-internal-color",
+    "title": "Hero Internal With BG Color Block",
+    "description": "A internal hero section with a solid background color, heading, description, and buttons.",
+    "style": [ "file:./hero-internal-color.css" ],
+    "category": "lazarus-design-team",
+    "icon": "welcome-view-site",
+    "keywords": ["hero internal color", "banner internal color", "intro color"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "hero-internal-color.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/amenity-collective/theme/template-parts/blocks/hero-internal-color/screenshot.png"
+        }
+    }    
+}

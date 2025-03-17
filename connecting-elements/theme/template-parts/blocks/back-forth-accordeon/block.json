@@ -1,0 +1,22 @@
+{
+    "name": "acf/backforth-accordeon",
+    "title": "Back & Forth Accordeon",
+    "description": "A general all purpose simple back & forth block that has a accordeeon and text section with buttons. The order of columns is reversible",
+    "style": [ "file:./back-forth-accordeon.css" ],
+    "category": "lazarus-design-team",
+    "icon": "table-col-before",
+    "keywords": ["content block", "back and forth accordeon", "media and text"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "back-forth-accordeon.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/connecting-elements/theme/template-parts/blocks/back-forth-accordeon/screenshot.png"
+        }
+    }    
+}

@@ -1,0 +1,22 @@
+{
+    "name": "acf/jobapplication",
+    "title": "Job Application",
+    "description": "A job application section with a form.",
+    "style": [ "file:./job-application.css" ],
+    "category": "lazarus-design-team",
+    "icon": "universal-access",
+    "keywords": ["job application", "form", "job apply"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "job-application.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/eric-scott-tailwind/theme/template-parts/blocks/job-application/screenshot.png"
+        }
+    }    
+}

@@ -1,0 +1,22 @@
+{
+    "name": "acf/timeline",
+    "title": "Timeline Slider",
+    "description": "Timeline slider section.",
+    "style": [ "file:./timeline.css" ],
+    "category": "lazarus-design-team",
+    "icon": "embed-photo",
+    "keywords": ["slider", "timeline", "content slider"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "timeline.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/amenity-collective/theme/template-parts/blocks/timeline/screenshot.png"
+        }
+    }    
+}

@@ -1,0 +1,22 @@
+{
+    "name": "acf/jobs",
+    "title": "Jobs",
+    "description": "A jobs list section with buttons.",
+    "style": [ "file:./jobs.css" ],
+    "category": "lazarus-design-team",
+    "icon": "yes-alt",
+    "keywords": ["content jobs", "jobs", "text"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "jobs.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/eric-scott-tailwind/theme/template-parts/blocks/jobs/screenshot.png"
+        }
+    }    
+}

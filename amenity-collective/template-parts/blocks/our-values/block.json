@@ -1,0 +1,22 @@
+{
+    "name": "acf/our-values",
+    "title": "Our Values",
+    "description": "A section to showcasing our core values.",
+    "style": [ "file:./our-values.css" ],
+    "category": "lazarus-design-team",
+    "icon": "edit",
+    "keywords": ["values", "info", "code values"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "our-values.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/amenity-collective/theme/template-parts/blocks/our-values/screenshot.png"
+        }
+    }    
+}

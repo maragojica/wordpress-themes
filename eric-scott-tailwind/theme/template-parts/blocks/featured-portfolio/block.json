@@ -1,0 +1,22 @@
+{
+    "name": "acf/featuredportfolio",
+    "title": "Featured Portfolio",
+    "description": "A porfolio section designed to illustrate our featured products.",
+    "style": [ "file:./featured-portfolio.css" ],
+    "category": "lazarus-design-team",
+    "icon": "grid-view",
+    "keywords": ["content products", "portfolio", "featured products"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "featured-portfolio.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/eric-scott-tailwind/theme/template-parts/blocks/featured-portfolio/screenshot.png"
+        }
+    }    
+}

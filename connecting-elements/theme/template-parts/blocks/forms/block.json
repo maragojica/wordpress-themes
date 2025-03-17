@@ -1,0 +1,22 @@
+{
+    "name": "acf/forms",
+    "title": "Forms",
+    "description": "A section designed to illustrate the contact forms.",
+    "style": [ "file:./forms.css" ],
+    "category": "lazarus-design-team",
+    "icon": "feedback",
+    "keywords": ["content forms", "forms", "Request A Consultation"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "forms.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/connecting-elements/theme/template-parts/blocks/forms/screenshot.png"
+        }
+    }    
+}

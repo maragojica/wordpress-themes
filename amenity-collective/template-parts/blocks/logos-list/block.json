@@ -1,0 +1,22 @@
+{
+    "name": "acf/logoslist",
+    "title": "Logos List",
+    "description": "A list with logos section with a background color and right and left shape.",
+    "style": [ "file:./logos-list.css" ],
+    "category": "lazarus-design-team",
+    "icon": "star-filled",
+    "keywords": ["logos", "list logos", "slider logos"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "logos-list.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/amenity-collective/theme/template-parts/blocks/logos-list/screenshot.png"
+        }
+    }    
+}

@@ -1,0 +1,22 @@
+{
+    "name": "acf/team",
+    "title": "Our Team",
+    "description": "A our team section with a background color and top and bottom shape.",
+    "style": [ "file:./team.css" ],
+    "category": "lazarus-design-team",
+    "icon": "businessperson",
+    "keywords": ["team", "team members", "bio"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "team.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/amenity-collective/theme/template-parts/blocks/team/screenshot.png"
+        }
+    }    
+}

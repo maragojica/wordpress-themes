@@ -1,0 +1,22 @@
+{
+    "name": "acf/columns-info",
+    "title": "Columns Info",
+    "description": "A general all purpose info block that has a text and image with buttons.",
+    "style": [ "file:./columns-info.css" ],
+    "category": "lazarus-design-team",
+    "icon": "image-rotate-right",
+    "keywords": ["columns", "info", "content text"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "columns-info.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/amenity-collective/theme/template-parts/blocks/columns-info/screenshot.png"
+        }
+    }    
+}

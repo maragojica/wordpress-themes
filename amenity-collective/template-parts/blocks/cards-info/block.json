@@ -1,0 +1,22 @@
+{
+    "name": "acf/cards-info",
+    "title": "Cards Info",
+    "description": "Cards info and slider section.",
+    "style": [ "file:./cards-info.css" ],
+    "category": "lazarus-design-team",
+    "icon": "images-alt",
+    "keywords": ["slider", "cards", "info slider"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "cards-info.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/amenity-collective/theme/template-parts/blocks/cards-info/screenshot.png"
+        }
+    }    
+}

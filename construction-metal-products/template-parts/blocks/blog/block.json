@@ -1,0 +1,16 @@
+{
+    "name": "acf/blog",
+    "title": "Blog",
+    "description": "A custom blog section",
+    "style": [ "file:./blog.css" ],
+    "category": "lazarus-design-team",
+    "icon": "welcome-write-blog",
+    "keywords": ["blog", "blog posts"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "blog.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+}

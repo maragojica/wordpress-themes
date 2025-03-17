@@ -1,0 +1,22 @@
+{
+    "name": "acf/products",
+    "title": "Products",
+    "description": "A products section with a load more.",
+    "style": [ "file:./products.css" ],
+    "category": "lazarus-design-team",
+    "icon": "cart",
+    "keywords": ["products", "filters products", "products list"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "products.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/connecting-elements/theme/template-parts/blocks/products/screenshot.png"
+        }
+    }    
+}

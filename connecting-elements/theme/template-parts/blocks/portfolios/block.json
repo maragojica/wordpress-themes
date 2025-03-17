@@ -1,0 +1,22 @@
+{
+    "name": "acf/portfolios",
+    "title": "Portfolios",
+    "description": "A products section with a load more.",
+    "style": [ "file:./portfolios.css" ],
+    "category": "lazarus-design-team",
+    "icon": "layout",
+    "keywords": ["portfolios", "filters portfolios", "portfolios list"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "portfolios.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/connecting-elements/theme/template-parts/blocks/portfolios/screenshot.png"
+        }
+    }    
+}

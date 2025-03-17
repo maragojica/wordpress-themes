@@ -1,0 +1,22 @@
+{
+    "name": "acf/logos",
+    "title": "Logos",
+    "description": "A list with slider logos section.",
+    "style": [ "file:./logos.css" ],
+    "category": "lazarus-design-team",
+    "icon": "star-filled",
+    "keywords": ["logos", "list logos", "slider logos"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "logos.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/connecting-elements/theme/template-parts/blocks/logos/screenshot.png"
+        }
+    }    
+}

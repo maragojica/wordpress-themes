@@ -1,0 +1,22 @@
+{
+    "name": "acf/accordeon",
+    "title": "Accordeon",
+    "description": "A two columns accordeon block with images.",
+    "style": [ "file:./accordeon.css" ],
+    "category": "lazarus-design-team",
+    "icon": "table-col-before",
+    "keywords": ["faqs", "accordions", "text"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "accordeon.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/amenity-collective/theme/template-parts/blocks/accordeon/screenshot.png"
+        }
+    }    
+}

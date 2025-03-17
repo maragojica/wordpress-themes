@@ -1,0 +1,22 @@
+{
+    "name": "acf/criteria-slider",
+    "title": "Criteria Slider",
+    "description": "Criteria slider section.",
+    "style": [ "file:./criteria-slider.css" ],
+    "category": "lazarus-design-team",
+    "icon": "format-chat",
+    "keywords": ["slider", "criteria", "content slider"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "criteria-slider.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/amenity-collective/theme/template-parts/blocks/criteria-slider/screenshot.png"
+        }
+    }    
+}

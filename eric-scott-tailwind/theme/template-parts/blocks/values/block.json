@@ -1,0 +1,22 @@
+{
+    "name": "acf/values",
+    "title": "Our Values",
+    "description": "Two columned section with our vision and values.",
+    "style": [ "file:./values.css" ],
+    "category": "lazarus-design-team",
+    "icon": "heart",
+    "keywords": ["our values", "values", "vision and values"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "values.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/eric-scott-tailwind/theme/template-parts/blocks/values/screenshot.png"
+        }
+    }    
+}

@@ -1,0 +1,22 @@
+{
+    "name": "acf/media-requests",
+    "title": "Media Requests",
+    "description": "A general all purpose info block that has a text and image with buttons.",
+    "style": [ "file:./media-requests.css" ],
+    "category": "lazarus-design-team",
+    "icon": "admin-media",
+    "keywords": ["media", "requests", "content text"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "media-requests.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/amenity-collective/theme/template-parts/blocks/media-requests/screenshot.png"
+        }
+    }    
+}

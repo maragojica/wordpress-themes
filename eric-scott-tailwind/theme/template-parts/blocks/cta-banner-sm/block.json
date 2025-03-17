@@ -1,0 +1,22 @@
+{
+    "name": "acf/ctabannersm",
+    "title": "CTA Banner Info",
+    "description": "A call to action section with a background image, heading, description, and buttons.",
+    "style": [ "file:./cta-banner-sm.css" ],
+    "category": "lazarus-design-team",
+    "icon": "align-full-width",
+    "keywords": ["cta", "cta banner info", "call to action"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "cta-banner-sm.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/eric-scott-tailwind/theme/template-parts/blocks/cta-banner-sm/screenshot.png"
+        }
+    }    
+}

@@ -1,0 +1,22 @@
+{
+    "name": "acf/testimonials",
+    "title": "Testimonials",
+    "description": "A testimonials slider section.",
+    "style": [ "file:./testimonials.css" ],
+    "category": "lazarus-design-team",
+    "icon": "format-status",
+    "keywords": ["testimonials slider", "slider info", "reviews"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "testimonials.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/connecting-elements/theme/template-parts/blocks/testimonials/screenshot.png"
+        }
+    }    
+}

@@ -1,0 +1,22 @@
+{
+    "name": "acf/blog-list",
+    "title": "Blog List",
+    "description": "A full list blog section with a featured Blog Post.",
+    "style": [ "file:./blog-list.css" ],
+    "category": "lazarus-design-team",
+    "icon": "welcome-write-blog",
+    "keywords": ["content post", "press", "news", "blog"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "blog-list.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/amenity-collective/theme/template-parts/blocks/blog-list/screenshot.png"
+        }
+    }    
+}

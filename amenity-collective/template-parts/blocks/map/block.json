@@ -1,0 +1,22 @@
+{
+    "name": "acf/map",
+    "title": "Map",
+    "description": "A testimonials slider section.",
+    "style": [ "file:./testimonials-slider.css" ],
+    "category": "lazarus-design-team",
+    "icon": "admin-site",
+    "keywords": ["map", "info map", "regions"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "map.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/amenity-collective/theme/template-parts/blocks/map/screenshot.png"
+        }
+    }    
+}

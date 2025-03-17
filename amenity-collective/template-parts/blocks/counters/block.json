@@ -1,0 +1,22 @@
+{
+    "name": "acf/counters",
+    "title": "Counters",
+    "description": "A hero section with a background video, heading, counters, and logos.",
+    "style": [ "file:./counters.css" ],
+    "category": "lazarus-design-team",
+    "icon": "chart-bar",
+    "keywords": ["counters", "numbers", "logos"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "counters.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/amenity-collective/theme/template-parts/blocks/counters/screenshot.png"
+        }
+    }    
+}

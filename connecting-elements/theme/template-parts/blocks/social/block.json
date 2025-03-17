@@ -1,0 +1,22 @@
+{
+    "name": "acf/social",
+    "title": "Social",
+    "description": "A social section with icons.",
+    "style": [ "file:./social.css" ],
+    "category": "lazarus-design-team",
+    "icon": "share",
+    "keywords": ["content socials", "icons", "socials"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "social.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/connecting-elements/theme/template-parts/blocks/social/screenshot.png"
+        }
+    }    
+}

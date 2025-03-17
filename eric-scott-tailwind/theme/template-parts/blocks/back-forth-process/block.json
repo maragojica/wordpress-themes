@@ -1,0 +1,22 @@
+{
+    "name": "acf/backforth-process",
+    "title": "Back & Forth Process",
+    "description": "A versatile back-and-forth content block that supports images, videos, and text sections with buttons. The column order is reversible for flexible layout options.",
+    "style": [ "file:./back-forth-process.css" ],
+    "category": "lazarus-design-team",
+    "icon": "image-rotate-right",
+    "keywords": ["content block", "back and forth process full", "image and text"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "back-forth-process.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/eric-scott-tailwind/theme/template-parts/blocks/back-forth-process/screenshot.png"
+        }
+    }    
+}

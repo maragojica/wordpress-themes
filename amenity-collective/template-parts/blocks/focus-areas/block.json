@@ -1,0 +1,22 @@
+{
+    "name": "acf/focus-areas",
+    "title": "Focus Area",
+    "description": "Slider with backgroung image section",
+    "style": [ "file:./focus-areas.css" ],
+    "category": "lazarus-design-team",
+    "icon": "embed-generic",
+    "keywords": ["focus areas", "slider backgroung", "info focus"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "focus-areas.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/amenity-collective/theme/template-parts/blocks/focus-areas/screenshot.png"
+        }
+    }    
+}

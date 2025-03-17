@@ -1,0 +1,22 @@
+{
+    "name": "acf/process",
+    "title": "Our Process",
+    "description": "A general all purpose back & forth block that has a text section, image and buttons. The order of columns is reversible",
+    "style": [ "file:./process.css" ],
+    "category": "lazarus-design-team",
+    "icon": "rest-api",
+    "keywords": ["process block", "columns text", "process"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "process.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/eric-scott-tailwind/theme/template-parts/blocks/process/screenshot.png"
+        }
+    }    
+}

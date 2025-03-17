@@ -1,0 +1,58 @@
+/**
+ * Custom styles to immediately follow Tailwind’s `utilities` layer
+ *
+ * Add your own utility classes to this theme. Complex utility classes should
+ * be added using Tailwind’s plugin system:
+ *
+ * https://tailwindcss.com/docs/adding-custom-styles#adding-custom-utilities
+ */
+ @layer utilities {
+    .rotate--10\.166 {
+      transform: rotate(-10.166deg);
+    }
+  }
+
+  
+
+  /* Process line styles */
+.process-line-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; 
+  pointer-events: none;
+  overflow: hidden;
+
+}
+
+.process-line-svg {
+  overflow: visible;
+}
+
+.process-path {
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: stroke-dashoffset 0.3s ease;
+}
+
+.content-list.active .border-primary {
+  /*box-shadow: 0 0 0 1px #D5A94E, 0 0 10px rgba(213, 169, 78, 0.5);*/
+  transition: all 0.3s ease;
+}
+
+.border-primary, .process-icon {
+  position: relative;
+  z-index: 2;
+}
+
+.headlines-mv, .content-list {
+  position: relative;
+  z-index: 2;
+}
+
+img.img-fluid {
+  position: relative;
+  z-index: 2;
+}

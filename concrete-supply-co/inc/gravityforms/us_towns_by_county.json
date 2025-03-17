@@ -1,0 +1,22 @@
+{
+  "Anderson County": [
+    "Anderson",
+    "Belton",
+    "Iva"
+  ],  
+  "Pickens County": [
+    "Easley",
+    "Clemson"
+  ],
+  "Greenville County": [
+    "Piedmont",
+    "Greenville",
+    "Fountain Inn"
+  ],
+  "Spartanburg County": [
+    "Spartanburg"
+  ],
+  "Cleveland County": [
+    "Boiling Springs"
+  ]     
+}

@@ -1,0 +1,22 @@
+{
+    "name": "acf/content",
+    "title": "Back & Forth",
+    "description": "A general all purpose back & forth block that has a media and text section with buttons. The order of columns is reversible",
+    "style": [ "file:./back-forth.css" ],
+    "category": "lazarus-design-team",
+    "icon": "align-pull-left",
+    "keywords": ["content block", "back and forth", "media and text"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "back-forth.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/nordic-it/theme/template-parts/blocks/back-forth/screenshot.png"
+        }
+    }    
+}

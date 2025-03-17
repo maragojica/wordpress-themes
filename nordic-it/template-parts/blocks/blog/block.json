@@ -1,0 +1,22 @@
+{
+    "name": "acf/blog",
+    "title": "Blog",
+    "description": "A blog section with a load more.",
+    "style": [ "file:./blog.css" ],
+    "category": "lazarus-design-team",
+    "icon": "welcome-write-blog",
+    "keywords": ["content blog", "news", "blog"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "blog.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/nordic-it/theme/template-parts/blocks/blog/screenshot.png"
+        }
+    }    
+}

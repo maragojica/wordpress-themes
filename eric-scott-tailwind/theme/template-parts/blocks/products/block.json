@@ -1,0 +1,22 @@
+{
+    "name": "acf/products",
+    "title": "Products",
+    "description": "A products section with categories.",
+    "style": [ "file:./products.css" ],
+    "category": "lazarus-design-team",
+    "icon": "store",
+    "keywords": ["products", "products cards", "products category"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "products.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/eric-scott-tailwind/theme/template-parts/blocks/products/screenshot.png"
+        }
+    }    
+}

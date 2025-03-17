@@ -1,0 +1,22 @@
+{
+    "name": "acf/hero",
+    "title": "Hero Block",
+    "description": "A hero section with a background image and/or video, heading, description, and buttons.",
+    "style": [ "file:./hero.css" ],
+    "category": "lazarus-design-team",
+    "icon": "welcome-view-site",
+    "keywords": ["hero", "banner", "intro"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "hero.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/connecting-elements/theme/template-parts/blocks/hero/screenshot.png"
+        }
+    }    
+}

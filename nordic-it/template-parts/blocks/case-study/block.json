@@ -1,0 +1,22 @@
+{
+    "name": "acf/study",
+    "title": "Case Study",
+    "description": "A case studies section with a load more.",
+    "style": [ "file:./case-study.css" ],
+    "category": "lazarus-design-team",
+    "icon": "welcome-write-blog",
+    "keywords": ["content case study", "case study", "success stories"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "case-study.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/nordic-it/theme/template-parts/blocks/case-study/screenshot.png"
+        }
+    }    
+}

@@ -1,0 +1,22 @@
+{
+    "name": "acf/content",
+    "title": "Content",
+    "description": "A section designed to illustrate the content.",
+    "style": [ "file:./content.css" ],
+    "category": "lazarus-design-team",
+    "icon": "media-text",
+    "keywords": ["content info", "content", "text"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "content.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/connecting-elements/theme/template-parts/blocks/content/screenshot.png"
+        }
+    }    
+}

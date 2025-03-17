@@ -1,0 +1,22 @@
+{
+    "name": "acf/backforth-simple",
+    "title": "Back & Forth Simple",
+    "description": "A general all purpose simple back & forth block that has a media and text section with buttons. The order of columns is reversible",
+    "style": [ "file:./back-forth-simple.css" ],
+    "category": "lazarus-design-team",
+    "icon": "align-left",
+    "keywords": ["content block", "back and forth simple", "media and text"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "back-forth-simple.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/connecting-elements/theme/template-parts/blocks/back-forth-simple/screenshot.png"
+        }
+    }    
+}

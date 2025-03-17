@@ -1,0 +1,22 @@
+{
+    "name": "acf/services",
+    "title": "Services",
+    "description": "A list with services section.",
+    "style": [ "file:./services.css" ],
+    "category": "lazarus-design-team",
+    "icon": "list-view",
+    "keywords": ["core services", "list services"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "services.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/connecting-elements/theme/template-parts/blocks/services/screenshot.png"
+        }
+    }    
+}

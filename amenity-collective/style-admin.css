@@ -1,0 +1,72 @@
+.acf-field-radio.color-picker .acf-radio-list {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.acf-field-radio.color-picker .acf-radio-list li {
+	margin-right: 10px;
+}
+
+.acf-field-radio.color-picker .acf-radio-list label {
+	font-size: 0; 
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	position: relative;
+	border-radius: 50%;
+	overflow: hidden;
+	border: 2px solid #ccc;
+}
+
+.acf-field-radio.color-picker .acf-radio-list input[type="radio"] {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+    border: 0;
+}
+
+.acf-field-radio.color-picker .acf-radio-list label{
+    transition: all ease-in-out 300ms;
+}
+.acf-field-radio.color-picker .acf-radio-list label.selected {
+	border-color: #000;
+    height: 35px;
+    width: 35px;
+}
+
+.acf-field-radio.color-picker .acf-radio-list input:before {
+	content: "";
+	width: 101%;
+	height: 101%;
+	display: block;
+}
+
+.acf-field-radio.color-picker input[type=radio]:checked::before{
+    margin: unset;
+    border-radius: unset;
+}
+
+.acf-field-radio.color-picker .acf-radio-list input[value="background"]:before {
+	background-color: #ffffff !important;
+}
+
+.acf-field-radio.color-picker .acf-radio-list input[value="foreground"]:before {
+	background-color: #404040 !important;
+}
+
+.acf-field-radio.color-picker .acf-radio-list input[value="primary"]:before {
+	background-color: #e4273e;
+}
+
+.acf-field-radio.color-picker .acf-radio-list input[value="secondary"]:before {
+	background-color: #008e60;
+}
+
+.acf-field-radio.color-picker .acf-radio-list input[value="tertiary"]:before {
+	background-color: #003624;
+}
+
+.acf-field-radio.color-picker .acf-radio-list input[value="quatary"]:before {
+	background-color: #5EC5C2;
+}

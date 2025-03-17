@@ -1,0 +1,22 @@
+{
+    "name": "acf/contentext",
+    "title": "Content Text",
+    "description": "A general all purpose content text block that has a text section with buttons.",
+    "style": [ "file:./content-text.css" ],
+    "category": "lazarus-design-team",
+    "icon": "format-aside",
+    "keywords": ["content block", "content text", "text"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "content-text.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/amenity-collective/theme/template-parts/blocks/content-text/screenshot.png"
+        }
+    }    
+}

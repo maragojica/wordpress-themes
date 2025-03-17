@@ -1,0 +1,22 @@
+{
+    "name": "acf/partner-slider",
+    "title": "Partners Slider",
+    "description": "Partners slider section.",
+    "style": [ "file:./partner-slider.css" ],
+    "category": "lazarus-design-team",
+    "icon": "slides",
+    "keywords": ["slider", "partner", "content slider"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "partner-slider.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/amenity-collective/theme/template-parts/blocks/partner-slider/screenshot.png"
+        }
+    }    
+}

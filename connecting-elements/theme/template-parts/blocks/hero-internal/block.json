@@ -1,0 +1,22 @@
+{
+    "name": "acf/hero-internal",
+    "title": "Hero Internal Block",
+    "description": "A internal hero section with a background image and/or video, heading, description, and buttons.",
+    "style": [ "file:./hero-internal.css" ],
+    "category": "lazarus-design-team",
+    "icon": "welcome-view-site",
+    "keywords": ["hero inner", "banner", "intro"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "hero-internal.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/connecting-elements/theme/template-parts/blocks/hero-internal/screenshot.png"
+        }
+    }    
+}

@@ -1,0 +1,22 @@
+{
+    "name": "acf/herointernalsm",
+    "title": "Hero Inner Small Block",
+    "description": "A small inner hero section with a background image and/or video, heading, description, and buttons.",
+    "style": [ "file:./hero-internal-sm.css" ],
+    "category": "lazarus-design-team",
+    "icon": "welcome-view-site",
+    "keywords": ["hero inner sm", "banner", "intro"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "hero-internal-sm.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/eric-scott-tailwind/theme/template-parts/blocks/hero-internal-sm/screenshot.png"
+        }
+    }    
+}

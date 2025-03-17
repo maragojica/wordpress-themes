@@ -1,0 +1,22 @@
+{
+    "name": "acf/icons",
+    "title": "Columns Icons",
+    "description": "A general all purpose columns info block that has a icons and text section with cta.",
+    "style": [ "file:./columns-icons.css" ],
+    "category": "lazarus-design-team",
+    "icon": "list-view",
+    "keywords": ["content block", "columns info icons", "cta", "icons info"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "columns-icons.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/nordic-it/theme/template-parts/blocks/columns-icons/screenshot.png"
+        }
+    }    
+}

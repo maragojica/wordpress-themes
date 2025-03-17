@@ -1,0 +1,22 @@
+{
+    "name": "acf/process",
+    "title": "The Process",
+    "description": "A three-column section designed to illustrate the process of our services.",
+    "style": [ "file:./process.css" ],
+    "category": "lazarus-design-team",
+    "icon": "image-filter",
+    "keywords": ["content process", "columns process", "slider process"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "process.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/connecting-elements/theme/template-parts/blocks/process/screenshot.png"
+        }
+    }    
+}

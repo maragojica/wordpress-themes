@@ -1,0 +1,23 @@
+.blog-item{
+    margin-bottom: 1em;
+}
+
+.blog-item-interior {
+    border-radius: 25px;
+    border: 2px solid var(--color-orange);
+}
+
+.blog-item-interior img{
+    width: 100%;
+    border-radius: 25px 25px 0px 0px;
+}
+
+.blog-item-info{
+    text-align: center;
+    padding: 3em 0;
+}
+
+.blog.row{
+    margin: 3em 0;
+}
+

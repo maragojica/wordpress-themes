@@ -1,0 +1,44 @@
+/*--------------------------------------------------------------
+# Slider OWL Testimonials
+--------------------------------------------------------------*/
+.testimonials-section .owl-carousel .owl-item{
+    opacity: 0;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out !important;
+  }
+  .testimonials-section .owl-carousel .owl-item.active{
+    opacity: 1;
+  }
+
+  .testimonials-section .owl-stage-outer {
+    overflow: hidden !important; /* Ensures only one slide is visible */
+  }
+  .testimonials-section .owl-item {
+    backface-visibility: hidden; /* Prevents rendering glitches */
+  }
+  
+  .testimonials-section .owl-theme .owl-dots .owl-dot span{
+    border: 2px solid var(--color-primary) !important;
+      border-radius: 50px !important;
+      width: 8px !important;
+      height: 8px !important;
+      background-color: transparent !important;
+      margin: 4px !important;
+      -webkit-transition: all 0.4s ease-out;
+      -moz-transition: all 0.4s ease-out;
+      -o-transition: all 0.4s ease-out;
+      transition: all 0.4s ease-out !important;
+  }
+  .testimonials-section .owl-theme .owl-dots .owl-dot.active span{
+    width: 180px !important;
+    background-color: var(--color-primary) !important; 
+  }
+  .testimonials-section .owl-theme .owl-dots .owl-dot:hover span{
+    background-color: var(--color-primary) !important; 
+  }
+  .testimonials-section .owl-theme .owl-nav.disabled+.owl-dots {
+    margin-top: 32px;
+    text-align: left;
+  }

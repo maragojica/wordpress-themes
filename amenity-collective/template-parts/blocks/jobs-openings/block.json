@@ -1,0 +1,22 @@
+{
+    "name": "acf/jobsopenings",
+    "title": "Jobs Openings",
+    "description": "A job openings section with a heading, subheading and Linkedin CTA button",
+    "style": [ "file:./jobs-openings.css" ],
+    "category": "lazarus-design-team",
+    "icon": "groups",
+    "keywords": ["Jobs Openings", "Opportunities", "Apply Now"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "jobs-openings.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/amenity-collective/theme/template-parts/blocks/jobs-openings/screenshot.png"
+        }
+    }    
+}

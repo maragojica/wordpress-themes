@@ -1,0 +1,22 @@
+{
+    "name": "acf/hero-default",
+    "title": "Hero Default Block",
+    "description": "A internal default hero section with a background color and a heading.",
+    "style": [ "file:./hero-default.css" ],
+    "category": "lazarus-design-team",
+    "icon": "welcome-view-site",
+    "keywords": ["hero default", "banner", "intro"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "hero-default.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/connecting-elements/theme/template-parts/blocks/hero-default/screenshot.png"
+        }
+    }    
+}

@@ -1,0 +1,22 @@
+{
+    "name": "acf/recent-blog",
+    "title": "Recent Blog",
+    "description": "A recent blog section.",
+    "style": [ "file:./recent-blog.css" ],
+    "category": "lazarus-design-team",
+    "icon": "welcome-write-blog",
+    "keywords": ["content post", "press", "news", "blog"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "recent-blog.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/amenity-collective/theme/template-parts/blocks/recent-blog/screenshot.png"
+        }
+    }    
+}

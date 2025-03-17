@@ -1,0 +1,22 @@
+{
+    "name": "acf/testimonials",
+    "title": "Testimonials",
+    "description": "A general testimonials block that has a slider and text section with buttons. The order of columns is reversible",
+    "style": [ "file:./testimonials.css" ],
+    "category": "lazarus-design-team",
+    "icon": "align-pull-left",
+    "keywords": ["testimonials", "slider"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "testimonials.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/nordic-it/theme/template-parts/blocks/testimonials/screenshot.png"
+        }
+    }    
+}

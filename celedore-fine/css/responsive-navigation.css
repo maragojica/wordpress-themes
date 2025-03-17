@@ -1,0 +1,295 @@
+/*Mobile Menu*/
+
+.menu-overlay {
+    position: fixed;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    z-index: 99997;
+    display: none;
+    top: 0;
+    left: 0;
+}
+
+#responsive-menu.open .menu-overlay {
+    display: block;
+}
+
+.responsive-menu-interior{
+    margin: 0;
+    list-style: none;
+    background-color: var(--color-slate);
+    position: fixed;
+    z-index: 99998;
+    width: 100%;
+    right: 0;
+    top: 0;
+    min-width: 100%;
+    height: 100vh;
+    max-height: 100vh;
+    padding: 30px 2em;
+    overflow-y: scroll;
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transform: translateX(100%);
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    -ms-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    transition: all 0.25s;
+}
+.responsive-menu-interior ul{
+    margin: 0;
+}
+#responsive-menu.open .responsive-menu-interior {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+}
+
+#menu-button {
+    background-color: var(--color-slate);
+    width: 34px;
+    height: 41px;
+    position: fixed;
+    z-index: 999999;
+    right: 25px;
+    top: 45px;
+    cursor: pointer;
+    border-radius: 0px;
+}
+
+#menu-button span {
+    width: 30px;
+    height: 3px;
+    background-color: #eeeeee;
+    border-radius: 0;
+    position: absolute;
+    left: 13px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    transition: all 0.25s;
+}
+#menu-button.open span{
+    background-color: #fff;
+}
+#menu-button span:nth-child(1) {
+    top: 10px;
+}
+
+#menu-button span:nth-child(2) {
+    top: 19px;
+}
+
+#menu-button span:nth-child(3) {
+    top: 19px;
+}
+
+#menu-button span:nth-child(4) {
+    top: 28px;
+}
+
+#menu-button.open span:nth-child(1),
+#menu-button.open span:nth-child(4) {
+    width: 0;
+    left: 23px;
+}
+
+#menu-button.open span:nth-child(2) {
+    transform: rotate(45deg);
+}
+
+#menu-button.open span:nth-child(3) {
+    transform: rotate(-45deg);
+}
+
+/*underscores fixes*/
+ul.responsive-menu-items li {
+    width: auto;
+    float: none;
+    position: relative;
+    list-style: none;
+}
+
+ul.responsive-menu-items li ul.sub-menu {
+    position: static;
+    float: none;
+    display: none;
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+ul.responsive-menu-items li ul.sub-menu li {
+    float: none;
+}
+
+ul.responsive-menu-items li ul.sub-menu a {
+    width: 100%;
+    display: block !important;
+}
+
+/*Sub Menu*/
+
+#menu-button {
+    background-color: transparent;
+    top: -3px;
+    right: 11px;
+    display: none;
+    position: relative;
+    bottom: 0;
+    border-radius: 100%;
+}
+#menu-button span {
+    width: 34px;
+    background-color: var( --color-cinder-rose);
+}
+#responsive-menu{
+    position: relative;
+    display: flex;
+    justify-content: end; 
+    padding: 0 15px;
+
+}
+
+ul.responsive-menu-items {
+    padding: 0;
+}
+ul.responsive-menu-items li {
+    list-style: none;
+    position: relative;
+    margin: 0;
+    text-align: left;
+    width: auto;
+    padding-right: 40px;
+    padding-bottom: 10px;
+}
+ul.responsive-menu-items a {
+    text-align: left;
+    text-decoration: none;
+    padding: 2px 0;
+    display: block;
+    border: none;
+    margin: 0;
+    -webkit-transition: 0.35s ease all;
+    -ms-transition: 0.35s ease all;
+    -o-transition: 0.35s ease all;
+    transition: 0.35s ease all;
+    color: var(--color-white);
+    font-size: 34px;
+    font-family: var(--font-family-content);
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 70px;
+    letter-spacing: 2.25px;  
+}
+
+ul.responsive-menu-items a:hover,
+ul.responsive-menu-items a:focus
+{
+    color: #fff !important;
+}
+ul.responsive-menu-items li.current-menu-item a{
+    color: var(--color-cinder-rose);
+    border-bottom: 2px solid var(--color-cinder-rose);
+}
+ul.responsive-menu-items a::after {
+    display: none;
+}
+ul.responsive-menu-items a.active,
+ul.responsive-menu-items a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+ul.responsive-menu-items li.menu-item-has-children::after {
+    position: absolute;
+    content: "";
+    background-color: transparent;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='28' height='17' viewBox='0 0 28 17' fill='none'%3e%3cpath d='M14 17L0 3.21622L3.26667 0L14 10.5676L24.7333 0L28 3.21622L14 17Z' fill='white'/%3e%3c/svg%3e");
+    top: 7px;
+    right: -1px;
+    transform: translate(-50%, -50%);
+    width: 16px;
+    height: 15px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    pointer-events: none;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -moz-transition: transform 0.25s ease 0s;
+  -o-transition: transform 0.25s ease 0s;
+  -webkit-transition: transform 0.25s ease 0s;  
+   transition: transform 0.25s ease 0s;
+}
+ul.responsive-menu-items li.menu-item-has-children.open::after {
+    top: 14px;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+ul.responsive-menu-items li ul.sub-menu {
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    box-shadow: none;
+    width: 100%;
+}
+
+ul.responsive-menu-items li ul.sub-menu li {
+    margin: 0;
+    padding-right: 0;
+}
+
+ul.responsive-menu-items li ul.sub-menu a {
+    padding: 8px 15px 6px 25px;
+    font-size: 1.5em;
+}
+
+ul.responsive-menu-items li ul.sub-menu .sub-menu a {
+    padding-left: 45px;
+}
+.responsive-menu-interior .social-icons{
+    margin-top: 2em;
+}
+#menu-button,
+#responsive-menu-items,
+.responsive-menu-items {
+    display: flex !important;
+    flex-direction: column;
+    align-items: self-start;
+    justify-content: center;
+    padding-top: 25%;
+}
+#menu-button{
+    padding-top: unset;
+}
+ul#responsive-menu-items{
+    justify-content: flex-start;
+    padding-top: 2%;
+}
+
+    .offcanvas-logo{
+        text-align: center;
+    }
+
+    @media screen and (max-width: 1023.98px) {
+    #primary-menu {
+        display: none;
+    }
+    .row.desktop{
+        display: none;
+      }
+}

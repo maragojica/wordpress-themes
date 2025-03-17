@@ -1,0 +1,312 @@
+{
+    "key": "group_64f26798df3f5",
+    "title": "Store Locator",
+    "fields": [
+        {
+            "key": "field_65b833ad7e35f",
+            "label": "Functionality",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0,
+            "selected": 0
+        },
+        {
+            "key": "field_64f2679635309",
+            "label": "Google Maps API",
+            "name": "google_maps_api",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_65b8333cd6340",
+            "label": "Default Latitude",
+            "name": "default_latitude",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Insert the default latitude for where you would like your store locator centered.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "40.7128",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_65b8335cd6341",
+            "label": "Default Longitude",
+            "name": "default_longitude",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Insert the default longitude you would like your store locator map centered on.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "-74.0060",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_65b8323ad633e",
+            "label": "Result Radius",
+            "name": "result_radius",
+            "aria-label": "",
+            "type": "number",
+            "instructions": "Input in number of miles for how large of a radius you would like for results to be shown around a certain point. This is 50 by default.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 50,
+            "min": "",
+            "max": "",
+            "placeholder": "",
+            "step": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_65b83293d633f",
+            "label": "Zoom on Search",
+            "name": "zoom_on_search",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "If this is enabled, when a location is searched for the user will be zoomed in on the exact location of search. By default, the user is shown all locations in a zoomed out fashion within the result radius.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "ui": 1
+        },
+        {
+            "key": "field_65b83129d633c",
+            "label": "Autocomplete",
+            "name": "autocomplete",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "Enable Google Maps address autocomplete, this will autofill the address as the user starts typing int he address field. Keep in mind, you need to have this feature enabled in the api console and it will increase api usage.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "ui": 1
+        },
+        {
+            "key": "field_65b8316fd633d",
+            "label": "Show Distance",
+            "name": "show_distance",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "If this is enabled after allowing geolocation, or entering an address in the location list the approximate distance between the input address and stores will be shown. Keep in mind this feature uses the haversine distance formula and not Google Maps reducing API usage, but it doesn't account for driving distance.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "ui": 1
+        },
+        {
+            "key": "field_65b8427908ae1",
+            "label": "Location Sharing",
+            "name": "location_sharing",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "If this option is enabled the browser will prompt the user to share their location to then list locations closest to that user's location.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "ui": 1
+        },
+        {
+            "key": "field_65b833b77e360",
+            "label": "Appearance",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0,
+            "selected": 0
+        },
+        {
+            "key": "field_64f267c53530a",
+            "label": "Marker",
+            "name": "marker",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_64f267d43530b",
+            "label": "Marker Width",
+            "name": "marker_width",
+            "aria-label": "",
+            "type": "number",
+            "instructions": "Marker width in pixels.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "min": "",
+            "max": "",
+            "placeholder": "",
+            "step": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_64f268003530c",
+            "label": "Marker Height",
+            "name": "marker_height",
+            "aria-label": "",
+            "type": "number",
+            "instructions": "Marker height in pixels.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "min": "",
+            "max": "",
+            "placeholder": "",
+            "step": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_64f268103530d",
+            "label": "Snazzy Maps",
+            "name": "snazzy_maps",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "rows": "",
+            "placeholder": "",
+            "new_lines": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "store-locator"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1732199506
+}

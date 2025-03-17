@@ -1,0 +1,22 @@
+{
+    "name": "acf/capabilities",
+    "title": "Capabilities",
+    "description": "Slider section with our capabilities",
+    "style": [ "file:./capabilities.css" ],
+    "category": "lazarus-design-team",
+    "icon": "smiley",
+    "keywords": ["our capabilities", "capabilities", "slider capabilities"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "capabilities.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/eric-scott-tailwind/theme/template-parts/blocks/capabilities/screenshot.png"
+        }
+    }    
+}

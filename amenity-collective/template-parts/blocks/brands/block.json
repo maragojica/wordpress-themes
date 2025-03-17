@@ -1,0 +1,22 @@
+{
+    "name": "acf/brands",
+    "title": "Our Brands",
+    "description": "A hero section with a background video, heading, counters, and logos.",
+    "style": [ "file:./brands.css" ],
+    "category": "lazarus-design-team",
+    "icon": "heart",
+    "keywords": ["brands", "opportunities", "logos"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "brands.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/amenity-collective/theme/template-parts/blocks/brands/screenshot.png"
+        }
+    }    
+}
