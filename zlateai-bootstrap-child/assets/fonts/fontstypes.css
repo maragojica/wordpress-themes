@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'Fieldwork-GeoThin';
+    src: url('Fieldwork-GeoThin.eot');
+    src: url('Fieldwork-GeoThin.eot?#iefix') format('embedded-opentype'),
+    url('Fieldwork-GeoThin.woff2') format('woff2'),
+    url('Fieldwork-GeoThin.woff') format('woff'),
+    url('Fieldwork-GeoThin.ttf') format('truetype'),
+    url('Fieldwork-GeoThin.svg#Fieldwork-GeoThin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fieldwork-GeoBold';
+    src: url('Fieldwork-GeoBold.eot');
+    src: url('Fieldwork-GeoBold.eot?#iefix') format('embedded-opentype'),
+    url('Fieldwork-GeoBold.woff2') format('woff2'),
+    url('Fieldwork-GeoBold.woff') format('woff'),
+    url('Fieldwork-GeoBold.ttf') format('truetype'),
+    url('Fieldwork-GeoBold.svg#Fieldwork-GeoBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fieldwork-GeoDemibold';
+    src: url('Fieldwork-GeoDemibold.eot');
+    src: url('Fieldwork-GeoDemibold.eot?#iefix') format('embedded-opentype'),
+    url('Fieldwork-GeoDemibold.woff2') format('woff2'),
+    url('Fieldwork-GeoDemibold.woff') format('woff'),
+    url('Fieldwork-GeoDemibold.ttf') format('truetype'),
+    url('Fieldwork-GeoDemibold.svg#Fieldwork-GeoDemibold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fieldwork-GeoRegular';
+    src: url('Fieldwork-GeoRegular.eot');
+    src: url('Fieldwork-GeoRegular.eot?#iefix') format('embedded-opentype'),
+    url('Fieldwork-GeoRegular.woff2') format('woff2'),
+    url('Fieldwork-GeoRegular.woff') format('woff'),
+    url('Fieldwork-GeoRegular.ttf') format('truetype'),
+    url('Fieldwork-GeoRegular.svg#Fieldwork-GeoRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fieldwork-GeoLight';
+    src: url('Fieldwork-GeoLight.eot');
+    src: url('Fieldwork-GeoLight.eot?#iefix') format('embedded-opentype'),
+    url('Fieldwork-GeoLight.woff2') format('woff2'),
+    url('Fieldwork-GeoLight.woff') format('woff'),
+    url('Fieldwork-GeoLight.ttf') format('truetype'),
+    url('Fieldwork-GeoLight.svg#Fieldwork-GeoLight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+

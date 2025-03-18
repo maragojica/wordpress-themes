@@ -1,0 +1,13 @@
+.row-testimonials{
+    min-height: 260px;
+}
+
+.row-form .box input:focus,
+.row-form .box select:focus{outline: none;}
+.row-form .box input:focus::placeholder{color: transparent;}
+
+@media (min-width: 992px){
+    .box-contact-fixed {
+         max-width: 445px;
+    }
+}

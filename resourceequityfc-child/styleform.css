@@ -1,0 +1,170 @@
+#can_embed_form, #donate_auto_modal, #donate_make_recurring_modal {
+	background-color: transparent !important;
+	border: none !important;
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+#can_embed_form h4, .action_description.clearfix, #action_info, .action_letter, label.floatlabel-label.floatlabel-label-inactive, textarea#form-comments {
+	display: none;
+}
+
+.action_widget.action-widget--toggle.action_status_tracker .centertext {
+    padding: 0 !important;
+}
+#can_embed_form .floatlabel-wrapper .floatlabel-label::after,
+#can_embed_form .floatlabel-wrapper .floatlabel-label-active,
+#can_embed_form .floatlabel-wrapper .floatlabel-label{
+	display: none !important;
+}
+#can_embed_form .entry-title {
+	padding-bottom: 0 !important;
+	border-bottom: 0 !important;
+	line-height: 27px !important;
+	text-align: left !important;
+	color: #fff;
+	font-size: 22px !important;
+	letter-spacing: -0.42px !important;
+	font-family: tablet-gothic, sans-serif !important;
+	font-style: normal;
+	font-weight: 800 !important;
+}
+#can_embed_form .additional_text {
+	margin-top: 10px !important;
+}
+#can_embed_form p {
+	margin-bottom: 0px !important;
+	font-family: tablet-gothic, sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	color: #fff;
+	font-size: 13px;
+	line-height: 18px;
+}
+#can_embed_form a{
+	color: #fff !important;
+}
+#can_embed_form input::placeholder{
+	border: 0 !important;
+	background-color: transparent !important;
+	box-sizing: border-box !important;
+	font-family: tablet-gothic-condensed, sans-serif !important;
+	font-style: normal;
+	font-weight: 600 !important;
+	color: #0087FF !important;
+	font-size: 16px !important;
+	letter-spacing: -0.31px;
+	text-transform: uppercase;
+	line-height: 35px !important;
+	opacity: 1;
+}
+#can_embed_form input[type="text"], #can_embed_form input[type="password"], #can_embed_form input[type="url"], #can_embed_form input[type="email"], #can_embed_form input[type="tel"], #can_embed_form input[type="number"]{
+	background: #FCFCFC 0% 0% no-repeat padding-box;
+	border: 2px solid #0087FF !important;
+	border-radius: 6px !important;
+	height: 45px !important;
+	font-family: tablet-gothic-condensed, sans-serif !important;
+	font-style: normal;
+	font-weight: 600 !important;
+	color: #0087FF !important;
+	font-size: 16px !important;
+	letter-spacing: -0.31px;
+	line-height: 20px !important;
+	text-transform: uppercase;
+	padding-left: 15px !important;
+	padding-right: 15px !important;
+}
+#can_embed_form input, #can_embed_form textarea, #can_embed_form select {
+	margin-bottom: 8px !important;
+}
+#can_embed_form .international_link-wrap,
+#can_embed_form #logo_wrap,
+#can_embed_form #d_sharing,
+#can_embed_form textarea,
+#can_embed_form #embed_toggle-open, #can_embed_form #embed_toggle-close,
+#can_embed_form .can_thank_you-block:first-child > label.graytext,
+#can_embed_form textarea{
+	display: none !important;
+}
+#can_embed_form input[type="submit"]{
+	background: #F8D14B 0% 0% no-repeat padding-box !important;
+	border-radius: 4px !important;
+	font-family: tablet-gothic, sans-serif !important;
+	font-style: normal;
+	font-weight: 600 !important;
+	color: #191919 !important;
+	font-size: 18px !important;
+	line-height: 24px !important;
+	padding: 8px 10px !important;
+	text-transform: uppercase !important;
+	letter-spacing: 0 !important;
+}
+#can_embed_form input[type="submit"]:hover,
+#can_embed_form input[type="submit"]:focus{
+	background-color: #191919 !important;
+	color: #F8D14B !important;
+}
+#can_embed_form .can_thank_you-block .share_button{
+	font-family: tablet-gothic, sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	border-radius: 6px;
+}
+#can_embed_form #can_thank_you h1{
+	margin: 0 0 20px !important;
+	font-family: tablet-gothic, sans-serif !important;
+	font-style: normal;
+	font-weight: 800 !important;
+	color: #fff;
+	font-size: 28px;
+	line-height: 32px !important;
+	letter-spacing: -0.42px !important;
+	text-align: center;
+}
+#can_embed_form #can_thank_you {
+	background-color: transparent !important;
+	color: #fff !important;
+	padding: 0 !important;
+	margin: -19px -19px 20px !important;
+	box-sizing: border-box !important;
+	text-align: center !important;
+}
+#can_embed_form a {
+	color: #0087FF !important;
+}
+#can_embed_form .additional_text a{
+	color: #fff !important;
+}
+#can_embed_form a:hover,
+#can_embed_form a:focus{
+	color: #01192F !important;
+}
+#action_welcome_message{
+	padding-bottom: 20px !important;
+	font-family: tablet-gothic, sans-serif;
+	font-weight: 300;
+	font-size: 17px;
+	line-height: 24px;
+	letter-spacing: -0.37px;
+	color: #01192F;
+}
+#can_embed_form #action_welcome_message #action_welcome_message_inner {
+	background-color: #fff !important;
+	padding: 20px !important;
+	text-align: center !important;
+}
+
+#new_signature li.control-group ~ li.core_field{
+	width: 49% !important;
+	display: inline-block !important;
+}
+#new_signature li.control-group + li.core_field{
+	margin-right: 3px !important;
+	width: 48% !important;
+}
+@media(max-width: 767.98px) {
+	.hide-md-block,
+	#can-petition-area-urge-gov-newsom-to-end-fossil-fuel-extration {
+		display: none !important;
+	}
+}

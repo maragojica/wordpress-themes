@@ -1,0 +1,1 @@
+<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/elipse-main.svg" class="bg-elipse out-section-elipse width-65 width-75-mdd width-100-smd-1 width-100-sm right-25 right-10-smd-1 right-sm-10 top-20 top-60-smd-1 top-xsm-35 z-index-1">

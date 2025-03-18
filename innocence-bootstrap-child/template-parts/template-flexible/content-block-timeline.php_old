@@ -1,0 +1,106 @@
+<section class="module module-block-timeline position-relative" <?php if(get_sub_field('section_id_timeline')):?>id="<?php the_sub_field('section_id_timeline'); ?>" <?php endif; ?>>
+
+   <?php $cta_timeline = get_sub_field('cta_timeline'); ?>
+
+    <?php if($cta_timeline):
+
+        $link_url = $cta_timeline['url'];
+
+        $link_title = $cta_timeline['title'];
+
+        $link_target = $cta_timeline['target'] ? $cta_timeline['target'] : '_self';?>
+
+        <div class="box-timeline-cta">
+
+            <a class="link-cta" aria-label="<?php echo $link_title; ?>" href="<?php echo $link_url; ?>" target="<?php echo $link_target;?>">
+
+                <?php echo $link_title; ?>
+
+                <svg class="d-inline" width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                    <path d="M1.25 9.5625L5.3125 5.5L1.25 1.4375" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+                </svg>
+
+            </a>
+
+        </div>
+
+    <?php endif; ?>
+
+   <div class="container-fluid ps-0 pe-0">
+
+       <?php if( have_rows('slider_timeline') ): ?>
+
+           <div class="slider-timeline owl-carousel <?php the_sub_field('section_id_timeline'); ?>">
+
+               <?php while ( have_rows('slider_timeline') ) : the_row();
+
+                   $slide_image = get_sub_field('image_timeline');
+
+                   $year_timeline = get_sub_field('year_timeline');
+
+                   $title_timeline = get_sub_field('title_timeline');
+
+                   $text_timeline = get_sub_field('text_timeline');
+
+                   $caption = get_sub_field('caption_image_timeline');
+
+                   $icon_timeline = get_sub_field('icon_timeline');?>
+
+                   <div class="item animated fadeIn item-timeline" <?php if($year_timeline): ?>data-dot="<button class='slide-time'><div class='bar'></div><span><?php echo $year_timeline;?></span></button>"<?php endif; ?>>
+
+                       <div class="box-timeline position-relative h-100">
+
+                           <?php if ( !empty($slide_image)) : ?>
+
+                               <img class="img-fluid fit-cover-center w-100 h-100" src="<?php echo esc_url($slide_image['url']); ?>" alt="<?php echo esc_attr($slide_image['alt']); ?>" />
+
+                           <?php endif; ?>
+
+                           <div class="overlay-timeline">
+
+                               <div class="info-timeline">
+
+                                   <?php if($title_timeline): ?>
+
+                                       <span class="title-timeline"><?php echo $title_timeline;?></span>
+
+                                   <?php endif; ?>
+
+                                   <?php if($text_timeline): ?>
+
+                                       <div class="text-timeline dp-1 dp-2 cl-white"><?php echo $text_timeline;?></div>
+
+                                   <?php endif; ?>
+
+                                   <?php if($caption): ?>
+
+                                       <div class="metadata-timeline cl-grey"><?php echo $caption;?></div>
+
+                                   <?php endif; ?>
+
+                               </div>
+
+                           </div>
+
+                           <?php if ( !empty($icon_timeline)) : ?>
+
+                               <img class="icon-time-line" src="<?php echo esc_url($icon_timeline['url']); ?>" alt="<?php echo esc_attr($icon_timeline['alt']); ?>" />
+
+                           <?php endif; ?>
+
+                       </div>
+
+                   </div>
+
+               <?php endwhile; ?>
+
+           </div>
+
+       <?php endif; ?>
+
+   </div>
+
+</section>
+

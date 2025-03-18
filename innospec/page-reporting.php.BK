@@ -1,0 +1,475 @@
+<?php
+//Template name: Page Reporting
+
+get_header();
+?>
+<div class="investors">
+    <section id="hero" style="background:url(/wp-content/uploads/2022/05/hero-investors.jpg) no-repeat !important;background-size: cover!important;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-7">
+                    <h1 class="headline-hero"><?php the_title(); ?></h1>
+                </div>
+                <div class="col-md-5"> 
+                    <?php echo do_shortcode("[nasdaq]"); ?>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <nav class="breadcrumb">
+                <?php if(function_exists('bcn_display'))
+                    {
+                        bcn_display();
+                    }?>
+                </nav>
+            </div>
+        </div>
+        <div class="row reporting-intro">
+            <div class="col-lg-6">
+                <?php the_content(); ?>
+            </div>
+            <div class="col-lg-6">
+                <div class="sidebar-downloads">
+                    
+                    <h3 class="headline" style="border:none;margin-bottom: inherit;">Quarterly Earnings</h3>
+
+                    <script type="text/javascript">
+                        jQuery(window).ready(function(){
+                            jQuery('.sidebar-downloads .accordeon .have-childs h3').click(function(){
+                                jQuery(this).closest('.have-childs').find('.subitems').slideToggle();
+                                jQuery(this).closest('.have-childs').toggleClass('open');
+                            });
+                        });
+                    </script>
+
+                    <div class="accordeon">
+                        <?php if( have_rows('years') ): ?>
+
+                            <?php $i=1; ?>
+                            <?php while( have_rows('years') ) : the_row(); ?>
+                                <?php if(get_sub_field('tab_type') == 'Repeat Items' and get_sub_field('show-hide')): ?>
+                                    <div class="items have-childs <?php echo ($i==1)?'open':''; ?>">
+                                        <h3><?php echo get_sub_field('year'); ?></h3>
+
+                                        <?php if( have_rows('items_repeat') ): ?>
+                                        <div class="subitems" <?php echo ($i>1)?"style='display:none;'":""; ?>>
+                                            
+                                            <?php while( have_rows('items_repeat') ) : the_row(); ?>
+                                            <div class="item download">
+                                                <a href="<?php the_permalink(get_sub_field('file')); ?>" target="_blank">
+                                                    <img src="<?php echo get_template_directory_uri(); ?>/img/icon-download.png"> <?php echo get_sub_field('title'); ?>
+                                                    <div class="meta-published"><?php echo get_sub_field('publish_date'); ?></div>
+                                                </a>
+                                                
+                                            </div>
+                                            <?php endwhile; ?>
+                                                
+                                        </div>
+                                        <?php endif; ?>
+                                    </div>
+                                    
+                                <?php endif; //tab_type ?>
+
+                                <?php if(get_sub_field('tab_type') == 'Single Item'): ?>
+                                    <div class="items download">
+                                        <h3><a href="<?php echo the_permalink(get_sub_field('tab_title_file')); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/icon-download.png"> <?php echo get_sub_field('year'); ?></a></h3>                                        
+                                    </div>
+                                <?php endif; //tab_type ?>
+                                <?php $i++; ?>
+                            <?php endwhile; ?>
+                        <?php endif; //years ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 content-main">
+                
+                <?php 
+                    //$agent = $_SERVER["HTTP_USER_AGENT"];
+                    $xml_string = file_get_contents("https://www.sec.gov/cgi-bin/browse-edgar/?CIK=1054905&output=atom");
+                    //$xml_string = file_get_contents("https://www.sec.gov/Archives/edgar/data/1054905/");
+                    //$xml_string = str_replace("-", "_", $xml_string);
+                    $xml_string = str_replace('file-number', 'file_number', $xml_string);
+                    $xml_string = str_replace('file-number-href', 'file_number_href', $xml_string);
+                    $xml_string = str_replace('filing-date', 'filing_date', $xml_string);
+                    $xml_string = str_replace('filing-href', 'filing_href', $xml_string);
+
+                    $xml_string = str_replace('filing-type', 'filing_type', $xml_string);
+                    $xml_string = str_replace('ffilm-number', 'ffilm_number', $xml_string);
+                    $xml_string = str_replace('form-name', 'form_name', $xml_string);
+                    $xml = simplexml_load_string($xml_string); // where $xml_string is the XML data you'd like to use (a well-formatted XML string). If retrieving from an external source, you can use file_get_contents to retrieve the data and populate this variable.
+
+                    $json = json_encode($xml); // convert the XML string to JSON
+                    //$array = json_decode($json,TRUE); // convert the JSON-encoded string to a PHP variable
+                ?>
+
+                <h3 id="sec-filings">SEC & Regulatory Filings</h3>
+                <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-resource/1.5.1/vue-resource.min.js"></script>
+
+                <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"></script>
+                <div id="app" class="wrap-grid">
+                    <div class="sec-filters">
+                        <div class="d-flex align-items select-year">
+                            <label>Select Year: </label>
+                            <select v-model="filter1" class="select select-year">
+                                <option value="">All</option>
+                                <?php 
+                                $year = date("Y");
+                                $year_init = $year - 5;
+                                for($i=$year_init; $i <= $year; $i++):
+                                ?>
+                                <option value="<?php echo $i ?>"><?php echo $i ?></option>
+                                <?php 
+                                endfor;
+                                ?>
+                            </select>
+                        </div>
+                        <div class="d-flex align-items all-form-types">
+                            <label>Filter Filing Type: </label>
+                            <select v-model="filter2" class="select select-year">
+                                <option value="">All Form Types</option>
+                                <option value="DEFA14A">DEFA14A</option>
+                                <option value="DEF 14A">DEF 14A</option>
+                                <option value="SC 13G/A">SC 13G/A</option>
+                                <option value="SC 13G">SC 13G</option>
+                                <option value="10-K">10-K</option>
+                                <option value="8-K">8-K</option>
+                                <option value="4">4</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+                        <!--<div class="icon-rss"><img src="<?php //echo get_template_directory_uri(); ?>/img/icon-rss.svg"/></div>-->
+                    </div>
+                    
+                    <div class="grid-head sec-regulatory">
+                        <div class="grid grid2">
+                            <div class="date">Date</div>
+                            <div>Filing Type</div>
+                            <div>Filing Description</div>
+                            <div>Download / View</div>
+                        </div>
+                    </div>
+                    
+                    <div class="grid-body grid-vue sec-regulatory">                        
+                        <div class="grid grid2" v-for="(item, index) in filteredRows" :key="index">
+                            <div class="date">{{ item.content.filing_date }}</div>
+                            <div>{{ item.content.filing_type }}</div>
+                            <div>{{ item.content.form_name }}</div>
+                            <div class="links">
+                                <span class="cursor" @click="export_pdf(item.content.filing_href)">
+                                    <img src="<?php bloginfo('template_url'); ?>/img/icon-download-2.png"> PDF
+                                </span>
+                                <span class="cursor" @click="export_html(item.content.filing_href)">
+                                    <img src="<?php bloginfo('template_url'); ?>/img/icon-download-2.png"> HTML
+                                </span>
+                                <span class="cursor" @click="export_excel(item.content.filing_href)">
+                                    <img src="<?php bloginfo('template_url'); ?>/img/icon-download-2.png"> XLS
+                                </span>
+                            </div>
+                        </div>
+
+                        <nav v-if="filter1 == '' && filter2 == ''">
+                            <ul class="pagination">
+                                <li class="page-item">
+                                    <button type="button" class="page-link" v-for="(pageNumber, index) in pages" :key="index" @click="page = pageNumber" :class="page==pageNumber?'active':''"> {{pageNumber}} </button>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <div id="ajax_container"></div>
+                        
+                    </div>
+                    
+                </div><!-- wrap-grid -->
+                <script>
+                    
+                    new Vue({
+                        el:'#app',
+                        data: {
+                            table : <?php echo $json ?>,
+                            posts : [''],
+                            page: 1,
+                            perPage: 9,
+                            pages: [],
+                            filter1: "",
+                            filter2: "",
+
+                        },
+                        computed: {
+                            /*displayedPosts() {
+                                return this.paginate(this.posts);
+                            },*/
+                            filteredRows() {
+                                let resu = this.posts.filter(row => {
+                                    const type = row.content.filing_type.toString().toLowerCase();
+                                    const year = row.content.filing_date.toString().toLowerCase();
+                                    
+                                    const searchTerm1= this.filter1.toLowerCase();
+                                    const searchTerm2 = this.filter2.toLowerCase();
+
+                                    return type.includes(searchTerm2) && year.includes(searchTerm1);
+                                });
+
+                                return this.paginate(resu);
+                            },
+                        },
+                        created(){
+                            this.posts = this.table.entry
+                        },
+                        methods:{
+                            
+                            setPages () {
+                                let numberOfPages = Math.ceil(this.posts.length / this.perPage);
+                                for (let index = 1; index <= numberOfPages; index++) {
+                                    this.pages.push(index);
+                                }
+                            },
+                            paginate (posts) {
+                                let page = this.page;
+                                let perPage = this.perPage;
+                                let from = (page * perPage) - perPage;
+                                let to = (page * perPage);
+                                return  posts.slice(from, to);
+                            },
+                                
+                            export_word(url){
+                                window.open('<?php echo get_site_url(); ?>/wp-content/themes/innospec/assets/libraries/script_export_word.php/?url='+url);
+                            },
+                            export_html(url){
+                                window.open('<?php echo get_site_url(); ?>/wp-content/themes/innospec/assets/libraries/script_export_html.php/?url='+url);
+                            },
+                            export_excel(url){
+                                window.open('<?php echo get_site_url(); ?>/wp-content/themes/innospec/assets/libraries/script_export_excel.php/?url='+url);
+                            },
+                            export_pdf(url){
+                                window.open('<?php echo get_site_url(); ?>/wp-content/themes/innospec/assets/libraries/script_export__pdf.php/?url='+url);
+                            },
+                        },
+                        watch: {
+                            posts () {
+                                this.setPages();
+                            },
+                            filter1(){
+                                this.page = 1;
+                            },
+                            filter2(){
+                                this.page = 1;
+                            }
+                        },
+                    });
+                </script>
+            </div>
+        </div>
+    </section>
+    
+    <?php get_template_part( 'footer-investors' ); ?>
+    
+</div>
+
+<style type="text/css">
+    .investors h1{
+        color: #000000;
+        font-size: 40px;
+        margin-top: 50px;
+    }
+    
+    /*.investors p{ font-size:20px; }*/
+    h2{font-size: 26px;}
+    .wrap-grid{
+        justify-self: center;
+    }
+    .grid-head{
+        margin-bottom: -1px;
+    }
+    .grid-head .grid > div{
+        background-color: #ededed;
+        font-weight: 500;
+        font-size: 16px;
+    }
+    .grid div.date{
+        padding-left: 15px!important;
+    }
+    .grid {
+        /*border-bottom: 1px solid #e2e2e2;*/
+        display: grid;
+        grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 1px;
+        grid-auto-flow: row;
+    }
+    .grid > div{
+        align-items: center;
+        background-color: white;
+        
+        display: flex;
+        font-size: 18px;
+        justify-content: flex-start;
+        margin-right: -1px;
+        padding: 15px 15px 15px 0px;
+        text-align: left;
+    }
+    .grid2 > div{
+        background-color: transparent;
+    }
+    .grid div:last-child{border-right: none;text-align: left!important;}
+
+    .grid .inner{background: #ffffff;}
+
+    .grid-q{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .grid-body .grid div.year{
+        font-weight: 500;
+    }
+    .grid-body .grid-q > div{
+        font-weight: bold;
+        margin: 0 3px;
+    }
+    .grid-body>div:nth-of-type(even){
+        background: #f7f7f7!important;
+    }
+    /*.grid-body .grid-q > div.q1{ color: #b2bb1c; }
+    .grid-body .grid-q > div.q2{ color: #0077c0; }
+    .grid-body .grid-q > div.q3{ color: #974399; }
+    .grid-body .grid-q > div.q4{ color: #272324; }*/
+    .grid a,
+    .grid span{
+        color: inherit;
+        line-height: 1 !important;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    .grid a{
+        border: 1px solid #000;
+        border-radius: 50%;
+        font-size: 16px;
+        padding: 5px 3px;
+    }
+    .grid span.unlink{
+        border: 1px solid #dadada;
+        border-radius: 50%;
+        color: #b2b2b2;
+        font-size: 16px;
+        padding: 5px 3px;
+    }
+    .grid a:after,
+    .grid span:after{
+        /*content: "\f107";
+        display: flex;
+        flex-direction: column;
+        font-family: 'Font Awesome 5 Pro';
+        position: relative;
+        top: -4px;*/
+        display: none;
+    }
+    #app .grid a:after,
+    #app .grid span:after{
+        display: none;
+        text-decoration: underline !important;
+    }
+    .grid-body .grid-q > div.q1 a:after{ color: #b2bb1c; }
+    .grid-body .grid-q > div.q2 a:after{ color: #0077c0; }
+    .grid-body .grid-q > div.q3 a:after{ color: #974399; }
+    .grid-body .grid-q > div.q4 a:after{ color: #272324; }
+
+    .grid2 {
+        grid-template-columns: 0.5fr 0.5fr 2fr 1fr !important;
+    }
+    #quaterly-earnings{
+        /*border: 1px solid #e2e2e2;*/
+        border-bottom: none;
+        border-right: none;
+        margin-bottom: 3rem;
+    }
+    .grid-vue .page-item{
+        display: flex;
+    }
+    .cursor:hover{
+        cursor: pointer;
+    }
+    .grid .links span{
+        margin-right: 20px;
+    }
+    .grid .links span.cursor{font-size: 16px;}
+    .grid .links span.cursor img{margin-right: 3px;}
+    .sec-filters{
+        align-items: center;
+        display: flex;
+        font-size: 16px !important;
+        line-height: 1.3;
+        justify-content: flex-start;
+        margin-bottom: 1.5rem;
+        margin-top: 1.5rem;
+    }
+    .sec-filters .icon-rss img{
+        margin-left: 20px;
+        width: 18px;
+    }
+    .all-form-types{ 
+        margin-left:30px !important;
+    }
+
+    .sec-regulatory{
+        font-size: 16px !important;
+        line-height: 1.3;
+    }
+
+
+    .sec-filters select::-ms-expand {
+      display: none;
+    }
+    .sec-filters select {
+      display: inline-block;
+      box-sizing: border-box;
+      margin: 0px !important;
+      padding: 0.5em 2em 0.5em 0.5em;
+      border: 1px solid #e2e2e2;
+      font: inherit;
+      line-height: inherit;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      -ms-appearance: none;
+      appearance: none;
+      background-repeat: no-repeat;
+      background-image: linear-gradient(45deg, transparent 50%, currentColor 50%), linear-gradient(135deg, currentColor 50%, transparent 50%);
+      background-position: right 15px top 1em, right 10px top 1em;
+      background-size: 5px 5px, 5px 5px;
+      min-width: 80px;
+    }
+    .sec-filters label{
+        margin-bottom: 0px !important;
+        margin-right: 15px !important;
+        margin-left: 0px !important;
+    }
+
+    .page-link {
+        color: #858585 !important;
+        font-size: 18px;
+        padding: 0.5rem 0.35rem !important;
+        border: none !important;
+    }
+    .page-link.active {
+        color: #000000 !important;
+        z-index: 2;
+        outline: 0;
+        text-decoration: underline;
+        box-shadow: none !important;
+    }
+    .pagination{
+        padding-left: 10px;
+        justify-content: flex-end;
+    }
+</style>
+<?php
+
+get_footer();
+
+?>

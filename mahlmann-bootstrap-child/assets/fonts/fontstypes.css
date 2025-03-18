@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'DIN2014-Bold';
+    src: url('DIN2014-Bold.eot');
+    src: url('DIN2014-Bold.eot?#iefix') format('embedded-opentype'),
+    url('DIN2014-Bold.woff2') format('woff2'),
+    url('DIN2014-Bold.woff') format('woff'),
+    url('DIN2014-Bold.ttf') format('truetype'),
+    url('DIN2014-Bold.svg#DIN2014-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DIN2014-ExtraBold';
+    src: url('DIN2014-ExtraBold.eot');
+    src: url('DIN2014-ExtraBold.eot?#iefix') format('embedded-opentype'),
+    url('DIN2014-ExtraBold.woff2') format('woff2'),
+    url('DIN2014-ExtraBold.woff') format('woff'),
+    url('DIN2014-ExtraBold.ttf') format('truetype'),
+    url('DIN2014-ExtraBold.svg#DIN2014-ExtraBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DIN2014-DemiBold';
+    src: url('DIN2014-DemiBold.eot');
+    src: url('DIN2014-DemiBold.eot?#iefix') format('embedded-opentype'),
+    url('DIN2014-DemiBold.woff2') format('woff2'),
+    url('DIN2014-DemiBold.woff') format('woff'),
+    url('DIN2014-DemiBold.ttf') format('truetype'),
+    url('DIN2014-DemiBold.svg#DIN2014-DemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DIN2014-ExtraLight';
+    src: url('DIN2014-ExtraLight.eot');
+    src: url('DIN2014-ExtraLight.eot?#iefix') format('embedded-opentype'),
+    url('DIN2014-ExtraLight.woff2') format('woff2'),
+    url('DIN2014-ExtraLight.woff') format('woff'),
+    url('DIN2014-ExtraLight.ttf') format('truetype'),
+    url('DIN2014-ExtraLight.svg#DIN2014-ExtraLight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DIN2014-Regular';
+    src: url('DIN2014-Regular.eot');
+    src: url('DIN2014-Regular.eot?#iefix') format('embedded-opentype'),
+    url('DIN2014-Regular.woff2') format('woff2'),
+    url('DIN2014-Regular.woff') format('woff'),
+    url('DIN2014-Regular.ttf') format('truetype'),
+    url('DIN2014-Regular.svg#DIN2014-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DIN2014-Light';
+    src: url('DIN2014-Light.eot');
+    src: url('DIN2014-Light.eot?#iefix') format('embedded-opentype'),
+    url('DIN2014-Light.woff2') format('woff2'),
+    url('DIN2014-Light.woff') format('woff'),
+    url('DIN2014-Light.ttf') format('truetype'),
+    url('DIN2014-Light.svg#DIN2014-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GothamRounded-Bold';
+    src: url('GothamRounded-Bold.eot');
+    src: url('GothamRounded-Bold.eot?#iefix') format('embedded-opentype'),
+    url('GothamRounded-Bold.woff2') format('woff2'),
+    url('GothamRounded-Bold.woff') format('woff'),
+    url('GothamRounded-Bold.ttf') format('truetype'),
+    url('GothamRounded-Bold.svg#GothamRounded-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GothamRounded-Book';
+    src: url('GothamRounded-Book.eot');
+    src: url('GothamRounded-Book.eot?#iefix') format('embedded-opentype'),
+    url('GothamRounded-Book.woff2') format('woff2'),
+    url('GothamRounded-Book.woff') format('woff'),
+    url('GothamRounded-Book.ttf') format('truetype'),
+    url('GothamRounded-Book.svg#GothamRounded-Book') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham-Book';
+    src: url('Gotham-Book.eot');
+    src: url('Gotham-Book.eot?#iefix') format('embedded-opentype'),
+    url('Gotham-Book.woff2') format('woff2'),
+    url('Gotham-Book.woff') format('woff'),
+    url('Gotham-Book.ttf') format('truetype'),
+    url('Gotham-Book.svg#Gotham-Book') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

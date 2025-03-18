@@ -1,0 +1,177 @@
+<?php
+//Template name: Page Governance
+get_header();
+?>
+<div class="investors">
+    <section id="hero" style="background:url(/wp-content/uploads/2022/05/hero-investors.jpg) no-repeat !important;background-size: cover!important;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="headline-hero"><?php the_title(); ?></div>
+                </div>
+                <div class="col-md-6"> 
+                    <div class="box-nyse">
+                        <div class="nyse">NYSE: IOSP</div>
+                        <div class="cost">$63.95</div>
+                        <div class="decimals">+0.75 (+1.19%)</div>
+                        <div class="text">Pricing delayed by 20 minutes<br>Last updated 9/3/2022 2:00 pm</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <div class="row intro">
+            <div class="col-lg-6">
+                <?php the_content(); ?>
+            </div>
+            <div class="col-lg-6">
+                <div class="sidebar-downloads">
+                    <h3 class="headline" style="border:none;margin-bottom: inherit;">Downloads</h3>
+                    <div class="accordeon">
+                        <div class="items have-childs open">
+                            <h3>Code of Conduct</h3>
+                            <div class="subitems">
+                                <div class="item download">
+                                    <a href="/about-us/corporate-governance/code_of_conduct_en/"><img src="<?php echo get_template_directory_uri(); ?>/img/icon-download.png"> English</a>
+                                </div>
+                                <div class="item download">
+                                    <a href="/about-us/corporate-governance/code_of_conduct_br/"><img src="<?php echo get_template_directory_uri(); ?>/img/icon-download.png"> Brazilian/Portuguese</a>
+                                </div>
+                                <div class="item download">
+                                    <a href="/about-us/corporate-governance/code_of_conduct_ch/"><img src="<?php echo get_template_directory_uri(); ?>/img/icon-download.png"> Chinese</a>
+                                </div>
+                                <div class="item download">
+                                    <a href="/about-us/corporate-governance/code_of_conduct_fr/"><img src="<?php echo get_template_directory_uri(); ?>/img/icon-download.png"> French</a>
+                                </div>
+                                <div class="item download">
+                                    <a href="/about-us/corporate-governance/code_of_conduct_de/"><img src="<?php echo get_template_directory_uri(); ?>/img/icon-download.png"> German</a>
+                                </div>
+                                <div class="item download">
+                                    <a href="/about-us/corporate-governance/code_of_conduct_it/"><img src="<?php echo get_template_directory_uri(); ?>/img/icon-download.png"> Italian</a>
+                                </div>
+                                <div class="item download">
+                                    <a href="/about-us/corporate-governance/code_of_conduct_ru/"><img src="<?php echo get_template_directory_uri(); ?>/img/icon-download.png"> Russian</a>
+                                </div>
+                                <div class="item download">
+                                    <a href="/about-us/corporate-governance/code_of_conduct_sp/"><img src="<?php echo get_template_directory_uri(); ?>/img/icon-download.png"> Spanish</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="items download">
+                            <h3><a href="/about-us/corporate-governance/innospec_humanrights_policy_-0921/"><img src="<?php echo get_template_directory_uri(); ?>/img/icon-download.png"> Human Rights</a></h3>
+                        </div>
+                        <div class="items download">
+                            <h3><a href="/about-us/corporate-governance/conflict_minerals/"><img src="<?php echo get_template_directory_uri(); ?>/img/icon-download.png"> Responsibility Sourcing: Conflict Minerals</a></h3>
+                        </div>
+                        <div class="items download">
+                            <h3><a href="/about-us/corporate-governance/corporate_governance_guidelines/"><img src="<?php echo get_template_directory_uri(); ?>/img/icon-download.png"> Corporate Governance Guidelines</a></h3>
+                        </div>
+
+                        <div class="items have-childs">
+                            <h3>Anti-Corruption Policy</h3>
+                            <div class="subitems" style="display:none;">
+                                <div class="item download">
+                                    <a href="/about-us/corporate-governance/anti-corruption_policy_en/"><img src="<?php echo get_template_directory_uri(); ?>/img/icon-download.png"> English</a>
+                                </div>
+                                <div class="item download">
+                                    <a href="/about-us/corporate-governance/anti-corruption_policy_br/"><img src="<?php echo get_template_directory_uri(); ?>/img/icon-download.png"> Brazilian/Portuguese</a>
+                                </div>
+                                <div class="item download">
+                                    <a href="/about-us/corporate-governance/anti-corruption_policy_ch/"><img src="<?php echo get_template_directory_uri(); ?>/img/icon-download.png"> Chinese</a>
+                                </div>
+                                <div class="item download">
+                                    <a href="/about-us/corporate-governance/anti-corruption_policy_fr/"><img src="<?php echo get_template_directory_uri(); ?>/img/icon-download.png"> French</a>
+                                </div>
+                                <div class="item download">
+                                    <a href="/about-us/corporate-governance/anti-corruption_policy_de/"><img src="<?php echo get_template_directory_uri(); ?>/img/icon-download.png"> German</a>
+                                </div>
+                                <div class="item download">
+                                    <a href="/about-us/corporate-governance/anti-corruption_policy_it/"><img src="<?php echo get_template_directory_uri(); ?>/img/icon-download.png"> Italian</a>
+                                </div>
+                                <div class="item download">
+                                    <a href="/about-us/corporate-governance/anti-corruption_policy_ru/"><img src="<?php echo get_template_directory_uri(); ?>/img/icon-download.png"> Russian</a>
+                                </div>
+                                <div class="item download">
+                                    <a href="/about-us/corporate-governance/anti-corruption_policy_sp/"><img src="<?php echo get_template_directory_uri(); ?>/img/icon-download.png"> Spanish</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="items download">
+                            <h3><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/icon-download.png"> Director of Independence Standards</a></h3>
+                        </div>
+
+                        <div class="items have-childs">
+                            <h3>Reporting Corporate Governance Concerns</h3>
+                            <div class="subitems" style="display:none;">
+                                <div class="item download">
+                                    <a href="/about-us/corporate-governance/reporting_corporate_governanace_concerns_en/"><img src="<?php echo get_template_directory_uri(); ?>/img/icon-download.png"> English</a>
+                                </div>
+                                <div class="item download">
+                                    <a href="/about-us/corporate-governance/reporting_corporate_governanace_concerns_br/"><img src="<?php echo get_template_directory_uri(); ?>/img/icon-download.png"> Brazilian/Portuguese</a>
+                                </div>
+                                <div class="item download">
+                                    <a href="/about-us/corporate-governance/reporting_corporate_governanace_concerns_ch/"><img src="<?php echo get_template_directory_uri(); ?>/img/icon-download.png"> Chinese</a>
+                                </div>
+                                <div class="item download">
+                                    <a href="/about-us/corporate-governance/reporting_corporate_governanace_concerns_fr/"><img src="<?php echo get_template_directory_uri(); ?>/img/icon-download.png"> French</a>
+                                </div>
+                                <div class="item download">
+                                    <a href="/about-us/corporate-governance/reporting_corporate_governance_concerns_ge/"><img src="<?php echo get_template_directory_uri(); ?>/img/icon-download.png"> German</a>
+                                </div>
+                                <div class="item download">
+                                    <a href="/about-us/corporate-governance/reporting_corporate_governanace_concerns_it/"><img src="<?php echo get_template_directory_uri(); ?>/img/icon-download.png"> Italian</a>
+                                </div>
+                                <div class="item download">
+                                    <a href="/about-us/corporate-governance/reporting_corporate_governanace_concerns_ru/"><img src="<?php echo get_template_directory_uri(); ?>/img/icon-download.png"> Russian</a>
+                                </div>
+                                <div class="item download">
+                                    <a href="/about-us/corporate-governance/reporting_corporate_governanace_concerns_sp/"><img src="<?php echo get_template_directory_uri(); ?>/img/icon-download.png"> Spanish</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <script type="text/javascript">
+                            jQuery(window).ready(function(){
+                                jQuery('.sidebar-downloads .accordeon .have-childs h3').click(function(){
+                                    jQuery(this).closest('.have-childs').find('.subitems').slideToggle();
+                                    jQuery(this).closest('.have-childs').toggleClass('open');
+                                });
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <div class="footer-investors">
+        <section class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h4>Contact Us</h4>
+                    <p>Email:contact@innospec.com</p>
+                    <p>Phone: 1-800-422-8193</p>
+                </div>
+                <div class="col-md-3">
+                    <h4>Quick Links</h4>
+                    <p><a href="#">> SEC Filings</a></p>
+                    <p><a href="#">> Stockholder FAQS</a></p>
+                </div>
+                <div class="col-md-3">
+                    <h4>Investor Email Alerts</h4>
+                    <form>
+                        <input type="text" name="">
+                        <button>SUBMIT</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+<?php
+
+get_footer();
+
+?>

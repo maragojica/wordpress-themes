@@ -1,0 +1,64 @@
+
+@font-face {
+    font-family: 'Hero New Regular';
+    src: url('HeroNew-Regular.eot');
+    src: url('HeroNew-Regular.eot?#iefix') format('embedded-opentype'),
+    url('HeroNew-Regular.woff2') format('woff2'),
+    url('HeroNew-Regular.woff') format('woff'),
+    url('HeroNew-Regular.ttf') format('truetype'),
+    url('HeroNew-Regular.svg#HeroNew-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Hero New Medium';
+    src: url('HeroNew-Medium.eot');
+    src: url('HeroNew-Medium.eot?#iefix') format('embedded-opentype'),
+    url('HeroNew-Medium.woff2') format('woff2'),
+    url('HeroNew-Medium.woff') format('woff'),
+    url('HeroNew-Medium.ttf') format('truetype'),
+    url('HeroNew-Medium.svg#HeroNew-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Hero New Bold';
+    src: url('HeroNew-Bold.eot');
+    src: url('HeroNew-Bold.eot?#iefix') format('embedded-opentype'),
+    url('HeroNew-Bold.woff2') format('woff2'),
+    url('HeroNew-Bold.woff') format('woff'),
+    url('HeroNew-Bold.ttf') format('truetype'),
+    url('HeroNew-Bold.svg#HeroNew-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'FreightSansProBook';
+    src: url('FreightSansProBook-Regular.eot');
+    src: url('FreightSansProBook-Regular.eot?#iefix') format('embedded-opentype'),
+    url('FreightSansProBook-Regular.woff2') format('woff2'),
+    url('FreightSansProBook-Regular.woff') format('woff'),
+    url('FreightSansProBook-Regular.ttf') format('truetype'),
+    url('FreightSansProBook-Regular.svg#FreightSansProBook-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {font-family: "FreightSans Pro Medium";
+    src: url("FreightSans-Pro-Medium.eot"); /* IE9*/
+    src: url("FreightSans-Pro-Medium.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("FreightSans-Pro-Medium.woff2") format("woff2"), /* chrome、firefox */
+    url("FreightSans-Pro-Medium.woff") format("woff"), /* chrome、firefox */
+    url("FreightSans-Pro-Medium.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url("FreightSans-Pro-Medium.svg#FreightSans Pro Medium") format("svg"); /* iOS 4.1- */
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+

@@ -1,0 +1,4 @@
+[17-Feb-2020 10:30:03 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home1/maxsher/public_html/wp-content/themes/engagedly/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home1/maxsher/public_html/wp-content/themes/engagedly/index.php on line 15
