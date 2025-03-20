@@ -1,0 +1,22 @@
+{
+    "name": "acf/text",
+    "title": "Columns Text",
+    "description": "A general all purpose back & forth block that has a text section with buttons. The order of columns is reversible",
+    "style": [ "file:./columns-text.css" ],
+    "category": "lazarus-design-team",
+    "icon": "align-pull-left",
+    "keywords": ["content block", "columns text", "text"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "columns-text.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/cnp-technologies/theme/template-parts/blocks/columns-text/screenshot.png"
+        }
+    }    
+}

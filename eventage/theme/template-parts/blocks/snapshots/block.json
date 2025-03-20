@@ -1,0 +1,22 @@
+{
+    "name": "acf/snapshots",
+    "title": "Snapshots",
+    "description": "A general all snapshotsinfo block that has a titles and text section.",
+    "style": [ "file:./snapshots.css" ],
+    "category": "lazarus-design-team",
+    "icon": "list-view",
+    "keywords": ["snapshots block", "columns info snapshots", "icsnapshotsons info"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "snapshots.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/eventage/theme/template-parts/blocks/snapshots/screenshot.png"
+        }
+    }    
+}

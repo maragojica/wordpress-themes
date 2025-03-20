@@ -1,0 +1,22 @@
+{
+    "name": "acf/support",
+    "title": "Support",
+    "description": "A support info section.",
+    "style": [ "file:./support.css" ],
+    "category": "lazarus-design-team",
+    "icon": "phone",
+    "keywords": ["support block", "support", "content support"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "support.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/cnp-technologies/theme/template-parts/blocks/support/screenshot.png"
+        }
+    }    
+}

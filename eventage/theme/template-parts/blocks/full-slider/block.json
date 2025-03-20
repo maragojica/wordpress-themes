@@ -1,0 +1,22 @@
+{
+    "name": "acf/fullslider",
+    "title": "Full Slider",
+    "description": "A slider of logos with a headline section.",
+    "style": [ "file:./full-slider.css" ],
+    "category": "lazarus-design-team",
+    "icon": "format-gallery",
+    "keywords": ["full slider", "slider headline", "slider content"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "full-slider.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/eventage/theme/template-parts/blocks/full-slider/screenshot.png"
+        }
+    }    
+}

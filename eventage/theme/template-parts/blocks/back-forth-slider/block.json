@@ -1,0 +1,22 @@
+{
+    "name": "acf/backforth-slider",
+    "title": "Back & Forth Slider",
+    "description": "A general all purpose simple back & forth block that has a slider and text section with buttons. The order of columns is reversible",
+    "style": [ "file:./back-forth-slider.css" ],
+    "category": "lazarus-design-team",
+    "icon": "embed-generic",
+    "keywords": ["content block", "back and forth slider", "media and text"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "back-forth-slider.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/eventage/theme/template-parts/blocks/back-forth-slider/screenshot.png"
+        }
+    }    
+}

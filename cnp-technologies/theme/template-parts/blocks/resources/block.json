@@ -1,0 +1,22 @@
+{
+    "name": "acf/resources",
+    "title": "Resources",
+    "description": "A resources section with a load more.",
+    "style": [ "file:./resources.css" ],
+    "category": "lazarus-design-team",
+    "icon": "welcome-write-blog",
+    "keywords": ["content resources", "case studies", "blogs"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "resources.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/eric-scott-tailwind/theme/template-parts/blocks/resources/screenshot.png"
+        }
+    }    
+}

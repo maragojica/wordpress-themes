@@ -1,0 +1,22 @@
+{
+    "name": "acf/backforth-accordeon-media",
+    "title": "Back & Forth Accordeon Media",
+    "description": "A versatile back-and-forth content block that supports an image with accordeons. The column order is reversible for flexible layout options.",
+    "style": [ "file:./back-forth-accordeon-media.css" ],
+    "category": "lazarus-design-team",
+    "icon": "embed-generic",
+    "keywords": ["media accordeon", "back and forth accordeon", "accordeon and media"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "back-forth-accordeon-media.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/cnp-technologies/theme/template-parts/blocks/back-forth-accordeon-media/screenshot.png"
+        }
+    }    
+}

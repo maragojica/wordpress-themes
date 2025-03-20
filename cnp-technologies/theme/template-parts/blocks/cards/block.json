@@ -1,0 +1,22 @@
+{
+    "name": "acf/cards",
+    "title": "Cards",
+    "description": "A general all purpose cards block that has a title with a cta.",
+    "style": [ "file:./cards.css" ],
+    "category": "lazarus-design-team",
+    "icon": "excerpt-view",
+    "keywords": ["content cards", "columns cards", "card cta"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "cards.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/cnp-technologies/theme/template-parts/blocks/cards/screenshot.png"
+        }
+    }    
+}

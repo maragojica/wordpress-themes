@@ -1,0 +1,22 @@
+{
+    "name": "acf/perks",
+    "title": "Perks",
+    "description": "A general all purpose back & forth block that has a text section with buttons. The order of columns is reversible",
+    "style": [ "file:./perks.css" ],
+    "category": "lazarus-design-team",
+    "icon": "plus",
+    "keywords": ["content block", "perks", "text"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "perks.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/cnp-technologies/theme/template-parts/blocks/perks/screenshot.png"
+        }
+    }    
+}

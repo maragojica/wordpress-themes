@@ -1,0 +1,22 @@
+{
+    "name": "acf/backforth-medialinks",
+    "title": "Back & Forth Media Links",
+    "description": "A versatile back-and-forth content block that supports images and text sections with blinksuttons.",
+    "style": [ "file:./back-forth-media-links.css" ],
+    "category": "lazarus-design-team",
+    "icon": "align-none",
+    "keywords": ["content block", "back and forth media link", "media images and links"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "back-forth-media-links.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/cnp-technologies/theme/template-parts/blocks/back-forth-media-links/screenshot.png"
+        }
+    }    
+}

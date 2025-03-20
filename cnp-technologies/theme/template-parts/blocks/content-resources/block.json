@@ -1,0 +1,22 @@
+{
+    "name": "acf/contentresouces",
+    "title": "Content Resouces",
+    "description": "A resouces content text section.",
+    "style": [ "file:./content-resouces.css" ],
+    "category": "lazarus-design-team",
+    "icon": "media-text",
+    "keywords": ["content resouces", "text", "content"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "content-resouces.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/cnp-technologies/theme/template-parts/blocks/content-resources/screenshot.png"
+        }
+    }    
+}

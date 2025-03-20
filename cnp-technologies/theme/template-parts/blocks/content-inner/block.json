@@ -1,0 +1,22 @@
+{
+    "name": "acf/contentinner",
+    "title": "Content Inner",
+    "description": "A inner content text section.",
+    "style": [ "file:./content-inner.css" ],
+    "category": "lazarus-design-team",
+    "icon": "media-text",
+    "keywords": ["content inner block", "text inner", "content inner"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "content-inner.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/cnp-technologies/theme/template-parts/blocks/content-inner/screenshot.png"
+        }
+    }    
+}

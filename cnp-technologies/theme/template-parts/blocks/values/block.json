@@ -1,0 +1,22 @@
+{
+    "name": "acf/values",
+    "title": "Values",
+    "description": "A core values a headline section.",
+    "style": [ "file:./values.css" ],
+    "category": "lazarus-design-team",
+    "icon": "heart",
+    "keywords": ["values", "core values", "our values"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "values.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/cnp-technologies/theme/template-parts/blocks/values/screenshot.png"
+        }
+    }    
+}

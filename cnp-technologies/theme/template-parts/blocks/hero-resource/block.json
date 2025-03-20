@@ -1,0 +1,22 @@
+{
+    "name": "acf/heroresource",
+    "title": "Hero Resource Block",
+    "description": "A resource hero section with a background image and/or video, heading, description, and buttons.",
+    "style": [ "file:./hero-resource.css" ],
+    "category": "lazarus-design-team",
+    "icon": "welcome-view-site",
+    "keywords": ["hero resource", "banner resource", "resource internal"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "hero-resource.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/cnp-technologies/theme/template-parts/blocks/hero-resource/screenshot.png"
+        }
+    }    
+}
