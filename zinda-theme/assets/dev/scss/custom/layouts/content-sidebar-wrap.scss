@@ -1,0 +1,113 @@
+// Main templates styles
+body:not(.page-template-front-page-php) {
+  .content-sidebar-wrap {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    main {
+      width: map-get($grid, main-width);
+      padding-bottom: 30px;
+      @include lg {
+        width: 100%;
+      }
+    }
+    aside {
+      width: map-get($grid, aside-width);
+      padding-left: map-get($grid, aside-padding);
+      padding-bottom: 30px;
+      margin-top: -300px;
+      @include lg {
+        margin-top: 0;
+        width: 100%;
+        padding-left: 0;
+      }
+    }
+  }
+  &.full-width-content {
+    .content-sidebar-wrap {
+      main {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.site-container {
+  word-wrap: break-word;
+  width: 100%;
+}
+
+// Sticky footer
+body:not(.page-template-front-page-php) {
+  .site-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    .site-inner {
+      flex-grow: 2;
+      padding-left: 15px;
+      padding-right: 15px;
+      margin: 0 auto;
+    }
+  }
+}
+
+body:not(.home) .form-section {
+  width: 100%;
+  border-radius: 0;
+  &-head {
+    width: 100%;
+  }
+  &-logo {
+    @include size(100%);
+    position: relative;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .sidebar-form {
+    padding: 0;
+    border: 1px solid $baseSecondary;
+    border-radius: 0;
+    .col-sm-6:first-child {
+      @include sm {
+        display: none;
+      }
+    }
+    &-main {
+      width: 100%;
+      padding: 30px;
+      background-color: $baseWhite;
+      h3 {
+        color: $baseBlack;
+        text-align: center;
+        margin: 0 0 15px;
+        i {
+          color: $baseThirdly;
+          font-weight: normal;
+        }
+        + p {
+          margin: 0 0 15px;
+          font-size: 13px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+body:not(.home) .white-form {
+  .wpcf7 form {
+    .wpcf7-not-valid-tip {
+      color: red!important;
+      font-size: 13px!important;
+    }
+    .wpcf7-response-output {
+      color: $baseBlack!important;
+      text-align: center;
+    }
+  }
+}

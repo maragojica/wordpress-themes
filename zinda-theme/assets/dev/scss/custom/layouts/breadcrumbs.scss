@@ -1,0 +1,37 @@
+.breadcrumb {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin: map-get($breadcrumbs, margin);
+  padding-bottom: map-get($breadcrumbs, padding-bottom);
+  border-bottom: 1px solid map-get($breadcrumbs, border-color);
+  line-height: map-get($breadcrumbs, line-height);
+  font-size: map-get($breadcrumbs, font-size);
+  color: map-get($breadcrumbs, arrows-color);
+  font-weight: map-get($breadcrumbs, arrows-font-weight);
+  letter-spacing: map-get($breadcrumbs, letter-spacing);
+  @include sm {
+    font-size: map-get($breadcrumbs, font-size-mobile);
+  }
+  &_last {
+    font-weight: map-get($breadcrumbs, font-weight);
+    color: map-get($breadcrumbs, color);
+  }
+  a {
+    font-size: map-get($breadcrumbs, font-size);
+    color: map-get($breadcrumbs, link-color);
+    font-weight: map-get($breadcrumbs, link-font-weight);
+    &:hover {
+      color: map-get($breadcrumbs, link-hover);
+    }
+    @include sm {
+      font-size: map-get($breadcrumbs, font-size-mobile);
+    }
+    svg{
+      position: relative;
+      top: 1px;
+    }
+  }
+}

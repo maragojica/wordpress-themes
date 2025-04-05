@@ -1,0 +1,208 @@
+.section-case-result-page {
+  &-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    .base-btn {
+      box-shadow: none;
+      height: 50px;
+      cursor: pointer;
+      border: 1px solid $baseSecondary!important;
+    }
+    .results-box-wrapper {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      &.hide {
+        display: none;
+      }
+      &:not(.hide) + .base-btn {
+        display: none!important;
+      }
+    }
+
+    .results-box {
+      width: 47%;
+      margin: 1.5%;
+      background-color: $baseWhite;
+      padding: 25px 45px;
+      box-shadow: 4px 4px 20px 0 rgba(0, 0, 0, 0.12);
+      border-radius: 20px;
+
+      @include xs {
+        width: 100%
+      }
+
+      .results-price-data {
+        display: block;
+        text-transform: uppercase;
+        color: $baseBlue;
+        line-height: normal;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        font-size: 44px;
+        text-align: left;
+        font-weight: 700;
+        letter-spacing: 0;
+        position: relative;
+
+        &:after {
+          position: absolute;
+          content: '';
+          width: 58px;
+          height: 5px;
+          background-color: $baseThirdly;
+          left: 0;
+          bottom: 0;
+        }
+      }
+
+      .result-icon {
+        display: flex;
+        align-items: center;
+
+        .inner-result-icon{
+          background-color: $baseBlue;
+          border-radius: 5px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 4px;
+        }
+
+        span {
+          margin-left: 20px;
+          text-transform: uppercase;
+          color: $baseBlack;
+          font-size: 14px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+.page-template-page-result {
+  .free_consult {
+    width: 100%;
+
+    a {
+      margin-top: 30px;
+    }
+  }
+}
+
+.numbers {
+  width: 100%;
+  background: linear-gradient(0deg, #007c98 0, #11526b 80%);
+  padding: 45px 0;
+
+  @include md{
+    padding: 30px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-around;
+
+    @include md{
+      flex-direction: column;
+    }
+
+    h2 {
+      color: $baseWhite;
+      display: block;
+      text-transform: uppercase;
+      line-height: normal;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      font-size: 32px;
+      text-align: left;
+      font-weight: 700;
+      letter-spacing: 0;
+      position: relative;
+
+      &:after {
+        position: absolute;
+        content: '';
+        width: 58px;
+        height: 5px;
+        background-color: $baseThirdly;
+        left: 0;
+        bottom: 0;
+      }
+    }
+
+    p {
+      color: $baseWhite;
+      font-weight: 500;
+      padding-right: 20px;
+    }
+  }
+}
+
+.what-client-say {
+  padding: 60px 0;
+  width: 100%;
+
+  @include md{
+    padding: 30px 0;
+  }
+
+  h2 {
+    color: $baseBlue;
+  }
+}
+
+.contact-methods {
+  padding: 60px 0;
+  width: 100%;
+  text-align: center;
+
+  @include md{
+    padding: 30px 0;
+  }
+
+  h2 {
+    font-size: 44px;
+    color: $baseBlue;
+  }
+
+  .row {
+    margin-top: 60px;
+
+    .col-lg-4 {
+      a {
+        text-align: left;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: nowrap;
+        align-items: center;
+        color: #787878;
+        box-shadow: 4px 4px 20px 0 rgba(0, 0, 0, 0.12);
+        border-radius: 15px;
+        padding: 25px 0;
+
+        @include md{
+          margin-bottom: 20px;
+        }
+
+        img {
+          margin-right: 10px;
+        }
+
+        > div {
+          display: flex;
+          flex-direction: column;
+
+          p {
+            margin: 0;
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,354 @@
+.site-footer {
+  width: 100%;
+}
+
+.section-footer-form{
+  padding: 100px 0;
+}
+
+.footer-inner-form{
+  position: relative;
+  margin: 0 auto;
+  max-width: 780px;
+  width: 100%;
+  background: $baseBlue;
+  border-radius: 10px;
+  box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.45);
+  padding: 30px 20px;
+
+  form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    fieldset{
+      border: none;
+      width: 32%;
+      margin: 10px 0;
+      padding: 0;
+
+      @include md{
+        width: 100%;
+      }
+
+      label{
+        display: none;
+      }
+
+      input[type=email], input[type=text], textarea{
+        color: #000;
+        font-size: 12px;
+        width: 100%;
+        border: none;
+        height: 45px;
+        padding: 5px 10px;
+        font-family: $baseFont;
+      }
+
+      textarea{
+        height: 150px;
+        resize: none;
+        border-radius: 5px;
+        width: 100%;
+      }
+
+      p{
+        margin: 0;
+        padding: 0;
+      }
+
+      &.message{
+        width: 100%;
+      }
+
+      &.submit{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+  .wpcf7 {
+    .wpcf7-form {
+      .acceptance-label {
+        .wpcf7-form-control-wrap {
+          .wpcf7-form-control {
+            .wpcf7-list-item {
+              label {
+                display:block;
+                color: $baseWhite;
+                font-family: $baseFont;
+                @include sm {
+                  font-size:10px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.after-content-form{
+  margin-top: 40px;
+}
+
+.section-offices {
+  position: relative;
+  padding: 60px 0;
+  background-image: url('../img/background/cities-bg.jpg');
+  background-size: contain;
+  background-position: bottom left;
+  background-repeat: no-repeat;
+
+  .office-list {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 13.3px;
+
+    .office {
+      -webkit-box-flex: 1;
+      -webkit-flex: 1 0 206px;
+      -ms-flex: 1 0 206px;
+      flex: 1 0 206px;
+      padding: 20px;
+      max-width: 100%;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+
+      .office-name {
+        margin-top: 0;
+        color: $baseBlue;
+        font-weight: 700;
+
+        a {
+          margin-top: 0;
+          color: $baseBlue;
+          font-weight: 700;
+        }
+      }
+
+      .phone {
+        margin-bottom: 0;
+        margin-top: auto;
+
+        a {
+          color: $baseThirdly;
+        }
+      }
+    }
+
+    .office.principal {
+      -webkit-box-flex: 2;
+      -webkit-flex: 2 0 412px;
+      -ms-flex: 2 0 412px;
+      flex: 2 0 412px;
+
+      .principal-label {
+        position: absolute;
+        top: -20px;
+        color: $baseBlue;
+        background: #ffe4cc;
+        padding: 7px 15px 7px 7px;
+        font-weight: 700;
+
+        &:after {
+          content: "";
+          position: absolute;
+          top: 0;
+          right: 0;
+          border-left: 9px solid transparent;
+          border-right: 0 solid transparent;
+          border-top: 30px solid #fff;
+        }
+      }
+    }
+
+    .office.has-left {
+      border-left: 1px solid #fde2ca;
+    }
+
+    .office.has-bottom {
+      border-bottom: 1px solid #fde2ca;
+    }
+
+    &:after {
+      content: '';
+      flex: 1 0 206px;
+    }
+  }
+}
+
+.section-city-list {
+  a {
+    display: flex;
+    position: relative;
+    height: 100%;
+
+    img {
+      display: flex;
+      height: auto;
+      width: 100%;
+    }
+
+    p {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      font-size: 32px;
+      color: #fff;
+      font-weight: 600;
+      text-align: center;
+      margin: 0;
+      line-height: 0.5;
+      font-family: $titleFont;
+      text-transform: uppercase;
+
+      span {
+        font-size: 14px;
+        display: block;
+      }
+    }
+  }
+}
+
+.footer {
+  background: #144861;
+  padding: 40px 0 0 0;
+  color: $baseWhite;
+  text-align: left;
+
+  .footer-columns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .column {
+      width: 18%;
+
+      @include md {
+        width: 100%;
+        padding-top: 35px;
+      }
+
+      &:first-child {
+        width: 30%;
+
+        @include md {
+          width: 100%;
+        }
+
+        h2 {
+          font-size: 20px;
+          font-weight: 400;
+          text-align: left;
+          margin: 40px 0;
+        }
+
+        p {
+          font-size: 14px;
+          max-width: 80%;
+          color: #fff;
+          font-weight: 500;
+
+          @include md {
+            max-width: 100%;
+          }
+        }
+
+        .copyright {
+          color: #c1c1c1;
+          font-size: 13px;
+          display: flex;
+          justify-content: space-between;
+          font-weight: 500;
+          max-width: 80%;
+
+          @include md {
+            max-width: 100%;
+          }
+
+          a {
+            color: #c1c1c1;
+            font-weight: 500;
+          }
+        }
+      }
+
+      h3 {
+        font-size: 28px;
+        font-weight: 500;
+        text-align: left;
+        margin: 0 0 30px 0;
+        color: $baseWhite;
+
+        @include md{
+          margin: 0;
+        }
+      }
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        li {
+          a {
+            font-weight: 600;
+            color: $baseWhite;
+          }
+        }
+      }
+
+      .footer-social {
+        margin: 30px 0;
+
+        a {
+          margin-right: 20px;
+        }
+
+        svg {
+          width: 32px;
+          height: 32px;
+          fill: $baseWhite;
+        }
+
+        @include md {
+          justify-content: center;
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    margin-top: 40px;
+
+    .footer-hd {
+      margin: 25px 0;
+      @include md {
+        margin: 30px 0 0;
+      }
+      a,
+      img {
+        display: inline-block;
+      }
+    }
+
+    p {
+      font-size: 11px;
+      color: #c1c1c1;
+      margin: 0;
+      @include md {
+        margin: 20px 0;
+      }
+    }
+
+    img {
+      display: flex;
+    }
+  }
+}

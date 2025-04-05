@@ -1,0 +1,129 @@
+body:not(.page-template-front-page-php) .entry-content {
+  p.rs-content-cta {
+    width: 100%;
+    display: block;
+    margin: map-get($cta, margin);
+    padding: map-get($cta, padding);
+    background-color: map-get($cta, background-color);
+    color: map-get($cta, color);
+    font-family: map-get($cta, font-family);
+    font-weight: map-get($cta, font-weight);
+    letter-spacing: map-get($cta, letter-spacing);
+    line-height: map-get($cta, line-height);
+    font-size: map-get($cta, font-size);
+    text-align: center;
+    @include sm {
+      padding: map-get($cta, padding-mobile);
+      font-size: map-get($cta, font-size-mobile);
+      br {
+        display: none;
+      }
+    }
+    a {
+      color: map-get($cta, color-link);
+      &:hover {
+        color: map-get($cta, color-link-hover);
+      }
+    }
+  }
+  .new-ctas {
+    display: flex;
+    flex-direction: column;
+    .cta-top {
+      display: flex;
+      justify-content: center;
+      margin: 0 auto !important;
+      position: relative;
+      width: 90%;
+      img {
+        margin: 0 auto !important;
+        object-fit: contain;
+        object-position: bottom;
+        height: auto;
+      }
+      .top-text {
+        position: absolute;
+        bottom: 10px;
+        margin: 0 auto;
+        text-align: center;
+        color: $baseWhite;
+        @include sm {
+          bottom: -15px;
+        }
+        p {
+          width: max-content;
+          color: $baseWhite;
+          font-size: 24px;
+          font-weight: 500;
+          margin-top: 5px;
+          margin-left: auto;
+          margin-right: auto;
+          @include sm {
+            font-size: 18px;
+          }
+          &:first-child {
+            font-weight: 700;
+            border-bottom: 1px solid $baseWhite;
+            margin-bottom: 0;
+            padding-bottom: 5px;
+          }
+        }
+      }
+    }
+    .container-fluid {
+      background-color: $baseBlue;
+      border-radius: 25px;
+      padding: 10px 30px 45px;
+      text-align: center;
+      p.white {
+        color: $baseWhite;
+        font-size: 28px;
+        line-height: 1.5;
+        @include sm {
+          font-size: 24px;
+          line-height: 1.4;
+        }
+      }
+      .btn-rounded {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 1;
+        display: flex;
+        margin: 0 auto;
+        padding: 20px 44px;
+        color: $baseWhite;
+        border-radius: 20px;
+        background-color: $baseThirdly;
+        width: 65%;
+        max-width: 500px;
+        justify-content: space-around;
+        @include md {
+          width: 90%;
+        }
+        @include sm {
+          flex-direction: column;
+          padding: 20px 25px;
+        }
+        &:hover {
+          span {
+            color: $baseBlack;
+            transition: all .3s ease-in-out;
+          }
+        }
+        span {
+          &:nth-child(2) {
+            font-weight: 200;
+          }
+          @include sm {
+            &:first-child {
+              padding-bottom: 10px;
+            }
+            &:nth-child(2) {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

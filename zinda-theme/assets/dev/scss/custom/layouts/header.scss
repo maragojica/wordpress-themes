@@ -1,0 +1,409 @@
+.header {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 996;
+  transition: $transition;
+
+  &-main {
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    @include lg {
+      height: map-get($header, mobile-height);
+      padding: 0 7px 0 15px;
+    }
+    @include xs {
+      padding: 0 7px 0 7px;
+    }
+
+    &-wrap {
+      width: 100%;
+      position: relative;
+      z-index: 996;
+      background-color: map-get($header, background);
+
+      &:before {
+        content: "";
+        z-index: 1;
+        width: 0;
+        height: 0;
+        border-left: 0 solid transparent;
+        border-right: 67vw solid transparent;
+        border-top: 170px solid #fff;
+        position: absolute;
+        left: 0;
+        top: 0;
+        pointer-events: none;
+
+        @include xl {
+          border-top: 140px solid #fff;
+        }
+
+        @include lg {
+          content: unset;
+        }
+      }
+
+      @include lg {
+        background-color: map-get($header, mobile-background);
+      }
+
+      .container {
+        @include lg {
+          padding-left: 0;
+          padding-right: 0;
+        }
+      }
+
+      .mobile-call{
+        display: none;
+        justify-content: center;
+        align-items: center;
+        font-weight: 600;
+        color: $baseWhite;
+        background: $baseThirdly;
+        border-radius:23px;
+        padding: 10px;
+        width:20%;
+        @include sm {
+          width:30%;
+        }
+
+        svg{
+          width: 20px;
+          height: 20px;
+          fill: $baseWhite;
+          margin-right: 5px;
+        }
+
+        @include lg{
+          display: flex;
+        }
+      }
+      .mobile-header-case {
+        @include xs {
+          display:flex;
+        }
+        background-color: $bannerBlue;
+        padding:10px 0;
+        margin:0;
+        text-align:center;
+        display:none;
+        justify-content: center;
+        picture{
+          img {
+            vertical-align: text-top;
+          }
+        }
+        .left-header-text {
+          margin-right:16px;
+        }
+        span {
+          color:$baseWhite;
+          font-size:14px;
+          font-family:$baseFont;
+          font-weight:500;
+          padding:3px;
+          @include xxs {
+            font-size:12px;
+          }
+        }
+      }
+    }
+  }
+
+  &-logo {
+    display: block;
+    z-index: 2;
+
+    img, picture {
+      display: block;
+
+      @include lg {
+        height: 35px;
+        width: auto;
+      }
+    }
+  }
+
+  &-cta {
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    @include lg {
+      padding: 0 15px;
+      @include size(100%, map-get($header-cta-mobile, height));
+      position: fixed;
+      top: map-get($header, mobile-height);
+      left: 0;
+      z-index: 995;
+      background-color: map-get($header-cta-mobile, background);
+      transition: $transition;
+      align-items: center;
+    }
+    @include sm {
+      display: none;
+    }
+
+    p {
+      position: relative;
+      display: block;
+      letter-spacing: initial;
+      margin-bottom: 5px;
+      color: #f4f4f4;
+      text-transform: uppercase;
+      font-weight: 700;
+      line-height: 1.2;
+      font-size: 11px;
+      margin-top: 0;
+    }
+
+    a.phone {
+      display: flex;
+      margin-bottom: 0;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+      background-color: $baseThirdly;
+      border-radius: 23px;
+      letter-spacing: 0.01em;
+      padding:10px 30px;
+      color: $baseWhite;
+      text-transform: uppercase;
+      font-weight: 700;
+      line-height: 1.1;
+      transform: translateY(-2px);
+
+      @include lg {
+        font-size: map-get($header-cta-mobile, phone-font-size);
+        color: map-get($header-cta-mobile, phone-color);
+        letter-spacing: map-get($header-cta-mobile, phone-letter-spacing);
+        font-weight: map-get($header-cta-mobile, phone-font-weight);
+        &:hover {
+          color: map-get($header-cta-mobile, phone-color);
+        }
+      }
+    }
+
+    span {
+      font-size: 14px;
+      color: $baseSecondary;
+      text-transform: uppercase;
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: 0.09em;
+      @include lg {
+        font-size: map-get($header-cta-mobile, text-font-size);
+        color: map-get($header-cta-mobile, text-color);
+        letter-spacing: map-get($header-cta-mobile, text-letter-spacing);
+        font-weight: map-get($header-cta-mobile, text-font-weight);
+        text-align: center;
+      }
+    }
+  }
+
+  &-nav {
+    width: 100%;
+    padding: 0;
+    background-color: map-get($menu-desktop, background);
+    @include lg {
+      padding: 0;
+      width: 300px;
+      height: calc(100% - #{map-get($header, mobile-height)});
+      background-color: map-get($menu-mobile, background);
+      box-shadow: none;
+      position: fixed;
+      bottom: 0;
+      right: -110%;
+      z-index: 996;
+      transition: all .4s ease-in-out;
+      border-top: map-get($menu-mobile, border-width) solid map-get($menu-mobile, border-color);
+      border-left: map-get($menu-mobile, border-width) solid map-get($menu-mobile, border-color);
+    }
+    @include xs {
+      width: 100%;
+      border-left: none;
+    }
+
+    &.active {
+      right: 0;
+    }
+
+    + .header-cta {
+      @media (min-width: 1200px) {
+        display: none;
+      }
+    }
+
+    .container {
+      @include lg {
+        padding-left: 0;
+        padding-right: 0;
+        @include size(100%);
+      }
+    }
+  }
+
+  &-menu {
+    width: 72%;
+    margin: 0 0 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: $transition;
+    @include xl {
+      width: 75%;
+    }
+    @include lg {
+      padding: 15px 0 150px;
+      @include size(100%);
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+  }
+
+  &-scroll {
+    &.header-mobile {
+      .header-cta {
+        @include sm {
+          transform: translateY(-#{map-get($header-cta-mobile, height)});
+        }
+      }
+    }
+  }
+
+  &-active {
+    box-shadow: $shadowBox;
+  }
+
+  &-mobile {
+    .menu {
+      > .menu-item-has-children.open {
+        @include lg {
+          > a {
+            color: map-get($menu-mobile, link-active);
+          }
+          &::before {
+            transform: rotate(-135deg);
+            border-color: map-get($menu-mobile, link-active);
+            top: 21px;
+          }
+        }
+
+        .menu-item-has-children.open {
+          @include lg {
+            > a {
+              color: map-get($menu-mobile, link-active);
+            }
+            &::before {
+              transform: rotate(-135deg);
+              top: 21px;
+              border-color: map-get($menu-mobile, link-active);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &:not(.header-mobile) {
+    .menu {
+      > .menu-item-has-children.open {
+        @include lg {
+          > a {
+            color: map-get($menu-mobile, link-active);
+          }
+          &::before {
+            transform: rotate(-135deg);
+            top: 21px;
+            border-color: map-get($menu-mobile, link-active);
+          }
+          > ul {
+            display: block;
+          }
+        }
+
+        .menu-item-has-children.open {
+          @include lg {
+            > a {
+              color: map-get($menu-mobile, link-active);
+            }
+            &::before {
+              transform: rotate(-135deg);
+              top: 21px;
+              border-color: map-get($menu-mobile, link-active);
+            }
+            > ul {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .two-row-menu {
+    ul {
+      @include min-lg {
+        width: 400px;
+      }
+
+      li {
+        @include min-lg {
+          width: 50%;
+        }
+
+        &:first-child {
+          @include min-lg {
+            margin-top: 0 !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+body.admin-bar {
+  .header {
+    top: 32px;
+    @media (max-width: 782px) {
+      top: 46px;
+    }
+
+    &-cta {
+      top: calc(#{map-get($header, mobile-height)} + 32px);
+      @media (max-width: 782px) {
+        top: calc(#{map-get($header, mobile-height)} + 46px);
+      }
+    }
+
+    &-nav {
+      @include lg {
+        height: calc(100% - (#{map-get($header, mobile-height)} + 32px));
+      }
+      @media (max-width: 782px) {
+        height: calc(100% - (#{map-get($header, mobile-height)} + 46px));
+      }
+    }
+  }
+}
+
+#wpadminbar {
+  @include xs {
+    position: fixed;
+  }
+}
+
+.overflowGlobal {
+  overflow: hidden;
+}

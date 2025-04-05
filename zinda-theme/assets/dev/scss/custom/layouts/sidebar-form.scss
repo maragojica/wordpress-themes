@@ -1,0 +1,163 @@
+.sidebar-form {
+  background-color: #144861;
+  border-radius: 10px;
+  padding: 0 30px 30px 30px;
+
+  @include md{
+    display: none;
+  }
+
+  .contact-subtitle {
+    width: max-content;
+    margin: 0 auto;
+    display: block;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: $baseWhite;
+    background: #737476;
+    font-size: 12px;
+    text-align: center;
+    transform: translateY(-69%);
+    border-radius: 0 0 5px 5px;
+    padding: 0 14px;
+    line-height: 25px;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.20);
+  }
+
+  h2 {
+    text-align: center;
+    color: $baseWhite;
+    font-size: 22.44px;
+    text-shadow: 1.5px 2.598px 21px rgba(0, 1, 1, 0.52);
+    margin: 0;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  .contact-dsc{
+    display: block;
+    color: $baseWhite;
+    font-size: 12px;
+    max-width: 300px;
+    margin: 0 auto;
+    line-height: 1.4;
+    padding:10px;
+    text-align: center;
+  }
+  .scholarship-form {
+    form {
+      max-width: 100%;
+    }
+  }
+  .wpcf7 {
+    .wpcf7-form {
+      .acceptance-label {
+        .wpcf7-form-control-wrap {
+          .wpcf7-form-control {
+            .wpcf7-list-item {
+              label {
+                display:block;
+                color: $baseWhite;
+                font-family: $baseFont;
+                font-size:12px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.wpcf7{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  fieldset{
+    border: none;
+    width: 262px;
+    margin: 10px auto;
+    padding: 0;
+  }
+
+  label{
+    display: none;
+  }
+
+  input[type=email], input[type=text], input[type=tel], textarea{
+    color: #000;
+    font-size: 12px;
+    width: 100%;
+    border: none;
+    height: 45px;
+    padding: 5px 10px;
+    font-family: $baseFont;
+  }
+
+  input[type=submit]{
+    margin: 10px auto;
+  }
+
+  textarea{
+    height: 150px;
+    resize: none;
+    border-radius: 5px;
+  }
+
+  p{
+    margin: 0;
+    padding: 0;
+  }
+}
+.scholarship-form {
+  h2 {
+    text-align: center;
+    color: $baseWhite;
+    font-size: 22.44px;
+    text-shadow: 1.5px 2.598px 21px rgba(0, 1, 1, 0.52); 
+    margin: 0;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+div {
+    color: $baseWhite;
+    font-size: 18px;
+} 
+label {
+    color: $baseWhite;
+    font-size: 15px;
+    display: block;
+}
+p {
+    color: $baseWhite;
+    font-size: 15px;
+}
+.wpcf7-not-valid-tip{
+    color: $baseBlack;
+    font-size: 15px;
+}
+.submit-button {
+    margin-top: 30px;
+    text-align: center;
+}
+.required {
+    color: $baseWhite;
+}
+input:not([type=submit]) { 
+		font-size: 15px;
+		font-weight: 400;
+		padding: 15px;
+		color: #000;
+		background-color: $baseWhite;
+	}
+
+select {
+	font-size: 15px; 
+
+	width: 100%; 
+	padding: 15px; 
+	color: $baseBlack;
+	background-color: $baseWhite;
+}
+}

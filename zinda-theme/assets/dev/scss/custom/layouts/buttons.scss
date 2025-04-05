@@ -1,0 +1,323 @@
+.btn-global {
+  padding: map-get($btn-global, padding);
+  height: map-get($btn-global, height);
+  min-width: map-get($btn-global, min-width);
+  width: max-content;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-style: normal;
+  line-height: 1;
+  font-size: map-get($btn-global, font-size);
+  text-transform: map-get($btn-global, text-transform);
+  font-weight: map-get($btn-global, font-weight);
+  font-family: map-get($btn-global, font-family);
+  letter-spacing: map-get($btn-global, letter-spacing);
+  z-index: 2;
+  border-radius: map-get($btn-global, border-radius);
+  transition: $transition;
+  background-color: map-get($btn-global, background);
+  text-decoration: none;
+  color: map-get($btn-global, color);
+  border: map-get($btn-global, border);
+  &:hover {
+    color: map-get($btn-global, hover);
+    box-shadow: $shadowBox;
+    background-color: map-get($btn-global, hover-background);
+  }
+  &:active {
+    transform: translateY(2px);
+    box-shadow: none;
+  }
+}
+
+.burger {
+  padding: 0;
+  @include size(map-get($burger, width));
+  display: none;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  z-index: 33333;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  cursor: pointer;
+  overflow: hidden;
+  &:focus, &:active, &:hover {
+    background: none;
+    border: none;
+    border-radius: 0;
+    outline: none;
+  }
+  @include lg {
+    display: flex;
+  }
+  &-svg {
+    @include size(100%);
+    path {
+      stroke: map-get($burger, fill-color);
+      stroke-width: map-get($burger, stroke-width);
+      transition: map-get($burger, animation-transition);
+    }
+  }
+  &-close {
+    transform: translateX(100%);
+  }
+  &-active {
+    .burger-icon {
+      stroke: transparent;
+      stroke-width: 0;
+      transform: translateX(-100%);
+    }
+    .burger-close {
+      stroke: map-get($burger, close-fill-color);
+      stroke-width: map-get($burger, close-stroke-width);
+      transform: translateX(0);
+    }
+  }
+}
+
+.socials {
+  padding: 0;
+  margin: 15px 0 5px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include lg {
+    justify-content: center;
+  }
+  li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 5px;
+  }
+  a {
+    padding: 0;
+    @include size(25px);
+    line-height: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+      transform: translateY(-3px);
+      svg {
+        fill: $baseThirdly;
+      }
+    }
+  }
+  svg {
+    margin: 0;
+    @include size(100%);
+    fill: $baseThirdly;
+    transition: $transition;
+  }
+}
+
+.social-share {
+  width: 100%;
+  padding-bottom: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  a {
+    margin: 0 10px;
+    @include size(45px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: $transition;
+    &:hover {
+      transform: translateY(-5px);
+    }
+    svg {
+      @include size(60%);
+      fill: $baseWhite;
+      transition: $transition;
+    }
+  }
+  &-twitter {
+    background-color: #55ACEE;
+  }
+  &-facebook {
+    background-color: #1877F2;
+  }
+  &-linkedin {
+    background-color: #0077B5;
+  }
+  &-pinterest {
+    background-color: #E60019;
+  }
+}
+
+#scrollToTop {
+  display: block;
+  padding: 0;
+  margin: 0;
+  opacity: map-get($btn-up, opacity);
+  text-align: center;
+  font-weight: 700;
+  @include size(map-get($btn-up, size));
+  text-decoration: none;
+  position: fixed;
+  bottom: map-get($btn-up, bottom);
+  right: map-get($btn-up, right);
+  z-index: 995;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: map-get($btn-up, border-radius);
+  border: map-get($btn-up, border);
+  background-color: map-get($btn-up, background);
+  outline: none;
+  transition: $transition;
+  @include lg {
+    display: none;
+  }
+  &:hover {
+    background: map-get($btn-up, hover);
+    opacity: 1;
+  }
+  svg {
+    @include size(map-get($btn-up, svg-size));
+    fill: map-get($btn-up, svg-fill);
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(-180deg);
+  }
+}
+
+#scrollToTop.btn-up-active {
+  bottom: map-get($btn-up, active-bottom);
+}
+
+.btn-nav.btn-next {
+  left: initial;
+  right: -90px;
+  @include xl {
+    right: -30px;
+  }
+  @include xs {
+    right: 0;
+  }
+  svg {
+    transform: rotate(-180deg);
+  }
+}
+
+.btn-nav {
+  @include size(25px, 80px);
+  position: absolute;
+  top: 50%;
+  left: -90px;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  transform: translateY(-50%);
+  background: none;
+  border-radius: 0;
+  z-index: 1;
+  @include xl {
+    left: -30px;
+  }
+  @include xs {
+    display: none;
+    @include size(20px, 65px);
+    left: 0;
+  }
+  &:hover svg {
+    fill: $baseThirdly;
+  }
+  svg {
+    @include size(100%);
+    fill: $baseSecondary;
+    transition: $transition;
+  }
+}
+
+.base-btn{
+  margin-left: auto;
+  margin-right: auto;
+  padding: 16px 32px;
+  background: #fff;
+  border-radius: 23px;
+  font-weight: 600;
+  color: $baseBlue;
+  line-height: 13px;
+  font-size: 13px;
+  text-transform: uppercase;
+  display: inline-block;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.45);
+  -webkit-transition: .4s;
+  transition: .4s;
+
+  &:hover{
+    color: #fff;
+    background: $baseBlue;
+    box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.45);
+  }
+}
+
+.orange-btn{
+  margin-left: auto;
+  margin-right: auto;
+  padding: 16px 32px;
+  background: $baseThirdly;
+  border-radius: 23px;
+  font-weight: 600;
+  color: $baseWhite;
+  line-height: 13px;
+  font-size: 13px;
+  text-transform: uppercase;
+  display: inline-block;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.45);
+  -webkit-transition: .4s;
+  transition: .4s;
+
+  &:hover{
+    color: #fff;
+    background: $baseBlue;
+    box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.45);
+  }
+}
+
+input[type=submit] {
+  text-align: center;
+  line-height: 39px;
+  font-weight: 400;
+  padding: 0 20px;
+  color: $baseWhite;
+  background: $baseThirdly;
+  border-radius: 31px;
+  font-size: 16px;
+  text-transform: uppercase;
+  max-width: 100%;
+  position: relative;
+  z-index: 5;
+  -webkit-transition: background .4s;
+  transition: background .4s;
+  cursor: pointer;
+  border: 1px solid transparent;
+  width: auto;
+  display: flex;
+
+  &:hover{
+    background-color: $baseWhite;
+    color: $baseThirdly;
+    border-color: $baseThirdly;
+  }
+}

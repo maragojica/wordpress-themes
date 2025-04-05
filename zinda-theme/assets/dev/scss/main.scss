@@ -1,0 +1,92 @@
+// Fonts
+@import "custom/layouts/fonts";
+// Global Mixins and Variables
+@import "custom/mixins";
+@import "custom/variables";
+// Bootstrap Grid 5.3.0
+@import "custom/libs/bootstrap-grid.scss";
+// Layouts
+@import "custom/layouts/buttons";
+@import "custom/layouts/header";
+@import "custom/layouts/genesis-nav";
+@import "custom/layouts/footer";
+@import "custom/layouts/hero";
+@import "custom/layouts/breadcrumbs";
+@import "custom/layouts/content-sidebar-wrap";
+@import "custom/layouts/entry-content";
+@import "custom/layouts/cta";
+@import "custom/layouts/widget-title-scroll";
+@import "custom/layouts/widgets-cta-attorney";
+@import "custom/layouts/widget-default";
+@import "custom/layouts/widget-faqs";
+@import "custom/layouts/sidebar-form";
+@import "custom/layouts/related-articles";
+@import "custom/layouts/pagination";
+@import "custom/layouts/address-shortcode";
+@import "custom/layouts/404-form";
+@import "custom/layouts/hd-modal";
+@import "custom/layouts/homepage";
+@import "custom/layouts/global-css";
+@import "custom/layouts/results";
+@import "custom/layouts/podcast";
+// Templates
+@import "custom/templates/page-home";
+@import "custom/templates/page-faqs";
+@import "custom/templates/blog-archive-search";
+@import "custom/templates/page-areas";
+
+// Body global
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  font-variant-numeric: lining-nums;
+}
+
+body {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.6;
+  font-family: $baseFont;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+
+  a {
+    text-decoration: none;
+    outline: none;
+    transition: $transition;
+
+    &:hover {
+      text-decoration: none;
+      outline: none;
+    }
+  }
+
+  p:empty {
+    display: none;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $titleFont;
+}
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  font-weight: 400;
+  color: #333;
+  text-transform: none;
+}
+
+.wpcf7-spinner {
+  display: none;
+}
+
+.d-none-mobile{
+  @include md{
+    display: none;
+  }
+}

@@ -1,0 +1,127 @@
+.sidebar .widget {
+  &:not(:first-child) {
+    margin-top: 30px;
+  }
+  &.location-widget-outer {
+    ul.location-widget-links {
+      margin: 0;
+    }
+  }
+  ul {
+    padding: 0 map-get($widget-default, padding-right) map-get($widget-default, padding-bottom) map-get($widget-default, padding-left);
+    background-color: map-get($widget-default, background);
+    @include xs {
+      padding: 0 map-get($widget-default, padding-right-mobile) map-get($widget-default, padding-bottom) map-get($widget-default, padding-left-mobile);
+    }
+  }
+}
+.sidebar .widget-title {
+  margin: 0;
+  padding: map-get($widget-default, padding-top) map-get($widget-default, padding-right) map-get($widget-default-title, margin-bottom) map-get($widget-default, padding-left);
+  color: map-get($widget-default-title, color);
+  font-size: map-get($widget-default-title, font-size);
+  line-height: map-get($widget-default-title, line-height);
+  font-weight: map-get($widget-default-title, font-weight);
+  background-color: map-get($widget-default, background);
+  font-family: map-get($widget-default-title, font-family);
+  box-shadow: $shadowBox;
+  @include sm {
+    font-size: map-get($widget-default-title, font-size-mobile);
+  }
+  @include xs {
+    padding: map-get($widget-default, padding-top) map-get($widget-default, padding-right-mobile) map-get($widget-default-title, margin-bottom) map-get($widget-default, padding-left-mobile);
+  }
+  &:not(.widget-title-faq) {
+    border-radius: map-get($widget-default, border-radius) map-get($widget-default, border-radius) 0 0;
+  }
+  br + br {
+    display: none;
+  }
+}
+.widget-wrap ul {
+  margin: 0;
+  padding: 0;
+  border-radius: 0 0 map-get($widget-default, border-radius) map-get($widget-default, border-radius);
+  box-shadow: $shadowBox;
+  position: relative;
+  z-index: 1;
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -10px;
+    left: 0;
+    @include size(100%, 13px);
+    background-color: map-get($widget-default, background);
+    z-index: 2;
+  }
+}
+.widget-wrap ul li, .location-widget-links .single-location-link {
+  margin: 0;
+  list-style-type: none;
+}
+.widget-wrap ul li a, .location-widget-links .single-location-link a  {
+  padding: 0;
+  margin: 0 0 map-get($widget-default-link, margin-bottom);
+  display: flex;
+  font-weight: map-get($widget-default-link, font-weight);
+  text-transform: map-get($widget-default-link, text-transform);
+  text-decoration: none;
+  transition: $transition;
+  color: map-get($widget-default-link, color);
+  font-size: map-get($widget-default-link, font-size);
+  font-family: map-get($widget-default-link, font-family);
+  position: relative;
+  @include sm {
+    font-size: map-get($widget-default-link, font-size-mobile);
+  }
+  @if(map-get($widget-default-link, arrow-symbol) == true) {
+    padding: 0 0 0 map-get($widget-default-link, padding-left);
+    &::before {
+      content: "";
+      position: absolute;
+      top: 11px;
+      transform: translateY(-50%) rotate(-45deg);
+      left: 0;
+      z-index: 1;
+      @include size(8px);
+      border: solid map-get($widget-default-link, arrow-color);
+      border-width: 0 map-get($widget-default-link, arrow-width) map-get($widget-default-link, arrow-width) 0;
+      display: inline-block;
+      padding: 2px;
+      transition: $transition;
+    }
+    &:hover {
+      &::before {
+        transform: translateY(-50%) translateX(5px) rotate(-45deg);
+        border: solid map-get($widget-default-link, arrow-hover);
+        border-width: 0 map-get($widget-default-link, arrow-width) map-get($widget-default-link, arrow-width) 0;
+      }
+    }
+  } @else if (map-get($widget-default-link, dot-symbol) == true) {
+    padding: 0 0 0 map-get($widget-default-link, padding-left);
+    &::before {
+      content: "";
+      position: absolute;
+      top: 12px;
+      transform: translateY(-50%);
+      left: 0;
+      z-index: 1;
+      @include size(5px);
+      border-radius: 50%;
+      display: block;
+      transition: $transition;
+      background-color: map-get($widget-default-link, arrow-color);
+    }
+    &:hover {
+      &::before {
+        @include size(10px, 5px);
+        border-radius: 2px;
+        background-color: map-get($widget-default-link, arrow-hover);
+      }
+    }
+  }
+  &:hover {
+    color: map-get($widget-default-link, hover);
+  }
+}

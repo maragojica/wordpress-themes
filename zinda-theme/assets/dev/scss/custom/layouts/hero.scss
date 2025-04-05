@@ -1,0 +1,221 @@
+//Homepage Hero Styles
+
+.homepage-hero-wrap {
+  background-image: url('../img/background/homepage-hero-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 100px;
+  text-align: center;
+  position: relative;
+
+  @include md{
+    padding-top: 50px;
+    background-image: url('../img/background/homepage-hero-bg-mobile.jpg');
+  }
+
+  .homepage-hero {
+    .left-content {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      h1 {
+        color: $baseWhite;
+        font-size: 50px;
+        text-transform: uppercase;
+        line-height: .916;
+        font-weight: 700;
+        text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+        font-family: $baseFont;
+        margin: 0;
+
+        @include md{
+          font-size: 38px;
+          margin-top:50px;
+        }
+      }
+
+      p {
+        color: $baseWhite;
+        font-size: 40px;
+        font-weight: 700;
+        text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+        margin-top: 20px;
+
+        @include md{
+          font-size: 28px;
+        }
+      }
+
+      .orange-btn{
+        display: none;
+
+        @include md{
+          display: inline-block;
+        }
+      }
+
+      img {
+        display: flex;
+        width: 100%;
+        height: auto;
+        margin-top: 50px;
+        @include min-md{
+          width: 105% !important;
+        }
+      }
+
+    }
+
+    .right-content {
+      background-color: #144861;
+      border-radius: 10px;
+      margin: 0 20px;
+      padding-bottom: 30px;
+      transform: translate(0, 60px);
+      box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.45);
+
+      @include md{
+        display: none;
+      }
+
+      .contact-subtitle {
+        width: max-content;
+        margin: 0 auto;
+        display: block;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: $baseWhite;
+        background: #737476;
+        font-size: 12px;
+        text-align: center;
+        transform: translateY(-69%);
+        border-radius: 0 0 5px 5px;
+        padding: 0 14px;
+        line-height: 25px;
+        box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.20);
+      }
+
+      h2 {
+        color: $baseWhite;
+        font-size: 22.44px;
+        text-shadow: 1.5px 2.598px 21px rgba(0, 1, 1, 0.52);
+        margin: 0;
+        margin-bottom: 20px;
+        font-weight: 700;
+      }
+
+      .wpcf7{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        fieldset{
+          border: none;
+          width: 262px;
+          margin: 10px auto;
+          padding: 0;
+
+          label{
+            display: none;
+          }
+
+          input[type=email], input[type=text], input[type=tel], textarea{
+            color: #000;
+            font-size: 12px;
+            width: 100%;
+            border: none;
+            height: 45px;
+            padding: 5px 10px;
+            font-family: $baseFont;
+          }
+
+          input[type=submit]{
+            margin: 20px auto;
+          }
+
+          textarea{
+            height: 150px;
+            resize: none;
+            border-radius: 5px;
+          }
+
+          p{
+            margin: 0;
+            padding: 0;
+          }
+        }
+      }
+
+      .contact-dsc{
+        display: block;
+        color: $baseWhite;
+        font-size: 12px;
+        max-width: 300px;
+        margin: 0 auto;
+        line-height: 1.4;
+        padding:10px;
+        text-align:center;
+      }
+
+      .wpcf7 form.invalid .wpcf7-response-output{
+        color: #dc3232;
+      }
+      .wpcf7 {
+        .wpcf7-form {
+          .acceptance-label {
+            .wpcf7-form-control-wrap {
+              .wpcf7-form-control {
+                .wpcf7-list-item {
+                  label {
+                    display:block;
+                    color: $baseWhite;
+                    font-family: $baseFont;
+                    font-size:12px;
+                    padding:10px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .z-logo{
+    position: absolute;
+    bottom: -30px;
+    left: calc(50% - 34px);
+  }
+}
+
+//Internal Hero Styles
+
+.internal-hero-image{
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 336px;
+  display: flex;
+  align-items: flex-end;
+  background-position: bottom;
+
+  @include sm{
+    height: 32vw;
+  }
+
+  .inner-internal-hero{
+    width: 70%;
+
+    @include lg{
+      width: 100%;
+    }
+
+    img{
+      display: flex;
+      width: 100%;
+      height: auto;
+    }
+  }
+}

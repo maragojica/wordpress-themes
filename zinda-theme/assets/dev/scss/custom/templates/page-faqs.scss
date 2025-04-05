@@ -1,0 +1,102 @@
+// FAQ's Template - Styles
+
+body:not(.page-template-front-page-php) .entry-content .faq {
+  &-wrap {
+    width: 100%;
+  }
+  &-filter-terms {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: map-get($faqs-filter, padding);
+    border-top: map-get($faqs-filter, border-width) solid map-get($faqs-filter, border-color);
+    border-bottom: map-get($faqs-filter, border-width) solid map-get($faqs-filter, border-color);
+    a {
+      font-size: map-get($faqs-filter, link-font-size);
+      display: inline-block;
+      margin: map-get($faqs-filter, link-margin);
+      color: map-get($faqs-filter, link-color);
+      font-family: map-get($faqs-filter, link-font-family);
+      font-weight: map-get($faqs-filter, link-font-weight);
+      letter-spacing: map-get($faqs-filter, link-letter-spacing);
+      line-height: 1.4;
+      &:hover {
+        color: map-get($faqs-filter, link-hover);
+      }
+      @include sm {
+        margin: map-get($faqs-filter, link-margin-mobile);
+        font-size: map-get($faqs-filter, link-font-size-mobile);
+      }
+      &.faq-filter-active {
+        color: map-get($faqs-filter, link-active);
+        font-weight: map-get($faqs-filter, link-active-font-weight);
+      }
+    }
+  }
+  &-page-items {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+
+    @include md{
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 10px;
+    }
+  }
+  &-page-item {
+    border: 1px solid map-get($faqs-article, border-color);
+    width: 100%;
+    overflow: hidden;
+    list-style: none;
+    height: 100%;
+    box-shadow: map-get($faqs-article, box-shadow);
+    border-radius: map-get($faqs-article, border-radius);
+    background-color: map-get($faqs-article, background);
+    &:hover {
+      h2 {
+        color: map-get($faqs-article, title-hover);
+      }
+    }
+  }
+  &-page-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+  &-page-thumb {
+    @include size(100%, map-get($faqs-article, thumb-height));
+    overflow: hidden;
+    border-radius: 0 0 map-get($faqs-article, border-radius) map-get($faqs-article, border-radius);
+    @include xs {
+      @include size(100%, map-get($faqs-article, thumb-height-mobile));
+    }
+    img {
+      @include size(100%);
+      display: block;
+      object-fit: cover;
+      object-position: center center;
+      transition: $transition;
+    }
+  }
+  &-page-title {
+    font-size: map-get($faqs-article, title-font-size);
+    text-transform: uppercase;
+    margin: 0;
+    padding: map-get($faqs-article, title-padding);
+    line-height: map-get($faqs-article, title-line-height);
+    color: map-get($faqs-article, title-color);
+    font-family: map-get($faqs-article, title-font-family);
+    font-weight: map-get($faqs-article, title-font-weight);
+    letter-spacing: map-get($faqs-article, title-letter-spacing);
+    transition: $transition;
+    @include sm {
+      font-size: map-get($faqs-article, title-font-size-mobile);
+      padding: map-get($faqs-article, title-padding-mobile);
+    }
+  }
+}
