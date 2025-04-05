@@ -31,6 +31,9 @@ if ($content_block) {
         case 'large':
             $spacing_class = 'padding-large';
             break;
+        case 'xlarge':
+            $spacing_class = 'padding-xlarge';
+            break;    
     }
 
     $spacing_responsive_class = '';
@@ -52,15 +55,17 @@ if ($content_block) {
             <?php endforeach; ?>      
         </div>
         <?php endif; ?>  
-        <div class="overlay absolute w-full h-full top-0 right-0 md:max-w-[60%] lg:max-w-[50%] flex justify-end items-end z-[1]">
+        <div class="overlay absolute w-full h-full top-0 right-0 flex justify-end items-end z-[1]">
         <div class="container mx-auto"> 
-            <div class="bg-primary rounded-t-[10px] py-[30px] px-[30px] lg:py-[45px] lg:px-[47px] mr-auto">
+            <div class="flex items-end">
+            <div class="bg-primary rounded-t-[10px] py-[30px] px-[30px] lg:py-[45px] lg:px-[47px] ml-auto lg:max-w-[655px]">
                 <?php if( $subheading): ?>
                     <h6 class="text-white mb-[20px]"><?php echo $subheading; ?></h6>
                 <?php endif; ?> 
                 <?php if($heading): ?>
                     <h4 class="text-white"><?php echo $heading; ?></h4>
                 <?php endif; ?>       
+            </div>
             </div>
         </div>
         </div>

@@ -15,7 +15,7 @@ if ( ! defined( 'EVENTAGE_VERSION' ) ) {
 	 * to create your production build, the value below will be replaced in the
 	 * generated zip file with a timestamp, converted to base 36.
 	 */
-	define( 'EVENTAGE_VERSION', '0.1.0' );
+	define( 'EVENTAGE_VERSION', time() );
 }
 
 if ( ! defined( 'EVENTAGE_TYPOGRAPHY_CLASSES' ) ) {
@@ -151,12 +151,18 @@ function eventage_scripts() {
 	wp_enqueue_style('eventage-owltheme-css', get_template_directory_uri() . '/css/owl.theme.default.min.css', array(), EVENTAGE_VERSION);	
 	wp_enqueue_style('eventage-glider-css', get_template_directory_uri() . '/css/glider.min.css', array(), EVENTAGE_VERSION);  
 	wp_enqueue_style('eventage-slick-css', get_template_directory_uri() . '/css/slick.min.css', array(), EVENTAGE_VERSION); 
+	wp_enqueue_style('eventage-plyr-css', get_template_directory_uri() . '/css/plyr.css', array(), EVENTAGE_VERSION); 
+	wp_enqueue_style('eventage-fancybox-css', get_template_directory_uri() . '/css/fancybox.min.css', array(), EVENTAGE_VERSION); 
+	wp_enqueue_style('eventage-swiper-css', get_template_directory_uri() . '/css/swiper.min.css', array(), EVENTAGE_VERSION); 
 
 	wp_enqueue_script('jquery');
-	wp_enqueue_script( 'eventage-elements-owl-js', get_template_directory_uri() . '/js/owl.carousel.min.js', array(), EVENTAGE_VERSION, true );	
+	wp_enqueue_script( 'eventage-owl-js', get_template_directory_uri() . '/js/owl.carousel.min.js', array(), EVENTAGE_VERSION, true );	
 	wp_enqueue_script( 'eventage-parallax-js', get_template_directory_uri() . '/js/parallax.min.js', array(), EVENTAGE_VERSION, true );	
 	wp_enqueue_script('eventage-glider-js', get_template_directory_uri() . '/js/glider.min.js', array(), EVENTAGE_VERSION, true); 		
-	wp_enqueue_script('eventage-slick-js', get_template_directory_uri() . '/js/slick.min.js', array(), EVENTAGE_VERSION, true); 
+	wp_enqueue_script('eventage-slick-js', get_template_directory_uri() . '/js/slick.min.js', array(), EVENTAGE_VERSION, true); 	
+	wp_enqueue_script('eventage-plyr-js', get_template_directory_uri() . '/js/plyr.polyfilled.js', array(), EVENTAGE_VERSION, true);
+	wp_enqueue_script('eventage-fancybox-js', get_template_directory_uri() . '/js/fancybox.min.js', array(), EVENTAGE_VERSION, true);
+	wp_enqueue_script( 'eventage-swiper-js', get_template_directory_uri() . '/js/swiper-bundle.min.js', array(), EVENTAGE_VERSION, true );	
 	wp_enqueue_script( 'eventage-custom-js', get_template_directory_uri() . '/js/custom.js', array(), EVENTAGE_VERSION, true );
 	wp_enqueue_script( 'eventage-script', get_template_directory_uri() . '/js/script.min.js', array(), EVENTAGE_VERSION, true );
 
@@ -257,3 +263,4 @@ add_action('after_setup_theme', 'mobile_thumbnail_size');
 	  return $existing_mimes;
   }
 
+ 

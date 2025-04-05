@@ -10,6 +10,8 @@ if ($hero) {
     $image_mobile = $hero['bg_image_mobile'];    
     $buttons = $hero['buttons'];  
 
+    $alignment = $hero['vertical_alignment'];
+
     // Block Settings
     $className = isset($block['className']) ? $block['className'] : '';
     $anchor = isset($block['anchor']) ? $block['anchor'] : '';
@@ -17,10 +19,10 @@ if ($hero) {
 
     //Container Settings
 
-    $container_classes = 'flex flex-col h-full w-full justify-center lg:justify-end ';
+    $container_classes = 'flex flex-col h-full w-full justify-center ' . ($alignment === 'middle' ? 'lg:justify-center' : ($alignment === 'bottom' ? 'lg:justify-end lg:pb-[70px] xl:pb-[100px]' : 'lg:justify-start lg:pt-[70px] xl:pt-[100px]'));
 ?>
 
-<section class="hero-section max-w-full h-screen relative z-[1] bg-cover bg-fixed bg-center bg-no-repeat animate__animated <?php echo esc_attr($className); ?> " <?php echo $anchor_attr; ?> <?php if(!empty($image)):?>style="background-image: url(<?php echo esc_url($image['url']); ?>)"<?php endif; ?> data-animation="fadeIn" data-duration="1.1s">
+<section class="hero-section max-w-full h-[30em] lg:h-screen relative z-[1] bg-cover bg-fixed bg-center bg-no-repeat animate__animated <?php echo esc_attr($className); ?> " <?php echo $anchor_attr; ?> <?php if(!empty($image)):?>style="background-image: url(<?php echo esc_url($image['url']); ?>)"<?php endif; ?> data-animation="fadeIn" data-duration="1.1s">
     <?php if($banner_type['value'] == "video"){ 
                 $videomp4 = $hero['banner_video_mp4'];  
                 $poster_video = $hero['video_poster']; ?> 
@@ -32,7 +34,7 @@ if ($hero) {
             <?php } ?>              
     <div class="overlay absolute h-full w-full z-[2] top-0 left-0 bg-[linear-gradient(0deg,rgba(0,0,0,0.20)_0%,rgba(0,0,0,0.20)_100%)]" >
      <div class="container mx-auto h-full">
-        <div class="<?php echo esc_attr($container_classes); ?> h-full lg:pb-[70px] xl:pb-[100px] lg:gap-[60px] xl:gap-[80px] 2xl:gap-[100px]">
+        <div class="<?php echo esc_attr($container_classes); ?> h-full lg:gap-[60px] xl:gap-[80px] 2xl:gap-[100px]">
             <div class="w-full lg:w-[60%] xl:w-[70%] 2xl:w-[66%]">
              <?php if(!empty($logo)): 
                 echo wp_get_attachment_image(

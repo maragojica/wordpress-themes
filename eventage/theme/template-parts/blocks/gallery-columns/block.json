@@ -1,0 +1,22 @@
+{
+    "name": "acf/gallery-columns",
+    "title": "Gallery Columns",
+    "description": "A Gallery of two columns section.",
+    "style": [ "file:./gallery-columns.css" ],
+    "category": "lazarus-design-team",
+    "icon": "columns",
+    "keywords": ["gallery", "two columns images", "images"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "gallery-columns.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/eventage/theme/template-parts/blocks/gallery-columns/screenshot.png"
+        }
+    }    
+}

@@ -1,0 +1,22 @@
+{
+    "name": "acf/teamslider",
+    "title": "Team Slider",
+    "description": "A team slider section.",
+    "style": [ "file:./team-slider.css" ],
+    "category": "lazarus-design-team",
+    "icon": "admin-users",
+    "keywords": ["team slider", "team members slider", "out people"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "team-slider.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/eventage/theme/template-parts/blocks/team-slider/screenshot.png"
+        }
+    }    
+}

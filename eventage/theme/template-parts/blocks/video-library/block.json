@@ -1,0 +1,22 @@
+{
+    "name": "acf/video-library",
+    "title": "Video Library",
+    "description": "A versatile video likbrary block that supports mp4, youtube, and vimeo videos.",
+    "style": [ "file:./video-library.css" ],
+    "category": "lazarus-design-team",
+    "icon": "video-alt3",
+    "keywords": ["video library", "videos", "studio"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "video-library.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/eventage/theme/template-parts/blocks/video-library/screenshot.png"
+        }
+    }    
+}

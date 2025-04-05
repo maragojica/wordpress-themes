@@ -1,0 +1,22 @@
+{
+    "name": "acf/content",
+    "title": "Content",
+    "description": "A general content section.",
+    "style": [ "file:./content.css" ],
+    "category": "lazarus-design-team",
+    "icon": "format-aside",
+    "keywords": ["content text", "info text", "text"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "content.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/eventage/theme/template-parts/blocks/content/screenshot.png"
+        }
+    }    
+}

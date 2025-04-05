@@ -1,0 +1,22 @@
+{
+    "name": "acf/full-gallery",
+    "title": "Full Gallery",
+    "description": "A general all purpose full gallery.",
+    "style": [ "file:./full-gallery.css" ],
+    "category": "lazarus-design-team",
+    "icon": "cover-image",
+    "keywords": ["content full gallery", "gallery", "media gallery"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "full-gallery.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/eventage/theme/template-parts/blocks/full-gallery/screenshot.png"
+        }
+    }    
+}

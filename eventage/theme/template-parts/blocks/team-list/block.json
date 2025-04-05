@@ -1,0 +1,22 @@
+{
+    "name": "acf/teamlist",
+    "title": "Team List",
+    "description": "A team grid section.",
+    "style": [ "file:./team-list.css" ],
+    "category": "lazarus-design-team",
+    "icon": "admin-users",
+    "keywords": ["team grid", "team members info", "out team"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "team-list.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/eventage/theme/template-parts/blocks/team-list/screenshot.png"
+        }
+    }    
+}

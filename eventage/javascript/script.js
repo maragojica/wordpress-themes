@@ -12,6 +12,7 @@
 // Table of Contents:
 // 1. Full Screen Menu
 // 2. Scroll Animations
+// 3. Custom Videos
 
 
 /*--------------------------------------------------------------
@@ -125,3 +126,53 @@ document.addEventListener('DOMContentLoaded', function () {
 		observer.observe(element);
 	});
 });
+
+/*--------------------------------------------------------------
+# Custom Videos
+--------------------------------------------------------------*/
+document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.player').forEach((p) => {
+        const player = new Plyr(p, {
+            fullscreen: { enabled: true, fallback: true, iosNative: true }
+        });
+
+        // Enable fullscreen button manually if needed
+        p.addEventListener('dblclick', () => {
+            player.fullscreen.enter();
+        });
+    });
+});
+
+/*--------------------------------------------------------------
+# Vertical Tabs
+--------------------------------------------------------------*/
+document.addEventListener("DOMContentLoaded", function () {
+    const tabHeadings = document.querySelectorAll(".tab-heading");
+    const tabContents = document.querySelectorAll(".tab-content");
+
+    function showTab(tabId) {
+        tabContents.forEach((content) => {
+            content.style.display = content.id === tabId ? "block" : "none";
+            content.classList.toggle("active", content.id === tabId);
+        });
+    }
+
+    tabHeadings.forEach((heading) => {
+        heading.addEventListener("click", function () {
+            const tabId = this.getAttribute("data-tab");
+
+            tabHeadings.forEach((h) => h.classList.remove("active"));
+            this.classList.add("active");
+
+            showTab(tabId);
+        });
+    });
+
+    // Ensure the first tab is active on page load
+    if (tabHeadings.length > 0 && tabContents.length > 0) {
+        tabHeadings[0].classList.add("active");
+        showTab(tabHeadings[0].getAttribute("data-tab"));
+    }
+});
+
+

@@ -1,7 +1,10 @@
 // Table of Contents:
 // 1. Parallax
 // 2. Slider Work
-// 3. Testimonials Slider
+// 3. Slider Banner CTA
+// 4. Testimonials Slider
+// 5. Logo Slider Section
+// 6. Custom Swipe Slider Team
 
 
 (function($) { "use strict";
@@ -173,6 +176,58 @@ jQuery(document).ready(function () {
     });
   });
   
+/*--------------------------------------------------------------
+# Custom Swipe Slider Team
+--------------------------------------------------------------*/
+var $swiperSelector = $('.swiper-container');
+
+$swiperSelector.each(function(index) {
+    var $this = $(this);
+    $this.addClass('swiper-slider-' + index);
+    
+    var dragSize = $this.data('drag-size') ? $this.data('drag-size') : 164;
+    var freeMode = $this.data('free-mode') ? $this.data('free-mode') : false;
+    var loop = $this.data('loop') ? $this.data('loop') : false;
+    var slidesDesktop = 4.5; // 5.5 slides on desktop
+    var slidesSmallDesktop = 3.5;  // 3.5 slides on small desktop
+    var slidesTablet = 2.5;  // 2.5 slides on tablet
+    var slidesMobile = 1.5;  // 1.5 slides on mobile
+    var spaceBetween = $this.data('space-between') ? $this.data('space-between') : 32;
+
+    var swiper = new Swiper('.swiper-slider-' + index, {
+      direction: 'horizontal',
+      loop: loop,
+      freeMode: freeMode,
+      spaceBetween: spaceBetween,
+      watchOverflow: true, // Ensures scrollbar shows when needed
+      breakpoints: {
+        1920: {
+          slidesPerView: slidesDesktop
+        },
+        1200: {
+          slidesPerView: slidesSmallDesktop
+        },
+        768: {
+          slidesPerView: slidesTablet
+        },
+        320: {
+           slidesPerView: slidesMobile
+        }
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      },
+      scrollbar: {
+        el: '.swiper-scrollbar',
+        draggable: true,
+        dragSize: dragSize,
+        hide: false // Keeps scrollbar visible
+      }
+   });
+});
+
+
     // eslint-disable-next-line no-undef
     })(jQuery); 
 

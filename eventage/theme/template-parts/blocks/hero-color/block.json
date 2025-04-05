@@ -1,0 +1,22 @@
+{
+    "name": "acf/hero-color",
+    "title": "Hero Color Block",
+    "description": "A internal hero section with a background color and a heading.",
+    "style": [ "file:./hero-color.css" ],
+    "category": "lazarus-design-team",
+    "icon": "welcome-view-site",
+    "keywords": ["hero color", "banner color", "intro color"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "hero-color.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/eventage/theme/template-parts/blocks/hero-color/screenshot.png"
+        }
+    }    
+}

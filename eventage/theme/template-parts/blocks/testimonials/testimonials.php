@@ -31,6 +31,9 @@ if ($content_block) {
         case 'large':
             $spacing_class = 'padding-large';
             break;
+        case 'xlarge':
+            $spacing_class = 'padding-xlarge';
+            break;
     }
 
     $spacing_responsive_class = '';

@@ -87,8 +87,8 @@ if ($logo) { ?>
 				</svg>
 			</div>	
 		</div>	
-		<div class="flex flex-col w-full lg:gap-[90px] xl:gap-y-[120px] 2xl:gap-y-[132px] px-[1em] sm:px-[2em] lg:px-[100px] xl:px-[130px] 2xl:px-[190px] gap-[100px] justify-between">
-			<div class="flex lg:flex-row flex-col w-full">
+		<div class="flex flex-col w-full h-full lg:h-[calc(100%-190px)] xl:h-[calc(100%-222px)] 2xl:h-[calc(100%-232px)] px-[1em] sm:px-[2em] lg:px-[100px] xl:px-[130px] 2xl:px-[190px] gap-[100px] justify-between">
+			<div class="flex lg:flex-row flex-col w-full lg:h-full">
 				<div class="h-full w-full lg:w-[45%] flex items-start pt-[3em] lg:pt-[100px] xl:pt-[130px] 2xl:pt-[170px]">
 					<nav class="flex flex-col site-navigation site-mobile-navigation justify-between items-center">           
 					<?php if (get_field('header_mobile_menu', 'option')): ?>		
@@ -98,7 +98,7 @@ if ($logo) { ?>
 									'menu' => get_field('header_mobile_menu', 'option'),
 									'theme_location' => 'menu-primary',
 									'container'      => false,
-									'menu_class'     => 'flex flex-col font-primary text-[40px] sm:text-[65px] xl:text-[80px] 2xl:text-[95px] tracking-[1.9px] leading-[1.15] uppercase text-white transition-all ease-in-out duration-300 gap-[40px] xl:gap-[50px] 2xl:gap-y-[60px] w-full',
+									'menu_class'     => 'flex flex-col font-primary text-[40px] sm:text-[55px] xl:text-[65px] xl:text-[80px] 2xl:text-[95px] tracking-[1.9px] leading-[1.15] uppercase text-white transition-all ease-in-out duration-300 gap-[40px] xl:gap-[50px] 2xl:gap-y-[60px] w-full',
 								)
 							);
 							?>	

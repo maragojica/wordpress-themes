@@ -1,0 +1,22 @@
+{
+    "name": "acf/backforth-mediabg",
+    "title": "Back & Forth Media Backgroung",
+    "description": "A general all purpose simple back & forth block that has a image and text section with buttons and a custom backgroung. The order of columns is reversible",
+    "style": [ "file:./back-forth-media-bg.css" ],
+    "category": "lazarus-design-team",
+    "icon": "embed-generic",
+    "keywords": ["content media", "back and forth media bg", "image and text"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "back-forth-media-bg.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/eventage/theme/template-parts/blocks/back-forth-media-bg/screenshot.png"
+        }
+    }    
+}
