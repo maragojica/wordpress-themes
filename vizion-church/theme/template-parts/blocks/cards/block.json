@@ -1,0 +1,22 @@
+{
+    "name": "acf/cards",
+    "title": "Cards",
+    "description": "A general cards info block that has a title, icon and text section.",
+    "style": [ "file:./cards.css" ],
+    "category": "lazarus-design-team",
+    "icon": "screenoptions",
+    "keywords": ["cards block", "columns info cards", "cards info"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "cards.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/vizion-church/theme/template-parts/blocks/cards/screenshot.png"
+        }
+    }    
+}

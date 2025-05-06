@@ -1,0 +1,22 @@
+{
+    "name": "acf/cards-slider",
+    "title": "Cards Slider",
+    "description": "Cards Slider section.",
+    "style": [ "file:./cards-slider.css" ],
+    "category": "lazarus-design-team",
+    "icon": "embed-photo",
+    "keywords": ["slider", "cards", "info slider"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "cards-slider.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/vizion-church/theme/template-parts/blocks/cards-slider/screenshot.png"
+        }
+    }    
+}

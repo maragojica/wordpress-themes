@@ -1,0 +1,22 @@
+{
+    "name": "acf/faq",
+    "title": "FAQs",
+    "description": "A one column faq block with headlines.",
+    "style": [ "file:./faq.css" ],
+    "category": "lazarus-design-team",
+    "icon": "format-quote",
+    "keywords": ["faqs", "accordions", "text"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "faq.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/vizion-church/theme/template-parts/blocks/faq/screenshot.png"
+        }
+    }    
+}
