@@ -1,0 +1,15 @@
+{
+    "name": "acf/backforth-contact",
+    "title": "Back & Forth Contact",
+    "description": "Two columned contact form section. The column order is reversible for flexible layout options.",
+    "category": "lazarus-design-team",
+    "icon": "feedback",
+    "keywords": ["contact form", "contact section", "contact us"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "back-forth-contact.php"
+    },
+    "supports": {
+        "anchor": true
+    }  
+}

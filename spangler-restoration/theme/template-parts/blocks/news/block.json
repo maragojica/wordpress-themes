@@ -1,0 +1,22 @@
+{
+    "name": "acf/news",
+    "title": "News",
+    "description": "A general news block that has a title and text section with cta.",
+    "style": [ "file:./news.css" ],
+    "category": "lazarus-design-team",
+    "icon": "edit-page",
+    "keywords": ["news block", "recent news", "blogs"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "news.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/spangler-restoration/theme/template-parts/blocks/news/screenshot.png"
+        }
+    }    
+}

@@ -1,0 +1,228 @@
+{
+    "key": "group_67782b0f02093",
+    "title": "Team",
+    "fields": [
+        {
+            "key": "field_67782b0f047d4",
+            "label": "Team",
+            "name": "team",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_678aa0e53764f",
+                    "label": "Team Section",
+                    "name": "team_section",
+                    "aria-label": "",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "row",
+                    "pagination": 0,
+                    "min": 0,
+                    "max": 0,
+                    "collapsed": "",
+                    "button_label": "Add Section",
+                    "rows_per_page": 20,
+                    "sub_fields": [
+                        {
+                            "key": "field_678aa14337650",
+                            "label": "Headline",
+                            "name": "headline",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "allow_in_bindings": 0,
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "parent_repeater": "field_678aa0e53764f"
+                        },
+                        {
+                            "key": "field_678aa16e37652",
+                            "label": "Team Members",
+                            "name": "team_members_info",
+                            "aria-label": "",
+                            "type": "post_object",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [
+                                "team-member"
+                            ],
+                            "post_status": [
+                                "publish"
+                            ],
+                            "taxonomy": "",
+                            "return_format": "object",
+                            "multiple": 1,
+                            "allow_null": 0,
+                            "allow_in_bindings": 1,
+                            "bidirectional": 0,
+                            "ui": 1,
+                            "bidirectional_target": [],
+                            "parent_repeater": "field_678aa0e53764f"
+                        }
+                    ]
+                },
+                {
+                    "key": "field_67782b0f057d4",
+                    "label": "Spacing",
+                    "name": "spacing",
+                    "aria-label": "",
+                    "type": "button_group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "100",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "small": "Small",
+                        "medium": "Medium",
+                        "large": "Large"
+                    },
+                    "default_value": "small",
+                    "return_format": "value",
+                    "allow_null": 0,
+                    "allow_in_bindings": 1,
+                    "layout": "horizontal"
+                },
+                {
+                    "key": "field_67782b0f057d7",
+                    "label": "Spacing Top Desktop?",
+                    "name": "spacing_top_desktop",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "20",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 0,
+                    "allow_in_bindings": 1,
+                    "ui_on_text": "",
+                    "ui_off_text": "",
+                    "ui": 1
+                },
+                {
+                    "key": "field_67782b0f057da",
+                    "label": "Spacing Bottom Desktop",
+                    "name": "spacing_bottom_desktop",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "20",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 0,
+                    "allow_in_bindings": 1,
+                    "ui_on_text": "",
+                    "ui_off_text": "",
+                    "ui": 1
+                },
+                {
+                    "key": "field_67782b0f057dd",
+                    "label": "Spacing Top Mobile",
+                    "name": "spacing_top_mobile",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "20",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 0,
+                    "allow_in_bindings": 1,
+                    "ui_on_text": "",
+                    "ui_off_text": "",
+                    "ui": 1
+                },
+                {
+                    "key": "field_67782b0f057e1",
+                    "label": "Spacing Bottom Mobile",
+                    "name": "spacing_bottom_mobile",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "20",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 0,
+                    "allow_in_bindings": 1,
+                    "ui_on_text": "",
+                    "ui_off_text": "",
+                    "ui": 1
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/team"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "A team member section with a headline.",
+    "show_in_rest": 0,
+    "modified": 1752780329
+}

@@ -1,0 +1,15 @@
+{
+    "name": "acf/featured-blog",
+    "title": "Featured Blog",
+    "description": "A featured blog section.",
+    "category": "lazarus-design-team",
+    "icon": "welcome-write-blog",
+    "keywords": ["content post", "press", "news", "blog"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "featured-blog.php"
+    },
+    "supports": {
+        "anchor": true
+    }  
+}

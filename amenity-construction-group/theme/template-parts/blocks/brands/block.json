@@ -1,0 +1,15 @@
+{
+    "name": "acf/brands",
+    "title": "Brands",
+    "description": "A general logos slider section with a headline.",
+    "category": "lazarus-design-team",
+    "icon": "slides",
+    "keywords": ["content logos", "info slides", "logos"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "brands.php"
+    },
+    "supports": {
+        "anchor": true
+    }   
+}

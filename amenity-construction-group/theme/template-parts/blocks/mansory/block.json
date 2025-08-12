@@ -1,0 +1,15 @@
+{
+    "name": "acf/mansory",
+    "title": "Mansory",
+    "description": "Mansory Slider section.",
+    "category": "lazarus-design-team",
+    "icon": "layout",
+    "keywords": ["mansory", "info slider"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "mansory.php"
+    },
+    "supports": {
+        "anchor": true
+    } 
+}

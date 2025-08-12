@@ -1,0 +1,22 @@
+{
+    "name": "acf/locations",
+    "title": "Locations",
+    "description": "A locations list section with buttons.",
+    "style": [ "file:./locations.css" ],
+    "category": "lazarus-design-team",
+    "icon": "location",
+    "keywords": ["content locations", "locations", "text"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "locations.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/spangler-restoration/theme/template-parts/blocks/locations/screenshot.png"
+        }
+    }    
+}

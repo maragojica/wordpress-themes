@@ -1,0 +1,339 @@
+{
+    "key": "group_6875906f8767a",
+    "title": "Hero Inner",
+    "fields": [
+        {
+            "key": "field_6875906fa96a1",
+            "label": "Hero Inner",
+            "name": "hero_internal",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_6875906fad4c5",
+                    "label": "Heading",
+                    "name": "heading",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 1,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_6883c82be2f0c",
+                    "label": "Hide Heading Mobile?",
+                    "name": "hide_heading_mobile",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 0,
+                    "allow_in_bindings": 1,
+                    "ui_on_text": "",
+                    "ui_off_text": "",
+                    "ui": 1
+                },
+                {
+                    "key": "field_6875906fbc1fa",
+                    "label": "Banner Type",
+                    "name": "banner_type",
+                    "aria-label": "",
+                    "type": "radio",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "image": "Image",
+                        "video": "Video"
+                    },
+                    "default_value": "image",
+                    "return_format": "array",
+                    "allow_null": 0,
+                    "other_choice": 0,
+                    "allow_in_bindings": 1,
+                    "layout": "horizontal",
+                    "save_other_choice": 0
+                },
+                {
+                    "key": "field_6875906fbfcac",
+                    "label": "BG Image Desktop",
+                    "name": "bg_image",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_6875906fbc1fa",
+                                "operator": "==",
+                                "value": "image"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "30",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "allow_in_bindings": 1,
+                    "preview_size": "medium"
+                },
+                {
+                    "key": "field_6875906fc37cc",
+                    "label": "Banner Video MP4",
+                    "name": "banner_video_mp4",
+                    "aria-label": "",
+                    "type": "file",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_6875906fbc1fa",
+                                "operator": "==",
+                                "value": "video"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "library": "all",
+                    "min_size": "",
+                    "max_size": "",
+                    "mime_types": "mp4",
+                    "allow_in_bindings": 1
+                },
+                {
+                    "key": "field_6875906fc71d4",
+                    "label": "Video Poster",
+                    "name": "video_poster",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_6875906fbc1fa",
+                                "operator": "==",
+                                "value": "video"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "allow_in_bindings": 1,
+                    "preview_size": "medium"
+                },
+                {
+                    "key": "field_6875906fcad6b",
+                    "label": "Overlay Opacity",
+                    "name": "overlay_opacity",
+                    "aria-label": "",
+                    "type": "range",
+                    "instructions": "Adjust the darkness of the overlay on the background media.",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "30",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": 20,
+                    "min": 0,
+                    "max": 100,
+                    "allow_in_bindings": 1,
+                    "step": 5,
+                    "prepend": "",
+                    "append": "%"
+                },
+                {
+                    "key": "field_6875906fd221a",
+                    "label": "Spacing",
+                    "name": "spacing",
+                    "aria-label": "",
+                    "type": "button_group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "100",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "small": "Small",
+                        "medium": "Medium",
+                        "large": "Large"
+                    },
+                    "default_value": "small",
+                    "return_format": "value",
+                    "allow_null": 0,
+                    "allow_in_bindings": 1,
+                    "layout": "horizontal"
+                },
+                {
+                    "key": "field_6875906fd5de4",
+                    "label": "Spacing Top Desktop?",
+                    "name": "spacing_top_desktop",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "20",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 0,
+                    "allow_in_bindings": 1,
+                    "ui_on_text": "",
+                    "ui_off_text": "",
+                    "ui": 1
+                },
+                {
+                    "key": "field_6875906fd9935",
+                    "label": "Spacing Bottom Desktop",
+                    "name": "spacing_bottom_desktop",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "20",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 0,
+                    "allow_in_bindings": 1,
+                    "ui_on_text": "",
+                    "ui_off_text": "",
+                    "ui": 1
+                },
+                {
+                    "key": "field_6875906fdd31f",
+                    "label": "Spacing Top Mobile",
+                    "name": "spacing_top_mobile",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "20",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 0,
+                    "allow_in_bindings": 1,
+                    "ui_on_text": "",
+                    "ui_off_text": "",
+                    "ui": 1
+                },
+                {
+                    "key": "field_6875906fe0d05",
+                    "label": "Spacing Bottom Mobile",
+                    "name": "spacing_bottom_mobile",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "20",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 0,
+                    "allow_in_bindings": 1,
+                    "ui_on_text": "",
+                    "ui_off_text": "",
+                    "ui": 1
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/heroinner"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Internal Hero section block with background image, heading, and content",
+    "show_in_rest": 0,
+    "modified": 1753467028
+}

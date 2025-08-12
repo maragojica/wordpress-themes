@@ -1,0 +1,15 @@
+{
+    "name": "acf/counters",
+    "title": "Counters",
+    "description": "A counters section with a background imagea, heading, and logos.",
+    "category": "lazarus-design-team",
+    "icon": "chart-area",
+    "keywords": ["counters", "numbers", "logos"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "counters.php"
+    },
+    "supports": {
+        "anchor": true
+    }  
+}

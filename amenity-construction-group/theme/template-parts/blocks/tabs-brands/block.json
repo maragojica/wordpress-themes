@@ -1,0 +1,15 @@
+{
+    "name": "acf/tabsbrands",
+    "title": "Tabs Brands",
+    "description": "A tabs section with a a list of brands.",
+    "category": "lazarus-design-team",
+    "icon": "block-default",
+    "keywords": ["content tabs brands", "content brands", "logos"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "tabs-brands.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "name": "acf/timeline",
+    "title": "Timeline",
+    "description": "A timeline section with events and background",
+    "category": "lazarus-design-team",
+    "icon": "image-filter",
+    "keywords": ["timeline", "events", "history"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "timeline.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+} 

@@ -1,0 +1,22 @@
+{
+    "name": "acf/backforth-mediafull",
+    "title": "Back & Forth Media Full",
+    "description": "A versatile back-and-forth full content block that supports images, videos, and text sections with buttons. The column order is reversible for flexible layout options.",
+    "style": [ "file:./back-forth-media-full.css" ],
+    "category": "lazarus-design-team",
+    "icon": "embed-generic",
+    "keywords": ["content block", "back and forth media full", "media video and text"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "back-forth-media-full.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/spangler-restoration/theme/template-parts/blocks/back-forth-media-full/screenshot.png"
+        }
+    }    
+}

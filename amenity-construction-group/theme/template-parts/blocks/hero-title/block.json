@@ -1,0 +1,15 @@
+{
+    "name": "acf/herotitle",
+    "title": "Hero Title Block",
+    "description": "A internal hero section with a background color and a heading.",
+    "category": "lazarus-design-team",
+    "icon": "welcome-view-site",
+    "keywords": ["hero title", "banner title", "intro internal"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "hero-title.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+}

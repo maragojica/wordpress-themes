@@ -1,0 +1,22 @@
+{
+    "name": "acf/content",
+    "title": "Content Text",
+    "description": "A section that has a text with buttons.",
+    "style": [ "file:./content.css" ],
+    "category": "lazarus-design-team",
+    "icon": "admin-page",
+    "keywords": ["content center", "center text", "text"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "content.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/bhs-filtration/theme/template-parts/blocks/center-text/screenshot.png"
+        }
+    }    
+}

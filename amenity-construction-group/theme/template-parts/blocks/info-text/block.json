@@ -1,0 +1,15 @@
+{
+    "name": "acf/infotext",
+    "title": "Info Text",
+    "description": "A general all purpose back & forth info block that has a text section with buttons. The order of columns is reversible",
+    "category": "lazarus-design-team",
+    "icon": "align-pull-left",
+    "keywords": ["content block", "info text", "text"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "info-text.php"
+    },
+    "supports": {
+        "anchor": true
+    }   
+}

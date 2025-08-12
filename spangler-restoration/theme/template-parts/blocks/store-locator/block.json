@@ -1,0 +1,21 @@
+{
+    "name": "acf/store-locator",
+    "title": "Store Locator",
+    "description": "Store locator with heading and sub heading option.",
+    "category": "lazarus-design-team",
+    "icon": "location-alt",
+    "keywords": ["map", "store locator", "stores"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "store-locator.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/spangler-restoration/theme/template-parts/blocks/store-locator/screenshot.png"
+        }
+    }    
+}

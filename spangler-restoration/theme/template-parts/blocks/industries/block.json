@@ -1,0 +1,22 @@
+{
+    "name": "acf/industries",
+    "title": "Industries",
+    "description": "A industries section with cta links.",
+    "style": [ "file:./industries.css" ],
+    "category": "lazarus-design-team",
+    "icon": "image-filter",
+    "keywords": ["industries", "industries cards", "industries cta"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "industries.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/spangler-restoration/theme/template-parts/blocks/industries/screenshot.png"
+        }
+    }    
+}

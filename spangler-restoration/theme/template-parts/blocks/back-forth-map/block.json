@@ -1,0 +1,22 @@
+{
+    "name": "acf/backforth-map",
+    "title": "Back & Forth Map",
+    "description": "A versatile back-and-forth full content block that supports a map and text sections with buttons. The column order is reversible for flexible layout options.",
+    "style": [ "file:./back-forth-map.css" ],
+    "category": "lazarus-design-team",
+    "icon": "sticky",
+    "keywords": ["content block", "back and forth map", "map and text"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "back-forth-map.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/spangler-restoration/theme/template-parts/blocks/back-forth-map/screenshot.png"
+        }
+    }    
+}

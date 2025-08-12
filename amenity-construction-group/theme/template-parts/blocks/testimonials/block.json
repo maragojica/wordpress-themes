@@ -1,0 +1,15 @@
+{
+    "name": "acf/testimonials",
+    "title": "Testimonials",
+    "description": "A general testimonials block that has a slider.",
+    "category": "lazarus-design-team",
+    "icon": "format-status",
+    "keywords": ["testimonials", "slider"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "testimonials.php"
+    },
+    "supports": {
+        "anchor": true
+    }   
+}

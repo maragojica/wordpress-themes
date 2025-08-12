@@ -1,0 +1,53 @@
+/**
+ * Custom styles to immediately follow Tailwind’s `utilities` layer
+ *
+ * Add your own utility classes to this theme. Complex utility classes should
+ * be added using Tailwind’s plugin system:
+ *
+ * https://tailwindcss.com/docs/adding-custom-styles#adding-custom-utilities
+ */
+
+ @layer utilities {
+  /* Text color utilities */
+  
+  .text-quaternary {
+    color: var(--wp--preset--color--quaternary) !important;
+  }
+  .text-accent {
+    color: var(--wp--preset--color--accent) !important;
+  }
+  .text-muted-text {
+    color: var(--wp--preset--color--muted-text) !important;
+  }
+  .text-link {
+    color: var(--wp--preset--color--link) !important;
+  }
+
+  /* Background color utilities */
+  .bg-quaternary {
+    background-color: var(--wp--preset--color--quaternary) !important;
+  }
+  .bg-accent {
+    background-color: var(--wp--preset--color--accent) !important;
+  }
+  .bg-muted-text {
+    background-color: var(--wp--preset--color--muted-text) !important;
+  }
+  .bg-link {
+    background-color: var(--wp--preset--color--link) !important;
+  }
+
+  /* Border color utilities */
+  .border-quaternary {
+    border-color: var(--wp--preset--color--quaternary) !important;
+  }
+  .border-accent {
+    border-color: var(--wp--preset--color--accent) !important;
+  }
+  .border-muted-text {
+    border-color: var(--wp--preset--color--muted-text) !important;
+  }
+  .border-link {
+    border-color: var(--wp--preset--color--link) !important;
+  }
+}

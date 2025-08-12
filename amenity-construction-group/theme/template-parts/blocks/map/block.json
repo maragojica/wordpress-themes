@@ -1,0 +1,15 @@
+{
+    "name": "acf/map",
+    "title": "Map",
+    "description": "A map section with headings.",
+    "category": "lazarus-design-team",
+    "icon": "location-alt",
+    "keywords": ["content map", "content text", "info map"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "map.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+}

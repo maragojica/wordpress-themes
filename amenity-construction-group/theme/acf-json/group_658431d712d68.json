@@ -1,0 +1,173 @@
+{
+    "key": "group_658431d712d68",
+    "title": "Theme Header Settings",
+    "fields": [
+        {
+            "key": "field_6584336909b46",
+            "label": "Menu Options",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0,
+            "selected": 0
+        },
+        {
+            "key": "field_672273ca84297",
+            "label": "Header Desktop Primary Menu",
+            "name": "header_desktop_primary_menu",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "3": "Primary Menu",
+                "4": "Mobile Menu Primary",
+                "5": "Footer Menu 1",
+                "6": "Footer Menu 2",
+                "8": "Mobile Menu Secondary"
+            },
+            "default_value": false,
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "allow_in_bindings": 1,
+            "ui": 1,
+            "ajax": 0,
+            "placeholder": "",
+            "create_options": 0,
+            "save_options": 0
+        },
+        {
+            "key": "field_65ce347d89414",
+            "label": "Header Mobile Menu Primary",
+            "name": "header_mobile_menu",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "3": "Primary Menu",
+                "4": "Mobile Menu Primary",
+                "5": "Footer Menu 1",
+                "6": "Footer Menu 2",
+                "8": "Mobile Menu Secondary"
+            },
+            "default_value": false,
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "allow_in_bindings": 1,
+            "ui": 1,
+            "ajax": 0,
+            "placeholder": "",
+            "create_options": 0,
+            "save_options": 0
+        },
+        {
+            "key": "field_6887aabdaf9e1",
+            "label": "Header Mobile Menu Secondary",
+            "name": "header_mobile_menu_secondary",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "3": "Primary Menu",
+                "4": "Mobile Menu Primary",
+                "5": "Footer Menu 1",
+                "6": "Footer Menu 2",
+                "8": "Mobile Menu Secondary"
+            },
+            "default_value": false,
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "allow_in_bindings": 1,
+            "ui": 1,
+            "ajax": 0,
+            "placeholder": "",
+            "create_options": 0,
+            "save_options": 0
+        },
+        {
+            "key": "field_686fe56fa5a4d",
+            "label": "Header CTA",
+            "name": "header_cta",
+            "aria-label": "",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "allow_in_bindings": 1
+        },
+        {
+            "key": "field_6887abca97146",
+            "label": "CTA Mobile Header",
+            "name": "cta_mobile_header",
+            "aria-label": "",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "allow_in_bindings": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "header"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Header settings for the Amenity Construction Group theme",
+    "show_in_rest": 0,
+    "modified": 1753721812
+}

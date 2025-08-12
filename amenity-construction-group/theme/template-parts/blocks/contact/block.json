@@ -1,0 +1,15 @@
+{
+    "name": "acf/contact-form",
+    "title": "Contact Form",
+    "description": "A contact form section with heading and background",
+    "category": "lazarus-design-team",
+    "icon": "email",
+    "keywords": ["contact", "form", "connect"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "contact.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+} 

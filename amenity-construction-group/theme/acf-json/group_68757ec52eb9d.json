@@ -1,0 +1,655 @@
+{
+    "key": "group_68757ec52eb9d",
+    "title": "Info Text",
+    "fields": [
+        {
+            "key": "field_68757ec5430c9",
+            "label": "Info Text",
+            "name": "content_block_info_text",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_6883ca68bc2da",
+                    "label": "Subheading",
+                    "name": "subheading",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 1,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_6883ca82bc2db",
+                    "label": "Hide Subheading Desktop?",
+                    "name": "hide_subheading_desktop",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 0,
+                    "allow_in_bindings": 1,
+                    "ui_on_text": "",
+                    "ui_off_text": "",
+                    "ui": 1
+                },
+                {
+                    "key": "field_68757ec54e572",
+                    "label": "Heading",
+                    "name": "heading",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_68757ec552041",
+                    "label": "Heading Color",
+                    "name": "heading_color",
+                    "aria-label": "",
+                    "type": "button_group",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "blue": "Blue",
+                        "gold": "Gold"
+                    },
+                    "default_value": "blue",
+                    "return_format": "value",
+                    "allow_null": 0,
+                    "allow_in_bindings": 1,
+                    "layout": "horizontal"
+                },
+                {
+                    "key": "field_68757ec555b00",
+                    "label": "Columns Number",
+                    "name": "columns_number",
+                    "aria-label": "",
+                    "type": "radio",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "one": "One",
+                        "two": "Two"
+                    },
+                    "default_value": "one",
+                    "return_format": "value",
+                    "allow_null": 0,
+                    "other_choice": 0,
+                    "allow_in_bindings": 1,
+                    "layout": "horizontal",
+                    "save_other_choice": 0
+                },
+                {
+                    "key": "field_68757ec5594db",
+                    "label": "Full Width Title?",
+                    "name": "full_width_title",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_68757ec555b00",
+                                "operator": "==",
+                                "value": "two"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 0,
+                    "allow_in_bindings": 0,
+                    "ui_on_text": "",
+                    "ui_off_text": "",
+                    "ui": 1
+                },
+                {
+                    "key": "field_68757ec55cf3e",
+                    "label": "Description Column One",
+                    "name": "description_column_one",
+                    "aria-label": "",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "allow_in_bindings": 1,
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0
+                },
+                {
+                    "key": "field_68757ec560a26",
+                    "label": "Description Column Two",
+                    "name": "description_column_two",
+                    "aria-label": "",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_68757ec555b00",
+                                "operator": "==",
+                                "value": "two"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "allow_in_bindings": 1,
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0
+                },
+                {
+                    "key": "field_68757ec5644e5",
+                    "label": "Buttons",
+                    "name": "buttons",
+                    "aria-label": "",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "table",
+                    "pagination": 0,
+                    "min": 0,
+                    "max": 0,
+                    "collapsed": "",
+                    "button_label": "Add Button",
+                    "rows_per_page": 20,
+                    "sub_fields": [
+                        {
+                            "key": "field_68757ec5b2eea",
+                            "label": "Button",
+                            "name": "button",
+                            "aria-label": "",
+                            "type": "link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "parent_repeater": "field_68757ec5644e5"
+                        },
+                        {
+                            "key": "field_68757ec5b6967",
+                            "label": "Button Type",
+                            "name": "button_type",
+                            "aria-label": "",
+                            "type": "radio",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "btn": "Button",
+                                "link": "Simple Link"
+                            },
+                            "default_value": "btn",
+                            "return_format": "value",
+                            "allow_null": 0,
+                            "other_choice": 0,
+                            "allow_in_bindings": 1,
+                            "layout": "vertical",
+                            "save_other_choice": 0,
+                            "parent_repeater": "field_68757ec5644e5"
+                        },
+                        {
+                            "key": "field_68757ec5ba41f",
+                            "label": "Button Style",
+                            "name": "button_style_btn",
+                            "aria-label": "",
+                            "type": "radio",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_68757ec5b6967",
+                                        "operator": "==",
+                                        "value": "btn"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "btn_primary": "Primary",
+                                "btn_secondary": "Secondary"
+                            },
+                            "default_value": "btn_primary",
+                            "return_format": "value",
+                            "allow_null": 0,
+                            "other_choice": 0,
+                            "allow_in_bindings": 1,
+                            "layout": "horizontal",
+                            "save_other_choice": 0,
+                            "parent_repeater": "field_68757ec5644e5"
+                        },
+                        {
+                            "key": "field_68757ec5bddf3",
+                            "label": "Button Style",
+                            "name": "button_style_link",
+                            "aria-label": "",
+                            "type": "radio",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_68757ec5b6967",
+                                        "operator": "==",
+                                        "value": "link"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "btn_simple_primary": "Simple Primary",
+                                "btn_simple_secondary": "Simple Secondary",
+                                "btn_simple_primary_hover": "Simple Primary Hover White"
+                            },
+                            "default_value": "btn_simple_primary",
+                            "return_format": "value",
+                            "allow_null": 0,
+                            "other_choice": 0,
+                            "allow_in_bindings": 1,
+                            "layout": "horizontal",
+                            "save_other_choice": 0,
+                            "parent_repeater": "field_68757ec5644e5"
+                        }
+                    ]
+                },
+                {
+                    "key": "field_68757ec573029",
+                    "label": "Add Bottom Shape",
+                    "name": "add_bottom_shape",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 0,
+                    "allow_in_bindings": 1,
+                    "ui_on_text": "",
+                    "ui_off_text": "",
+                    "ui": 1
+                },
+                {
+                    "key": "field_68757fa30e0fe",
+                    "label": "Shape Type",
+                    "name": "bottom_shape_type",
+                    "aria-label": "",
+                    "type": "button_group",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_68757ec573029",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "left": "Left",
+                        "right": "Right"
+                    },
+                    "default_value": "left",
+                    "return_format": "value",
+                    "allow_null": 0,
+                    "allow_in_bindings": 1,
+                    "layout": "horizontal"
+                },
+                {
+                    "key": "field_687596693e1ec",
+                    "label": "Add Margin Top Desktop",
+                    "name": "add_margin_top_desktop",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "48",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 0,
+                    "allow_in_bindings": 1,
+                    "ui_on_text": "",
+                    "ui_off_text": "",
+                    "ui": 1
+                },
+                {
+                    "key": "field_68759a25c93e6",
+                    "label": "Add Margin Top Mobile",
+                    "name": "add_margin_top_desktop_mobile",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 0,
+                    "allow_in_bindings": 1,
+                    "ui_on_text": "",
+                    "ui_off_text": "",
+                    "ui": 1
+                },
+                {
+                    "key": "field_68757ec576cea",
+                    "label": "Reverse Order Desktop",
+                    "name": "reverse_order_desktop",
+                    "aria-label": "",
+                    "type": "checkbox",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "yes": "Yes"
+                    },
+                    "default_value": [],
+                    "return_format": "value",
+                    "allow_custom": 0,
+                    "allow_in_bindings": 1,
+                    "layout": "vertical",
+                    "toggle": 0,
+                    "save_custom": 0,
+                    "custom_choice_button_text": "Add new choice"
+                },
+                {
+                    "key": "field_68757ec57a859",
+                    "label": "Reverse Order Mobile",
+                    "name": "reverse_order_mobile",
+                    "aria-label": "",
+                    "type": "checkbox",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "yes": "Yes"
+                    },
+                    "default_value": [],
+                    "return_format": "value",
+                    "allow_custom": 0,
+                    "allow_in_bindings": 1,
+                    "layout": "vertical",
+                    "toggle": 0,
+                    "save_custom": 0,
+                    "custom_choice_button_text": "Add new choice"
+                },
+                {
+                    "key": "field_68757ec57e2a6",
+                    "label": "Vertical Alignment",
+                    "name": "vertical_alignment",
+                    "aria-label": "",
+                    "type": "button_group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "top": "Top",
+                        "middle": "Middle",
+                        "bottom": "Bottom",
+                        "items-stretch": "Stretch"
+                    },
+                    "default_value": "items-stretch",
+                    "return_format": "value",
+                    "allow_null": 0,
+                    "allow_in_bindings": 1,
+                    "layout": "horizontal"
+                },
+                {
+                    "key": "field_68757ec581d63",
+                    "label": "Spacing",
+                    "name": "spacing",
+                    "aria-label": "",
+                    "type": "button_group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "small": "Small",
+                        "medium": "Medium",
+                        "large": "Large"
+                    },
+                    "default_value": "small",
+                    "return_format": "value",
+                    "allow_null": 0,
+                    "allow_in_bindings": 1,
+                    "layout": "horizontal"
+                },
+                {
+                    "key": "field_68757ec585883",
+                    "label": "Spacing Top Desktop?",
+                    "name": "spacing_top_desktop",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "20",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 0,
+                    "allow_in_bindings": 1,
+                    "ui_on_text": "",
+                    "ui_off_text": "",
+                    "ui": 1
+                },
+                {
+                    "key": "field_68757ec5893c2",
+                    "label": "Spacing Bottom Desktop",
+                    "name": "spacing_bottom_desktop",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "20",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 0,
+                    "allow_in_bindings": 1,
+                    "ui_on_text": "",
+                    "ui_off_text": "",
+                    "ui": 1
+                },
+                {
+                    "key": "field_68757ec58cf1c",
+                    "label": "Spacing Top Mobile",
+                    "name": "spacing_top_mobile",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "20",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 0,
+                    "allow_in_bindings": 1,
+                    "ui_on_text": "",
+                    "ui_off_text": "",
+                    "ui": 1
+                },
+                {
+                    "key": "field_68757ec590959",
+                    "label": "Spacing Bottom Mobile",
+                    "name": "spacing_bottom_mobile",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "20",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 0,
+                    "allow_in_bindings": 1,
+                    "ui_on_text": "",
+                    "ui_off_text": "",
+                    "ui": 1
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/infotext"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "A general all purpose back & forth block that has a text section with buttons  and a background image. The order of columns is reversible",
+    "show_in_rest": 0,
+    "modified": 1753467638
+}

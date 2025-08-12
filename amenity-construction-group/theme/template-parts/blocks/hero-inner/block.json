@@ -1,0 +1,15 @@
+{
+    "name": "acf/heroinner",
+    "title": "Hero Inner Block",
+    "description": "A internal hero section with a background image and/or video, heading, description, and buttons.",
+    "category": "lazarus-design-team",
+    "icon": "welcome-view-site",
+    "keywords": ["hero inner", "banner inner", "intro internal"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "hero-inner.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+}

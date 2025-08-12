@@ -1,0 +1,15 @@
+{
+    "name": "acf/backforth-media",
+    "title": "Back & Forth Media",
+    "description": "A versatile back-and-forth content block that supports images, videos, and text sections with buttons. The column order is reversible for flexible layout options.",
+    "category": "lazarus-design-team",
+    "icon": "embed-generic",
+    "keywords": ["content block", "back and forth media", "media video and text"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "back-forth-media.php"
+    },
+    "supports": {
+        "anchor": true
+    }  
+}

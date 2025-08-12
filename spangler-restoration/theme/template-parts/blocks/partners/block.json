@@ -1,0 +1,22 @@
+{
+    "name": "acf/partners",
+    "title": "Partners",
+    "description": "A partners section with cta links.",
+    "style": [ "file:./partners.css" ],
+    "category": "lazarus-design-team",
+    "icon": "star-filled",
+    "keywords": ["partners", "partners cards", "partners cta"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "partners.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/spangler-restoration/theme/template-parts/blocks/partners/screenshot.png"
+        }
+    }    
+}

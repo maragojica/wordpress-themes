@@ -1,0 +1,22 @@
+{
+    "name": "acf/benefits",
+    "title": "Benefits",
+    "description": "A benefits section with a headline.",
+    "style": [ "file:./benefits.css" ],
+    "category": "lazarus-design-team",
+    "icon": "heart",
+    "keywords": ["benefits", "our benefits", "benefits cards"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "benefits.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/spangler-restoration/theme/template-parts/blocks/benefits/screenshot.png"
+        }
+    }    
+}

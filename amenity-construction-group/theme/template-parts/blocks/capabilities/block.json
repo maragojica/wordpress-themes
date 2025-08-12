@@ -1,0 +1,15 @@
+{
+    "name": "acf/capabilities",
+    "title": "Capabilities",
+    "description": "A capabilities list section.",
+    "category": "lazarus-design-team",
+    "icon": "chart-bar",
+    "keywords": ["content capabilities", "list", "info capabilities"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "capabilities.php"
+    },
+    "supports": {
+        "anchor": true
+    }  
+}

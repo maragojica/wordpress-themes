@@ -1,0 +1,15 @@
+{
+    "name": "acf/text",
+    "title": "Columns Text",
+    "description": "A general all purpose back & forth block that has a text section with buttons and a background image. The order of columns is reversible",
+    "category": "lazarus-design-team",
+    "icon": "columns",
+    "keywords": ["content block", "columns text", "text"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "columns-text.php"
+    },
+    "supports": {
+        "anchor": true
+    }   
+}

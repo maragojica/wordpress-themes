@@ -1,0 +1,22 @@
+{
+    "name": "acf/contact",
+    "title": "Contact Form",
+    "description": "Two columned contact form section",
+    "style": [ "file:./contact.css" ],
+    "category": "lazarus-design-team",
+    "icon": "feedback",
+    "keywords": ["contact form", "contact section", "contact us"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "contact.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/spangler-restoration/theme/template-parts/blocks/contact/screenshot.png"
+        }
+    }    
+}

@@ -1,0 +1,22 @@
+{
+    "name": "acf/process",
+    "title": "Process",
+    "description": "A process section with numbers.",
+    "style": [ "file:./process.css" ],
+    "category": "lazarus-design-team",
+    "icon": "image-filter",
+    "keywords": ["process", "process cards", "process cta"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "process.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/spangler-restoration/theme/template-parts/blocks/process/screenshot.png"
+        }
+    }    
+}

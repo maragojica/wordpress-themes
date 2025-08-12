@@ -1,0 +1,15 @@
+{
+    "name": "acf/listbrands",
+    "title": "List Brands",
+    "description": "A section with a a list of brands.",
+    "category": "lazarus-design-team",
+    "icon": "block-default",
+    "keywords": ["content brands", "content list brands", "logos"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "list-brands.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+}

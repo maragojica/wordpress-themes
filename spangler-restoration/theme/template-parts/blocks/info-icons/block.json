@@ -1,0 +1,22 @@
+{
+    "name": "acf/infoicons",
+    "title": "Info Icons",
+    "description": "A info icons section.",
+    "style": [ "file:./info-icons.css" ],
+    "category": "lazarus-design-team",
+    "icon": "excerpt-view",
+    "keywords": ["info icons", "icons", "icons cards"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "info-icons.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/spangler-restoration/theme/template-parts/blocks/info-icons/screenshot.png"
+        }
+    }    
+}

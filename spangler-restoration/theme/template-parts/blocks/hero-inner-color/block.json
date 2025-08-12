@@ -1,0 +1,22 @@
+{
+    "name": "acf/heroinnercolor",
+    "title": "Hero Inner Color Block",
+    "description": "A internal colored hero section with a background image and/or video, heading, description, and buttons.",
+    "style": [ "file:./hero-inner-color.css" ],
+    "category": "lazarus-design-team",
+    "icon": "welcome-view-site",
+    "keywords": ["hero inner color", "banner inner color", "intro"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "hero-inner-color.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/spangler-restoration/theme/template-parts/blocks/hero-inner-color/screenshot.png"
+        }
+    }    
+}

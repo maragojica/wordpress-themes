@@ -1,0 +1,22 @@
+{
+    "name": "acf/beforeafter",
+    "title": "Before & After",
+    "description": "A before-after slider section.",
+    "style": [ "file:./before-after.css" ],
+    "category": "lazarus-design-team",
+    "icon": "image-flip-horizontal",
+    "keywords": ["before after", "slider before after", "slider"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "before-after.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/spangler-restoration/theme/template-parts/blocks/before-after/screenshot.png"
+        }
+    }    
+}

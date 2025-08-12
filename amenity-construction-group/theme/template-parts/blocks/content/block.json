@@ -1,0 +1,15 @@
+{
+    "name": "acf/content",
+    "title": "Content",
+    "description": "A internal hero section with a background color and a heading.",
+    "category": "lazarus-design-team",
+    "icon": "format-aside",
+    "keywords": ["content block", "content text", "text"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "content.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+}

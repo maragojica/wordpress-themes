@@ -1,0 +1,22 @@
+{
+    "name": "acf/services",
+    "title": "Services",
+    "description": "A services section with cta links.",
+    "style": [ "file:./services.css" ],
+    "category": "lazarus-design-team",
+    "icon": "store",
+    "keywords": ["services", "services cards", "services cta"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "services.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/spangler-restoration/theme/template-parts/blocks/services/screenshot.png"
+        }
+    }    
+}

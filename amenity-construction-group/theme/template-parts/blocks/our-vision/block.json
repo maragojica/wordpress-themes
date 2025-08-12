@@ -1,0 +1,15 @@
+{
+    "name": "acf/our-vision",
+    "title": "Our Vision",
+    "description": "A our vision list section.",
+    "category": "lazarus-design-team",
+    "icon": "heart",
+    "keywords": ["content our vision", "list our vision", "info our vision"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "our-vision.php"
+    },
+    "supports": {
+        "anchor": true
+    }  
+}

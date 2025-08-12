@@ -1,0 +1,15 @@
+{
+    "name": "acf/infolist",
+    "title": "Info List",
+    "description": "A general all purpose info list that has a text section with headlines.",
+    "category": "lazarus-design-team",
+    "icon": "table-row-before",
+    "keywords": ["content block", "info list", "list"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "info-list.php"
+    },
+    "supports": {
+        "anchor": true
+    }   
+}

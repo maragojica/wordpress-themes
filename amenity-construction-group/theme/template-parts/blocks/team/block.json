@@ -1,0 +1,15 @@
+{
+    "name": "acf/team",
+    "title": "Our Team",
+    "description": "A team member section with a headline.",
+    "category": "lazarus-design-team",
+    "icon": "businessperson",
+    "keywords": ["team", "team members", "bio"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "team.php"
+    },
+    "supports": {
+        "anchor": true
+    }  
+}

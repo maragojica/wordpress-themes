@@ -1,0 +1,22 @@
+{
+    "name": "acf/counters",
+    "title": "Counters",
+    "description": "A section with headings and counters.",
+    "style": [ "file:./counters.css" ],
+    "category": "lazarus-design-team",
+    "icon": "list-view",
+    "keywords": ["content counters", "numbers", "counters info"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "counters.php"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "attributes": {
+        "previewImage": {
+            "type": "string",
+            "default": "/wp-content/themes/spangler-restoration/theme/template-parts/blocks/counters/screenshot.png"
+        }
+    }    
+}
