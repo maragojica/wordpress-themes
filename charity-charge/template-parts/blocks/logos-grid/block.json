@@ -1,0 +1,16 @@
+{
+    "name": "acf/logosgrid",
+    "title": "Logos Grid",
+    "description": "A block to showcase nonprofit logos in a grid layout.",
+    "category": "charity-charge",
+    "icon": "grid-view",
+    "keywords": ["logos", "nonprofit logos", "logos grid"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "logos-grid.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+  
+}

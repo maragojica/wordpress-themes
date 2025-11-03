@@ -1,0 +1,16 @@
+{
+    "name": "acf/featured-resources",
+    "title": "Featured Resources",
+    "description": "A block to showcase featured nonprofit resources.",  
+    "category": "charity-charge",
+    "icon": "table-row-before",
+    "keywords": ["featured resources", "nonprofit resources", "our resources"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "featured-resources.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+  
+}

@@ -1,0 +1,16 @@
+{
+    "name": "acf/backforthhero",
+    "title": "Back & Forth Hero Block",
+    "description": "A hero section with a background media, heading, description, and buttons.",  
+    "category": "charity-charge",
+    "icon": "welcome-view-site",
+    "keywords": ["back & forth hero", "banner", "intro"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "back-forth-hero.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+  
+}

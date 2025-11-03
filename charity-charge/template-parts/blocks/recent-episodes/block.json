@@ -1,0 +1,16 @@
+{
+    "name": "acf/recent-episodes",
+    "title": "Recent episodes",
+    "description": "A block to showcase recent episodes.",
+    "category": "charity-charge",
+    "icon": "microphone",
+    "keywords": ["recent episodes", "podcasts nonprofit resources", "our podcasts"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "recent-episodes.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+  
+}

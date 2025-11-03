@@ -1,0 +1,16 @@
+{
+    "name": "acf/credit-card",
+    "title": "Credit Card",
+    "description": "A block to showcase credit card information.",
+    "category": "charity-charge",
+    "icon": "align-full-width",
+    "keywords": ["credit card", "payment", "donation"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "credit-card.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+  
+}

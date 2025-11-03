@@ -1,0 +1,16 @@
+{
+    "name": "acf/content",
+    "title": "Content Block",
+    "description": "A block to showcase content info.",
+    "category": "charity-charge",
+    "icon": "edit",
+    "keywords": ["content", "content info", "logos grid"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "content.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+  
+}

@@ -1,0 +1,16 @@
+{
+    "name": "acf/episodes",
+    "title": "Episodes List",
+    "description": "A block to showcase episodes in a list layout.",
+    "category": "charity-charge",
+    "icon": "controls-play",
+    "keywords": ["episodes", "episode list", "episodes code"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "episodes.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+  
+}

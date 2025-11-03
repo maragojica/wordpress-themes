@@ -1,0 +1,16 @@
+{
+    "name": "acf/herointernal",
+    "title": "Hero Internal Block",
+    "description": "A internal hero section with a background color, heading, description, and buttons.",
+    "category": "charity-charge",
+    "icon": "welcome-view-site",
+    "keywords": ["hero internal", "banner", "intro"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "hero-internal.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+  
+}

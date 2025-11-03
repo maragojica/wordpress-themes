@@ -1,0 +1,16 @@
+{
+    "name": "acf/backforthcontact",
+    "title": "Back & Forth Contact Block",
+    "description": "A contact section with a background media, heading, description, and buttons.",  
+    "category": "charity-charge",
+    "icon": "phone",
+    "keywords": ["back & forth contact", "contact", "socials"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "back-forth-contact.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+  
+}

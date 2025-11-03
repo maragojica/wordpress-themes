@@ -1,0 +1,16 @@
+{
+    "name": "acf/resources-by-category",
+    "title": "Resources by Category",
+    "description": "A block to showcase nonprofit resources filtered by category.",
+    "category": "charity-charge",
+    "icon": "editor-table",
+    "keywords": ["resources by category", "nonprofit resources", "our resources"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "resources-by-category.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+  
+}

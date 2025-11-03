@@ -1,0 +1,16 @@
+{
+    "name": "acf/team",
+    "title": "Team Section",
+    "description": "A block to showcase nonprofit team members.",
+    "category": "charity-charge",
+    "icon": "businessperson",
+    "keywords": ["team", "nonprofit team", "team section"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "team.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+  
+}

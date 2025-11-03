@@ -1,0 +1,11 @@
+/* admin-style.css */
+.wp-block,
+.acf-fields.-left,
+.postbox,
+.acf-postbox,
+.edit-post-visual-editor__post-title-wrapper,
+.interface-interface-skeleton__content {
+    max-width: 80rem !important;
+    width: 100%;
+    margin: 0 auto;
+}

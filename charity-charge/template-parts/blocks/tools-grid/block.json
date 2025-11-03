@@ -1,0 +1,16 @@
+{
+    "name": "acf/toolsgrid",
+    "title": "Tools Grid",
+    "description": "A block to showcase nonprofit tools in a grid layout.",
+    "category": "charity-charge",
+    "icon": "screenoptions",
+    "keywords": ["tools", "nonprofit tools", "tools grid"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "tools-grid.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+  
+}

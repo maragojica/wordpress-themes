@@ -1,0 +1,16 @@
+{
+    "name": "acf/globalcharityshow",
+    "title": "Global Section Charity Show",
+    "description": "A global block displaying charity show section banner.",
+    "category": "charity-charge",
+    "icon": "admin-site",
+    "keywords": ["global section", "global charity show", "charity"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "global-charity-show.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+  
+}

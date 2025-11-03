@@ -1,0 +1,16 @@
+{
+    "name": "acf/backforthform",
+    "title": "Back & Forth Form Block",
+    "description": "A back and forth section with a form, heading, description and buttons.",
+    "category": "charity-charge",
+    "icon": "email",
+    "keywords": ["back & forth form", "banner", "intro"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "back-forth-form.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+  
+}

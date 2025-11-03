@@ -1,0 +1,16 @@
+{
+    "name": "acf/services",
+    "title": "Services",
+    "description": "A block to showcase nonprofit services.",  
+    "category": "charity-charge",
+    "icon": "screenoptions",
+    "keywords": ["services", "nonprofit services", "our services"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "services.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+  
+}

@@ -1,0 +1,16 @@
+{
+    "name": "acf/topics",
+    "title": "Topics",
+    "description": "A block displaying card topics in a stylish layout.",
+    "category": "charity-charge",
+    "icon": "networking",
+    "keywords": ["card topics", "style topics", "charity"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "topics.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+  
+}

@@ -1,0 +1,16 @@
+{
+    "name": "acf/platformgrid",
+    "title": "Platform Logos Grid",
+    "description": "A block to showcase platform logos in a grid layout.",
+    "category": "charity-charge",
+    "icon": "grid-view",
+    "keywords": ["platforms", "platform logos", "logos grid"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "platforms-grid.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+  
+}

@@ -1,0 +1,16 @@
+{
+    "name": "acf/resources-slider",
+    "title": "Resources Slider",
+    "description": "A block to showcase nonprofit resources.",  
+    "category": "charity-charge",
+    "icon": "embed-photo",
+    "keywords": ["resources slider", "nonprofit resources slider", "our resources"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "resources-slider.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+  
+}

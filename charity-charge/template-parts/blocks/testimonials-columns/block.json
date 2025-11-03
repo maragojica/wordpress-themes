@@ -1,0 +1,16 @@
+{
+    "name": "acf/testimonials-columns",
+    "title": "Testimonials Columns",
+    "description": "A block to showcase nonprofit testimonials.",
+    "category": "charity-charge",
+    "icon": "format-quote",
+    "keywords": ["testimonials", "nonprofit testimonials", "testimonials columns"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "testimonials-columns.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+  
+}

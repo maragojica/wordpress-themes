@@ -1,0 +1,16 @@
+{
+    "name": "acf/faqstabs",
+    "title": "FAQs Tabs",
+    "description": "A block for displaying frequently asked questions in tabs.",
+    "category": "charity-charge",
+    "icon": "lightbulb",
+    "keywords": ["faqs tabs", "questions", "answers", "tabs"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "faqs-tabs.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+  
+}

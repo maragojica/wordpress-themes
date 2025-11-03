@@ -1,0 +1,16 @@
+{
+    "name": "acf/backforthlist",
+    "title": "Back & Forth List Block",
+    "description": "A back and forth section with a media, heading, description, a list of items and buttons.",
+    "category": "charity-charge",
+    "icon": "align-pull-left",
+    "keywords": ["back & forth list", "banner", "intro"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "back-forth-list.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+  
+}

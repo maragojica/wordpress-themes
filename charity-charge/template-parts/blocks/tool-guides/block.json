@@ -1,0 +1,16 @@
+{
+    "name": "acf/tool-guides",
+    "title": "Tool Guides",
+    "description": "A block to showcase tool guides for nonprofit resources.",
+    "category": "charity-charge",
+    "icon": "layout",
+    "keywords": ["tool guides", "nonprofit resources", "our resources"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "tool-guides.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+  
+}

@@ -1,0 +1,132 @@
+/* Color utility classes: passive, hover, focus */
+.color-white      { color: var(--color-white); }
+.color-off-white  { color: var(--color-off-white); }
+.color-black      { color: var(--color-black); }
+.color-off-black  { color: var(--color-off-black); }
+.color-orange     { color: var(--color-orange); }
+.color-blue-light { color: var(--color-blue-light); }
+.color-blue-dark  { color: var(--color-blue-dark); }
+.color-gray       { color: var(--color-gray); }
+.color-gray-medium{ color: var(--color-gray-medium); }
+.color-gray-off   { color: var(--color-gray-off); }
+.color-dark-gray  { color: var(--color-dark-gray); }
+.color-neutral    { color: var(--color-neutral); }
+.color-neutral-secondary { color: var(--color-neutral-secondary); }
+.color-foreground { color: var(--color-foreground); }
+.color-foreground-medium { color: var(--color-foreground-medium); }
+.color-foreground-darker { color: var(--color-foreground-darker); }
+.color-accent     { color: var(--color-accent); }
+.color-accent-light { color: var(--color-accent-light); }
+.color-accent-special-light { color: var(--color-accent-special-light); }
+.color-accent-darker { color: var(--color-accent-darker); }
+.color-line { color: var(--color-line); }
+.color-line-footer { color: var(--color-line-footer); }
+.color-blue-darker { color: var(--color-blue-darker); }
+.color-dark { color: var(--color-dark); }
+.color-darker { color: var(--color-darker); }
+.color-accent-extra-light { color: var(--color-accent-extra-light); } 
+.color-menu-footer { color: var(--color-menu-footer); }
+.color-primary { color: var(--color-primary); }
+.color-secondary { color: var(--color-secondary); }
+
+/* Background utility classes */
+.bg-white      { background-color: var(--color-white); }
+.bg-off-white  { background-color: var(--color-off-white); }
+.bg-black      { background-color: var(--color-black); }
+.bg-off-black  { background-color: var(--color-off-black); }
+.bg-orange     { background-color: var(--color-orange); }
+.bg-blue-light { background-color: var(--color-blue-light); }
+.bg-blue-dark  { background-color: var(--color-blue-dark); }
+.bg-neutral    { background-color: var(--color-neutral); }
+.bg-neutral-secondary { background-color: var(--color-neutral-secondary); }
+.bg-gray       { background-color: var(--color-gray); }
+.bg-gray-off   { background-color: var(--color-gray-off); }
+.bg-gray-medium { background-color: var(--color-gray-medium); }
+.bg-dark-gray  { background-color: var(--color-dark-gray); }
+.bg-foreground { background-color: var(--color-foreground); }
+.bg-foreground-medium { background-color: var(--color-foreground-medium); }
+.bg-foreground-darker { background-color: var(--color-foreground-darker); }
+.bg-accent     { background-color: var(--color-accent); }
+.bg-accent-light { background-color: var(--color-accent-light); }
+.bg-accent-special-light { background-color: var(--color-accent-special-light); }
+.bg-accent-dark { background-color: var(--color-accent-dark); }
+.bg-accent-darker { background-color: var(--color-accent-darker); }
+.bg-line { background-color: var(--color-line); }
+.bg-line-footer { background-color: var(--color-line-footer); }
+.bg-blue-darker    { background-color: var(--color-blue-darker); }
+.bg-dark { background-color: var(--color-dark); }
+.bg-darker { background-color: var(--color-darker); }
+.bg-accent-extra-light { background-color: var(--color-accent-extra-light); }
+.bg-menu-footer { background-color: var(--color-menu-footer); }
+.bg-secondary { background-color: var(--color-secondary); }
+
+
+
+/* Hover and focus states */
+.color-white:hover, .color-white:focus      { color: var(--color-white); }
+.color-off-white:hover, .color-off-white:focus { color: var(--color-off-white); }
+.color-black:hover, .color-black:focus      { color: var(--color-black); }
+.color-off-black:hover, .color-off-black:focus { color: var(--color-off-black); }
+.color-orange:hover, .color-orange:focus,
+.color-orange-h:hover, .color-orange-h:focus    { color: var(--color-orange) !important; }
+.color-blue-light:hover, .color-blue-light:focus { color: var(--color-blue-light); }
+.color-blue-dark:hover, .color-blue-dark:focus   { color: var(--color-blue-dark); }
+.color-gray:hover, .color-gray:focus       { color: var(--color-gray); }
+.color-gray-off:hover, .color-gray-off:focus { color: var(--color-gray-off); }
+.color-gray-medium:hover, .color-gray-medium:focus { color: var(--color-gray-medium); }
+.color-neutral:hover, .color-neutral:focus { color: var(--color-neutral); }
+.color-neutral-secondary:hover, .color-neutral-secondary:focus { color: var(--color-neutral-secondary); }
+.color-dark-gray:hover, .color-dark-gray:focus { color: var(--color-dark-gray); }
+.color-foreground:hover, .color-foreground:focus { color: var(--color-foreground); }
+.color-foreground-medium:hover, .color-foreground-medium:focus { color: var(--color-foreground-medium); }
+.color-foreground-darker:hover, .color-foreground-darker:focus { color: var(--color-foreground-darker); }
+.color-accent:hover, .color-accent:focus   { color: var(--color-accent); }
+.color-accent-light:hover, .color-accent-light:focus { color: var(--color-accent-light); }
+.color-accent-special-light:hover, .color-accent-special-light:focus { color: var(--color-accent-special-light); }
+.color-accent-dark:hover, .color-accent-dark:focus { color: var(--color-accent-dark); }
+.color-line:hover, .color-line:focus { color: var(--color-line); }
+.color-line-footer:hover, .color-line-footer:focus { color: var(--color-line-footer); }
+.color-blue-darker:hover, .color-blue-darker:focus { color: var(--color-blue-darker); }
+.color-accent-darker:hover, .color-accent-darker:focus { color: var(--color-accent-darker); }
+.color-dark:hover, .color-dark:focus { color: var(--color-dark); }
+.color-darker:hover, .color-darker:focus { color: var(--color-darker); }
+.color-accent-extra-light:hover, .color-accent-extra-light:focus { color: var(--color-accent-extra-light); }
+.color-menu-footer:hover, .color-menu-footer:focus { color: var(--color-menu-footer); }
+
+.bg-white:hover, .bg-white:focus      { background-color: var(--color-white); }
+.bg-off-white:hover, .bg-off-white:focus { background-color: var(--color-off-white); }
+.bg-black:hover, .bg-black:focus      { background-color: var(--color-black); }
+.bg-off-black:hover, .bg-off-black:focus { background-color: var(--color-off-black); }
+.bg-orange:hover, .bg-orange:focus    { background-color: var(--color-orange); }
+.bg-neutral:hover, .bg-neutral:focus    { background-color: var(--color-neutral); }
+.bg-neutral-secondary:hover, .bg-neutral-secondary:focus { background-color: var(--color-neutral-secondary); }.bg-blue-light:hover, .bg-blue-light:focus { background-color: var(--color-blue-light); }
+.bg-blue-dark:hover, .bg-blue-dark:focus   { background-color: var(--color-blue-dark); }
+.bg-gray:hover, .bg-gray:focus       { background-color: var(--color-gray); }
+.bg-gray-off:hover, .bg-gray-off:focus { background-color: var(--color-gray-off); }
+.bg-gray-medium:hover, .bg-gray-medium:focus { background-color: var(--color-gray-medium); }
+.bg-dark-gray:hover, .bg-dark-gray:focus { background-color: var(--color-dark-gray); }
+.bg-foreground:hover, .bg-foreground:focus { background-color: var(--color-foreground); }
+.bg-foreground-medium:hover, .bg-foreground-medium:focus { background-color: var(--color-foreground-medium); }
+.bg-foreground-darker:hover, .bg-foreground-darker:focus { background-color: var(--color-foreground-darker); }
+.bg-accent:hover, .bg-accent:focus   { background-color: var(--color-accent); }
+.bg-accent-light:hover, .bg-accent-light:focus { background-color: var(--color-accent-light); }
+.bg-accent-special-light:hover, .bg-accent-special-light:focus { background-color: var(--color-accent-special-light); }
+.bg-accent-dark:hover, .bg-accent-dark:focus { background-color: var(--color-accent-dark); }
+.bg-line:hover, .bg-line:focus { background-color: var(--color-line); }
+.bg-line-footer:hover, .bg-line-footer:focus { background-color: var(--color-line-footer); }
+.bg-blue-darker:hover, .bg-blue-darker:focus      { background-color: var(--color-blue-darker); }
+.bg-accent-darker:hover, .bg-accent-darker:focus { background-color: var(--color-accent-darker); }
+.bg-dark:hover, .bg-dark:focus { background-color: var(--color-dark); }
+.bg-darker:hover, .bg-darker:focus { background-color: var(--color-darker); }
+.bg-accent-extra-light:hover, .bg-accent-extra-light:focus { background-color: var(--color-accent-extra-light); }
+.bg-menu-footer:hover, .bg-menu-footer:focus { background-color: var(--color-menu-footer); }
+
+.bg-sharp-gradient {
+  background: linear-gradient(to left, #f5f5f5 0%, #f5f5f5 33%, #fff 33%, #fff 100%);
+}
+.bg-sharp-blue {
+  background: linear-gradient(to bottom, #004F86 0%, #004F86 calc(100% - 114px), #fff calc(100% - 114px), #fff 100%);
+}
+.bg-sharp-blue.bg-style-medium{
+  background: linear-gradient(to bottom, #004F86 0%, #004F86 calc(100% - 150px), #fff calc(100% - 150px), #fff 100%);
+}

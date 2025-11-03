@@ -1,0 +1,16 @@
+{
+    "name": "acf/cardiconsstyletwo",
+    "title": "Card Icons Style Two",
+    "description": "A block displaying card icons in a stylish layout.",
+    "category": "charity-charge",
+    "icon": "excerpt-view",
+    "keywords": ["card icons", "style two", "charity"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "cards-icons-style-two.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+  
+}
