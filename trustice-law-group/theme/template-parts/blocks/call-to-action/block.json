@@ -1,0 +1,15 @@
+{
+    "name": "acf/get-involved",
+    "title": "Call to Action",
+    "description": "A versatile call to action block with a headline and buttons.",
+    "category": "trustice-law-group",
+    "icon": "smiley",
+    "keywords": ["content block", "call to action", "information"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "call-to-action.php"
+    },
+    "supports": {
+        "anchor": true
+    } 
+}

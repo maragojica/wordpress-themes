@@ -1,0 +1,15 @@
+{
+    "name": "acf/get-involved",
+    "title": "Get Involved",
+    "description": "A versatile get involved block with a headline and buttons.",
+    "category": "virginia-interfaith",
+    "icon": "smiley",
+    "keywords": ["content block", "get involved", "information"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "get-involved.php"
+    },
+    "supports": {
+        "anchor": true
+    } 
+}

@@ -1,0 +1,15 @@
+{
+    "name": "acf/newsbycategory",
+    "title": "News By Category",
+    "description": "A block to display news articles related to a category.",
+    "category": "virginia-interfaith",
+    "icon": "feedback",
+    "keywords": ["content block", "news by category", "media"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "news-by-category.php"
+    },
+    "supports": {
+        "anchor": true
+    } 
+}

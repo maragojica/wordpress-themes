@@ -1,0 +1,8 @@
+<svg width="526" height="594" viewBox="-27 75 526 594" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<mask id="ellipseMask" maskUnits="userSpaceOnUse" x="-27" y="75" width="526" height="594">
+<ellipse cx="236.036" cy="371.869" rx="257.254" ry="301.477" transform="rotate(20.1511 236.036 371.869)" fill="white"/>
+</mask>
+</defs>
+<rect x="-27" y="75" width="526" height="594" fill="black" mask="url(#ellipseMask)"/>
+</svg>

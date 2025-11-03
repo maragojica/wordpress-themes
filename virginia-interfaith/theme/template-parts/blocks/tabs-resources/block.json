@@ -1,0 +1,15 @@
+{
+    "name": "acf/tabs-resources",
+    "title": "Tabs Resources",
+    "description": "A block to display tabs resources with a cta.",
+    "category": "virginia-interfaith",
+    "icon": "block-default",
+    "keywords": ["content block", "resources", "media"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "tabs-resources.php"
+    },
+    "supports": {
+        "anchor": true
+    } 
+}

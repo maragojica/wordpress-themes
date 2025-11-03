@@ -1,0 +1,15 @@
+{
+    "name": "acf/hero",
+    "title": "Hero",
+    "description": "A hero section with a background image and/or video, heading, description, and buttons.",
+    "category": "smarther",
+    "icon": "welcome-view-site",
+    "keywords": ["hero", "banner", "intro"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "hero.php"
+    },
+    "supports": {
+        "anchor": true
+    } 
+}

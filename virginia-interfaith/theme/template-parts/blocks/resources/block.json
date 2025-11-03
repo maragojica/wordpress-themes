@@ -1,0 +1,15 @@
+{
+    "name": "acf/resources",
+    "title": "Resources",
+    "description": "A block to display resources with a cta.",
+    "category": "virginia-interfaith",
+    "icon": "screenoptions",
+    "keywords": ["content block", "resources", "media"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "resources.php"
+    },
+    "supports": {
+        "anchor": true
+    } 
+}

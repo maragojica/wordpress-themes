@@ -1,0 +1,15 @@
+{
+    "name": "acf/openpositions",
+    "title": "Opens Positions",
+    "description": "A section with opens positions.",
+    "category": "sphinx",
+    "icon": "screenoptions",
+    "keywords": ["info", "open positions", "call to action info"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "open-positions.php"
+    },
+    "supports": {
+        "anchor": true
+    }  
+}

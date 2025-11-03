@@ -1,0 +1,15 @@
+{
+    "name": "acf/hero",
+    "title": "Hero Banner",
+    "description": "A versatile hero banner full width block that supports images and text sections with buttons.",
+    "category": "trustice-law-group",
+    "icon": "welcome-view-site",
+    "keywords": ["content block", "hero", "main hero text"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "hero.php"
+    },
+    "supports": {
+        "anchor": true
+    } 
+}

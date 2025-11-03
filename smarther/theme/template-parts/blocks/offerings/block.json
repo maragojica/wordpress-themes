@@ -1,0 +1,15 @@
+{
+    "name": "acf/offerings",
+    "title": "Offerings",
+    "description": "A block to display offerings with a cta.",
+    "category": "smarther",
+    "icon": "forms",
+    "keywords": ["content block", "offerings", "media"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "offerings.php"
+    },
+    "supports": {
+        "anchor": true
+    } 
+}

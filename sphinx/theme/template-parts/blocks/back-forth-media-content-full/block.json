@@ -1,0 +1,15 @@
+{
+    "name": "acf/backforth-mediacontentfull",
+    "title": "Back & Forth Media Content Full",
+    "description": "A versatile back-and-forth content block that supports images, videos, and text sections with buttons. The column order is reversible for flexible layout options.",
+    "category": "sphinx",
+    "icon": "align-left",
+    "keywords": ["content block", "back and forth media content", "media video and text"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "back-forth-media-content-full.php"
+    },
+    "supports": {
+        "anchor": true
+    } 
+}

@@ -1,0 +1,15 @@
+{
+    "name": "acf/herointernal",
+    "title": "Hero Internal",
+    "description": "A hero internal section with a background image and/or video, heading, description, and buttons.",
+    "category": "sphinx",
+    "icon": "welcome-view-site",
+    "keywords": ["hero internal", "banner internal", "intro"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "hero-internal.php"
+    },
+    "supports": {
+        "anchor": true
+    } 
+}

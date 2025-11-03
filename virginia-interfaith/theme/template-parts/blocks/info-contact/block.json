@@ -1,0 +1,15 @@
+{
+    "name": "acf/info-contact",
+    "title": "Info Contact",
+    "description": "A versatile info contact block with a headline and buttons.",
+    "category": "virginia-interfaith",
+    "icon": "thumbs-up",
+    "keywords": ["content block", "info contact", "information"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "info-contact.php"
+    },
+    "supports": {
+        "anchor": true
+    } 
+}

@@ -1,0 +1,15 @@
+{
+    "name": "acf/video",
+    "title": "Video",
+    "description": "A versatile video block that supports various video sources and layouts.",
+    "category": "smarther",
+    "icon": "video-alt3",
+    "keywords": ["content block", "video", "media"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "video.php"
+    },
+    "supports": {
+        "anchor": true
+    } 
+}

@@ -1,0 +1,15 @@
+{
+    "name": "acf/testimonials",
+    "title": "Testimonials",
+    "description": "A testimonials section with a slider and a headline.",
+    "category": "trustice-law-group",
+    "icon": "format-status",
+    "keywords": ["testimonials", "feedback", "reviews"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "testimonials.php"
+    },
+    "supports": {
+        "anchor": true
+    } 
+}

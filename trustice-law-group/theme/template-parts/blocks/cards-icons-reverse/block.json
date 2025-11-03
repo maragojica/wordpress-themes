@@ -1,0 +1,15 @@
+{
+    "name": "acf/cardsiconsreverse",
+    "title": "Cards Icons Reverse",
+    "description": "A section with cards and icons.",
+    "category": "trustice-law-group",
+    "icon": "screenoptions",
+    "keywords": ["info", "cards icons", "call to action info"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "cards-icons-reverse.php"
+    },
+    "supports": {
+        "anchor": true
+    }  
+}

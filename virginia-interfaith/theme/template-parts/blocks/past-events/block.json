@@ -1,0 +1,15 @@
+{
+    "name": "acf/pastevents",
+    "title": "Past Events",
+    "description": "A block to display past events with a cta.",
+    "category": "virginia-interfaith",
+    "icon": "calendar",
+    "keywords": ["content block", "past events", "media"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "past-events.php"
+    },
+    "supports": {
+        "anchor": true
+    } 
+}

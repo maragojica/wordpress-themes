@@ -1,0 +1,15 @@
+{
+    "name": "acf/upcomingevents",
+    "title": "Upcoming Events",
+    "description": "A block to display upcoming events with a cta.",
+    "category": "smarther",
+    "icon": "calendar",
+    "keywords": ["content block", "upcoming events", "media"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "upcoming-events.php"
+    },
+    "supports": {
+        "anchor": true
+    } 
+}

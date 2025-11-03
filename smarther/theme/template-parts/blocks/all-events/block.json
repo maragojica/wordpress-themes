@@ -1,0 +1,15 @@
+{
+    "name": "acf/allevents",
+    "title": "All Events",
+    "description": "A block to display all events with a cta.",
+    "category": "smarther",
+    "icon": "calendar",
+    "keywords": ["content block", "all events", "media"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "all-events.php"
+    },
+    "supports": {
+        "anchor": true
+    } 
+}

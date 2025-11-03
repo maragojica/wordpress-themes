@@ -1,0 +1,15 @@
+{
+    "name": "acf/resources",
+    "title": "Resources",
+    "description": "A section with resources and buttons.",
+    "category": "trustice-law-group",
+    "icon": "image-filter",
+    "keywords": ["info", "resources", "call to action info"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "resources.php"
+    },
+    "supports": {
+        "anchor": true
+    }  
+}

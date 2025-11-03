@@ -1,0 +1,15 @@
+{
+    "name": "acf/newspress",
+    "title": "News Press",
+    "description": "A news press section with a background image and/or video, heading, description, and buttons.",
+    "category": "sphinx",
+    "icon": "book",
+    "keywords": ["news press", "banner internal", "intro"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "news-press.php"
+    },
+    "supports": {
+        "anchor": true
+    } 
+}

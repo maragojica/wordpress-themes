@@ -1,0 +1,15 @@
+{
+    "name": "acf/give",
+    "title": "Give",
+    "description": "A versatile give block that supports images, videos, and text sections with buttons.",
+    "category": "virginia-interfaith",
+    "icon": "image-filter",
+    "keywords": ["content block", "give", "information"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "give.php"
+    },
+    "supports": {
+        "anchor": true
+    } 
+}

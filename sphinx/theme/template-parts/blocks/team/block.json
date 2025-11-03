@@ -1,0 +1,15 @@
+{
+    "name": "acf/team",
+    "title": "Team",
+    "description": "A team members section with a description and headline.",
+    "category": "sphinx",
+    "icon": "businessperson",
+    "keywords": ["team member", "cards team", "leadership info"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "team.php"
+    },
+    "supports": {
+        "anchor": true
+    }  
+}

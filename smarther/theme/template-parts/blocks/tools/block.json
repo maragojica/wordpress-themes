@@ -1,0 +1,15 @@
+{
+    "name": "acf/tools",
+    "title": "Tools",
+    "description": "A block to display tools with a cta.",
+    "category": "smarther",
+    "icon": "screenoptions",
+    "keywords": ["content block", "tools", "media"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "tools.php"
+    },
+    "supports": {
+        "anchor": true
+    } 
+}

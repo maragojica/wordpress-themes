@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="531" height="532" viewBox="0 0 531 532" fill="none">
+  <defs>
+    <mask id="circleMask" maskUnits="userSpaceOnUse" x="0" y="0" width="531" height="532">
+      <circle cx="265.5" cy="266" r="266" fill="white"/>
+    </mask>
+  </defs>
+  
+  <rect x="0" y="0" width="531" height="532" fill="black" mask="url(#circleMask)"/>
+</svg>

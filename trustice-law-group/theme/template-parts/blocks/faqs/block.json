@@ -1,0 +1,15 @@
+{
+    "name": "acf/faqs",
+    "title": "FAQs",
+    "description": "A section for frequently asked questions.",
+    "category": "trustice-law-group",
+    "icon": "megaphone",
+    "keywords": ["faq", "questions", "answers"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "faqs.php"
+    },
+    "supports": {
+        "anchor": true
+    } 
+}

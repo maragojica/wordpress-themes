@@ -1,0 +1,15 @@
+{
+    "name": "acf/insights-filter",
+    "title": "Insights Filter",
+    "description": "A insights-filter with category filters section with a load more.",
+    "category": "trustice-law-group",
+    "icon": "filter",
+    "keywords": ["portfolios", "filters portfolios", "portfolios list"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "insights-filter.php"
+    },
+    "supports": {
+        "anchor": true
+    }  
+}

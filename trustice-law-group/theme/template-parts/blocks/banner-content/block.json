@@ -1,0 +1,15 @@
+{
+    "name": "acf/banner-content",
+    "title": "Banner Content",
+    "description": "A versatile banner content full width block that supports images and text sections with buttons. The column order is reversible for flexible layout options.",
+    "category": "trustice-law-group",
+    "icon": "align-full-width",
+    "keywords": ["content block", "back and forth full", "media video and text"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "banner-content.php"
+    },
+    "supports": {
+        "anchor": true
+    } 
+}

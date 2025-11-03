@@ -1,0 +1,15 @@
+{
+    "name": "acf/insights",
+    "title": "Insights",
+    "description": "A block to display insights articles with a cta.",
+    "category": "trustice-law-group",
+    "icon": "welcome-write-blog",
+    "keywords": ["content block", "insights", "media"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "insights.php"
+    },
+    "supports": {
+        "anchor": true
+    } 
+}

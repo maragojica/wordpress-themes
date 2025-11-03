@@ -1,0 +1,15 @@
+{
+    "name": "acf/content",
+    "title": "Content",
+    "description": "A content section for Single Pages.",
+    "category": "sphinx",
+    "icon": "welcome-write-blog",
+    "keywords": ["info", "content", "call to content"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "content.php"
+    },
+    "supports": {
+        "anchor": true
+    }  
+}

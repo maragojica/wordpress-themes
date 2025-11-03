@@ -1,0 +1,15 @@
+{
+    "name": "acf/items-list",
+    "title": "Items List",
+    "description": "A versatile items list block that supports images, videos, and text sections with buttons.",
+    "category": "virginia-interfaith",
+    "icon": "editor-ul",
+    "keywords": ["content block", "items list", "information"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "items-list.php"
+    },
+    "supports": {
+        "anchor": true
+    } 
+}

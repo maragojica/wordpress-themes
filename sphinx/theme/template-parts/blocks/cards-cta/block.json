@@ -1,0 +1,15 @@
+{
+    "name": "acf/cardscta",
+    "title": "Cards CTA",
+    "description": "A call to action cards section with a description and buttons.",
+    "category": "sphinx",
+    "icon": "columns",
+    "keywords": ["info", "cards cta", "call to action info"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "cards-cta.php"
+    },
+    "supports": {
+        "anchor": true
+    }  
+}

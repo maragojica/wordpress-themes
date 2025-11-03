@@ -1,0 +1,15 @@
+{
+    "name": "acf/news",
+    "title": "News",
+    "description": "A block to display news articles with a cta.",
+    "category": "virginia-interfaith",
+    "icon": "welcome-write-blog",
+    "keywords": ["content block", "news", "media"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "news.php"
+    },
+    "supports": {
+        "anchor": true
+    } 
+}

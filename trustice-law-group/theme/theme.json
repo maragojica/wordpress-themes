@@ -1,0 +1,69 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "background",
+					"color": "#ffffff",
+					"name": "Background"
+				},
+				{
+					"slug": "foreground",
+					"color": "#3E0F28",
+					"name": "Foreground"
+				},
+				{
+					"slug": "primary",
+					"color": "#5B1A37",
+					"name": "Primary"
+				},
+				{
+					"slug": "secondary",
+					"color": "#C79A4A",
+					"name": "Secondary"
+				},
+				{
+					"slug": "tertiary",
+					"color": "#1B585F",
+					"name": "Tertiary"
+				},
+				{
+					"slug": "quaternary",
+					"color": "#123747",
+					"name": "Quaternary"
+				},
+				{
+					"slug": "quinary",
+					"color": "#5E3465",
+					"name": "Quinary"
+				},
+				{
+					"slug": "action",
+					"color": "#1b5860",
+					"name": "Action"
+				},
+				{
+					"slug": "ada-action",
+					"color": "#856731",
+					"name": "ADA Action"
+				},
+				{
+					"slug": "accent",
+					"color": "#F3E2D8",
+					"name": "Accent"
+				},
+				{
+					"slug": "accent-light",
+					"color": "#FAF3EE",
+					"name": "Accent"
+				}
+			]
+		},
+		"layout": {
+			"contentSize": "81.25rem",
+			"wideSize": "89.375rem" 
+		}
+	}
+}

@@ -1,0 +1,15 @@
+{
+    "name": "acf/cardsicons",
+    "title": "Cards Icons",
+    "description": "A section with cards and icons.",
+    "category": "virginia-interfaith",
+    "icon": "screenoptions",
+    "keywords": ["info", "cards icons", "call to action info"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "cards-icons.php"
+    },
+    "supports": {
+        "anchor": true
+    }  
+}

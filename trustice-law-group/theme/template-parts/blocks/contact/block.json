@@ -1,0 +1,15 @@
+{
+    "name": "acf/contactform",
+    "title": "Contact",
+    "description": "A versatile contact block that supports a contact forms and info.",
+    "category": "trustice-law-group",
+    "icon": "feedback",
+    "keywords": ["content block", "contact", "form"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "contact.php"
+    },
+    "supports": {
+        "anchor": true
+    } 
+}

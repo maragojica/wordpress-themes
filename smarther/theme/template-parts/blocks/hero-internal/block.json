@@ -1,0 +1,15 @@
+{
+    "name": "acf/herointernal",
+    "title": "Hero Internal",
+    "description": "A internal hero section with a background image and/or video, heading, description, and buttons.",
+    "category": "smarther",
+    "icon": "welcome-view-site",
+    "keywords": ["hero internal", "banner", "intro"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "hero-internal.php"
+    },
+    "supports": {
+        "anchor": true
+    } 
+}

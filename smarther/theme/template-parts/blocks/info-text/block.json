@@ -1,0 +1,15 @@
+{
+    "name": "acf/info-text",
+    "title": "Info Text",
+    "description": "A section with a heading, description, and buttons.",
+    "category": "smarther",
+    "icon": "text",
+    "keywords": ["info text", "info text internal", "intro"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "info-text.php"
+    },
+    "supports": {
+        "anchor": true
+    } 
+}

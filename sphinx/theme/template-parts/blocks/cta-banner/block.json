@@ -1,0 +1,15 @@
+{
+    "name": "acf/ctabanner",
+    "title": "CTA Banner",
+    "description": "A cta banner section with a background color heading, description, and buttons.",
+    "category": "sphinx",
+    "icon": "align-wide",
+    "keywords": ["cta", "banner", "intro"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "cta-banner.php"
+    },
+    "supports": {
+        "anchor": true
+    } 
+}

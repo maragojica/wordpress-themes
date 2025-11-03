@@ -1,0 +1,15 @@
+{
+    "name": "acf/contentt",
+    "title": "Content",
+    "description": "A general content section.",
+    "category": "virginia-interfaith",
+    "icon": "format-aside",
+    "keywords": ["content text", "info text", "text"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "content.php"
+    },
+    "supports": {
+        "anchor": true
+    } 
+}

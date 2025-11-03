@@ -1,0 +1,15 @@
+{
+    "name": "acf/backforthsmarther",
+    "title": "Back & Forth Smarther",
+    "description": "A versatile back-and-forth content block that supports images, videos, and text sections with buttons. The column order is reversible for flexible layout options.",
+    "category": "smarther",
+    "icon": "align-left",
+    "keywords": ["content block", "back and forth smarther content", "smarther video and text"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "back-forth-smarther.php"
+    },
+    "supports": {
+        "anchor": true
+    } 
+}

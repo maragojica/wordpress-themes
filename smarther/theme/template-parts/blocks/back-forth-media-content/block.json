@@ -1,0 +1,15 @@
+{
+    "name": "acf/backforth-mediacontent",
+    "title": "Back & Forth Media Content",
+    "description": "A versatile back-and-forth content block that supports images, videos, and text sections with buttons. The column order is reversible for flexible layout options.",
+    "category": "smarther",
+    "icon": "align-left",
+    "keywords": ["content block", "back and forth media content", "media video and text"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "back-forth-media-content.php"
+    },
+    "supports": {
+        "anchor": true
+    } 
+}

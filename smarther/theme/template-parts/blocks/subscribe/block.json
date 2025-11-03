@@ -1,0 +1,15 @@
+{
+    "name": "acf/subscribe",
+    "title": "Subscribe",
+    "description": "A subscribe section with a background image and/or video, heading, description, and buttons.",
+    "category": "smarther",
+    "icon": "email-alt2",
+    "keywords": ["subscribe", "newsletter", "signup"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "subscribe.php"
+    },
+    "supports": {
+        "anchor": true
+    } 
+}

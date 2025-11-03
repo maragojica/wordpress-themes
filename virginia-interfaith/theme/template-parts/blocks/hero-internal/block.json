@@ -1,0 +1,15 @@
+{
+    "name": "acf/hero-internal",
+    "title": "Hero Internal",
+    "description": "A versatile hero section block that supports images, videos, and text sections with buttons.",
+    "category": "virginia-interfaith",
+    "icon": "welcome-view-site",
+    "keywords": ["content block", "hero internal", "media video and text"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "hero-internal.php"
+    },
+    "supports": {
+        "anchor": true
+    } 
+}

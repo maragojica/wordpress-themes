@@ -1,0 +1,296 @@
+<?php
+$content_block = get_field('content_block_smarther', 'option');
+if ($content_block) {  
+   
+    $add_shape = $content_block['add_shape'];      
+    $list_content = $content_block['list_content'];  
+    $gallery = $content_block['gallery']; 
+?>
+
+   <?php if($add_shape){ $shape = $content_block['shape'];?>
+        <div class="absolute right-0 z-1 shape-middle bottom-0 md:max-w-fit max-w-[100%]" data-aos="fade-in">
+            <?php if(!empty($shape)){ echo wp_get_attachment_image( $shape['ID'], 'full' ); } ?>
+        </div>
+    <?php } ?>
+     <?php $i = 1; if( $list_content ): ?> 
+         <?php foreach ($list_content as $column): 
+            $heading = $column['heading'];
+            $subheading = $column['subheading'];    
+            $description = $column['description']; 
+            $small_description = $column['small_description'];
+            $buttons = $column['buttons'];   
+            $media_type = $column['media_type'];   
+            $image = $column['image'];   
+            $video_type = $column['video_type'];  
+            $videomp4 = $column['video_mp4'];   
+            $video_webm = $column['video_webm'];
+            $youtube_id = $column['youtube_id'];
+            $vimeo_id = $column['vimeo_id'];
+            $poster = $column['poster']; 
+            $reverse_desktop = in_array('yes', $column['reverse_order_desktop']);
+            $reverse_mobile = in_array('yes', $column['reverse_order_mobile']);
+            $alignment = $column['vertical_alignment']; 
+            $columns_size = $column['columns_size']; 
+            $columns_gap = $column['columns_gap']; 
+            $row_gap = $column['row_gap']; 
+            $text_size = $column['text_size']; 
+            $heading = $column['heading'];
+             $container_classes = ' flex flex-col lg:flex-row ' . ($reverse_desktop ? 'lg:flex-row-reverse ' : '') . ($reverse_mobile ? 'flex-col-reverse ' : '') . ($alignment === 'middle' ? 'items-center' : ($alignment === 'bottom' ? 'items-end' : ($alignment === 'top' ? 'items-start' : 'items-stretch')));
+             $heading_width = '';
+            $content_width = '';
+            
+
+                switch ($columns_size) {
+                    case 'equal':
+                        // 50/50 on medium and up, full width stacked on small
+                        $heading_width = 'w-full lg:w-1/2 flex flex-col'; 
+                        $content_width = 'w-full lg:w-1/2';  
+                        break;
+
+                    case 'wide':
+                        // 60/40 on medium and up, stacked on small
+                        $heading_width = 'w-full lg:w-7/12 flex flex-col';
+                        $content_width = 'w-full lg:w-5/12';
+                        break;
+
+                    case 'wide-reverse':
+                        // 40/60 on medium and up, stacked on small
+                        $heading_width = 'w-full lg:w-5/12 flex flex-col';
+                        $content_width = 'w-full lg:w-7/12 flex flex-col';
+                        break;
+
+                    case 'narrow':
+                        // 45/55 on medium and up, stacked on small
+                        $heading_width = 'w-full lg:w-[45%] flex flex-col';
+                        $content_width = 'w-full lg:w-[55%] flex flex-col';
+                        break;
+
+                    case 'narrow-reverse':
+                        // 55/45 on medium and up, stacked on small
+                        $heading_width = 'w-full lg:w-[55%] flex flex-col';
+                        $content_width = 'w-full lg:w-[45%] flex flex-col';
+                        break;
+
+                    default:
+                        // Fallback to equal
+                    $heading_width = 'w-full lg:w-1/2 flex flex-col'; 
+                        $content_width = 'w-full lg:w-1/2 flex flex-col';
+                        break;
+                }
+                    
+                $columns_gap_class = '';
+                switch ($columns_gap) {
+                    case 'small':
+                        if ($reverse_desktop) {
+                            $columns_gap_class = ' lg:pl-[40px] lg:pr-0';
+                        } else {
+                            $columns_gap_class = ' lg:pr-[40px] lg:pl-0';
+                        }
+                        break;
+                    case 'medium':
+                        if ($reverse_desktop) {
+                            $columns_gap_class = ' lg:pl-[50px] lg:pr-0';
+                        } else {
+                            $columns_gap_class = ' lg:pr-[50px] lg:pl-0';
+                        }
+                        break;
+                    case 'large':
+                        if ($reverse_desktop) {
+                            $columns_gap_class = ' lg:pl-[60px] lg:pr-0';
+                        } else {
+                            $columns_gap_class = ' lg:pr-[60px] lg:pl-0';
+                        }
+                        break;
+                    default:   
+                     if ($reverse_desktop) {
+                            $columns_gap_class = ' lg:pl-[60px] lg:pr-0';
+                        } else {
+                            $columns_gap_class = ' lg:pr-[60px] lg:pl-0';
+                        }
+                        break; 
+                }
+
+                $row_gap_class = '';
+                switch ($row_gap) {
+                    case 'small':
+                        $row_gap_class = ' lg:py-[12px] ';
+                        break;
+                    case 'medium':
+                        $row_gap_class = ' lg:py-[40px] ';
+                        break;
+                    case 'large':
+                        $row_gap_class = ' lg:py-[50px] ';
+                        break;
+                    default:   
+                        $row_gap_class = ' lg:py-[40px] ';
+                        break; 
+                }
+
+                $text_size_class = '';
+                switch ($text_size) {
+                    case 'small':
+                        $text_size_class = 'text-small';
+                        break;
+                    case 'medium':
+                        $text_size_class = 'text-medium';
+                        break;
+                    case 'large':
+                        $text_size_class = 'text-large';
+                        break;
+                    default:
+                        $text_size_class = 'text-large';
+                        break;
+                }
+             ?>
+
+       <div class="content-box relative z-2 w-full">
+         <div class="container mx-auto px-0 sm:px-[1.5rem]">  
+          <div class="w-full">   
+           <div class="<?php echo esc_attr($container_classes); ?> lg:gap-y-0 gap-y-[3em] <?php if($i > 1){ echo ' lg:mb-[30px] mb-[3em]'; } ?>">               
+              <div class="<?php echo esc_attr($heading_width); ?> custom-p-info px-[2rem] <?php echo $row_gap_class; ?> <?php echo $columns_gap_class; ?>  justify-center">
+                    <?php if($subheading): ?>
+                        <div class="eyebrow text-quaternary mb-[12px]"  >
+                            <?php echo $subheading; ?>
+                        </div>   
+                    <?php endif; ?> 
+                        <?php if ($heading) : ?>
+                        <h2 class="text-foreground mb-[15px]" >
+                            <?php echo $heading; ?>
+                        </h2> 
+                    <?php endif; ?> 
+                        <?php if($description): ?>
+                        <div class="<?php echo esc_attr($text_size_class); ?> text-foreground style-disc" data-aos="fade-in" >                 
+                            <?php echo $description; ?>                   
+                        </div>
+                    <?php endif; ?>        
+                     <?php if($small_description): ?>
+                        <div class="text-foreground style-disc mt-4" data-aos="fade-in" >                 
+                            <?php echo $small_description; ?>                   
+                        </div>
+                    <?php endif; ?>         
+                    <?php if ($buttons) : ?>
+                        <div class="flex flex-wrap gap-2 lg:gap-8 mt-[15px] justify-start" data-aos="fade-up">
+                            <?php foreach ($buttons as $button) : ?>
+                                <?php 
+                                $button_link = $button['button'];
+                                $button_style = $button['button_style'];
+                                $is_external = $button['is_external'];
+                                $is_download = $button['is_download'];
+                                if ($button_link) :
+                                    $url = $button_link['url'];
+                                    $title = $button_link['title'];
+                                    $target = $button_link['target'] ? $button_link['target'] : '_self';  ?>
+                                    <div class="relative group">
+                                    <a href="<?php echo esc_url($url); ?>" tabindex="0" target="<?php echo esc_attr($target); ?>" aria-label="<?php echo esc_html($title); ?>" title="<?php echo esc_html($title); ?>" class="btn w-fit <?php if($button_style): echo $button_style; endif;?>">
+                                        <?php echo esc_html($title); ?>
+                                        <?php if ($is_external){ ?>
+                                            <span class="external-link-icon pl-[10px]" aria-hidden="true">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
+                                                <path d="M0 12V1.9432H6.94225V3.33573H1.39085V10.6083H9.24745V6.3752H10.6391V12H0ZM4.85345 6.45547L10.4448 1.39173H7.49417V0H13L12.9446 0.088V5.528H11.554V2.2368L5.78699 7.48747L4.85345 6.45547Z" fill="#1F2133"/>
+                                                </svg>
+                                            </span>
+                                        <?php }elseif($is_download){ ?>
+                                            <span class="external-link-icon pl-[10px]" aria-hidden="true">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 13 14" fill="none">
+                                            <mask id="mask0_4195_848" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="14">
+                                                <path d="M13 0.5H0V13.5H13V0.5Z" fill="white"/>
+                                            </mask>
+                                            <g mask="url(#mask0_4195_848)">
+                                                <path d="M1.63223 11.8653H11.4155V11.7648C11.4155 10.9834 11.4155 10.2022 11.4155 9.42102C11.4171 9.21589 11.4962 9.01896 11.6369 8.86972C11.7777 8.72049 11.9696 8.62997 12.1743 8.61634C12.379 8.60271 12.5813 8.66696 12.7406 8.79622C12.8999 8.92547 13.0044 9.11016 13.0332 9.31326C13.0396 9.35225 13.0434 9.39163 13.0445 9.43113C13.0445 10.5096 13.0445 11.5882 13.0445 12.6667C13.0486 12.8509 12.9899 13.0311 12.8779 13.1775C12.766 13.3239 12.6075 13.4278 12.4286 13.4721C12.3573 13.4901 12.284 13.499 12.2105 13.4987C8.41447 13.5 4.61847 13.5 0.822475 13.4987C0.714674 13.5005 0.607591 13.4808 0.507521 13.4407C0.407452 13.4006 0.316414 13.3408 0.23976 13.265C0.163106 13.1892 0.102383 13.0988 0.061161 12.9992C0.0199387 12.8996 -0.000951306 12.7927 -0.000280827 12.6849C-0.00259194 11.5871 -0.00259194 10.4888 -0.000280827 9.39011C0.00664698 9.18795 0.0886697 8.99562 0.229774 8.85068C0.370879 8.70574 0.560935 8.6186 0.762839 8.60625C0.964743 8.59391 1.164 8.65726 1.32171 8.78393C1.47942 8.9106 1.58426 9.09149 1.61576 9.29131C1.62473 9.35835 1.62936 9.4259 1.62963 9.49353C1.63059 10.2522 1.63059 11.0108 1.62963 11.7694V11.8639" fill="#1F2133"/>
+                                                <path d="M7.3589 7.43674C7.54956 7.24414 7.74023 7.05155 7.9309 6.85896C8.35267 6.43631 8.77243 6.01165 9.19796 5.59276C9.29913 5.48764 9.42673 5.41171 9.56737 5.37293C9.70801 5.33415 9.85649 5.33397 9.99723 5.37239C10.138 5.41081 10.2658 5.48642 10.3672 5.59128C10.4686 5.69614 10.5399 5.82638 10.5737 5.96831C10.611 6.10744 10.6094 6.25415 10.5691 6.39244C10.5288 6.53074 10.4513 6.65533 10.3451 6.75265C9.33923 7.75991 8.33264 8.7664 7.32538 9.77211C7.25345 9.84405 7.18094 9.91656 7.10988 9.98878C7.03377 10.0683 6.94231 10.1316 6.84105 10.1747C6.73979 10.2179 6.63082 10.2401 6.52075 10.2399C6.41067 10.2397 6.30177 10.2172 6.20064 10.1738C6.0995 10.1303 6.00824 10.0668 5.93236 9.98705C4.85384 8.90853 3.77533 7.82953 2.69681 6.75005C2.59163 6.65016 2.51513 6.52392 2.47526 6.38446C2.43538 6.245 2.43359 6.0974 2.47006 5.95701C2.50654 5.81662 2.57995 5.68857 2.68267 5.58615C2.78539 5.48374 2.91367 5.41071 3.05416 5.37465C3.19391 5.33412 3.3422 5.33339 3.48234 5.37254C3.62248 5.41168 3.74893 5.48915 3.84745 5.59623C4.43293 6.1794 5.01735 6.76363 5.60072 7.34892C5.6296 7.3778 5.6585 7.41131 5.68594 7.44251L5.70905 7.43443C5.70905 7.39417 5.70905 7.35402 5.70905 7.31396C5.70905 5.74587 5.70905 4.17769 5.70905 2.6094C5.70905 2.1649 5.70905 1.72049 5.70905 1.27618C5.70688 1.07624 5.77843 0.882501 5.91003 0.731958C6.04163 0.581415 6.22407 0.484612 6.4225 0.46003C6.62094 0.435449 6.82148 0.484811 6.98584 0.598693C7.1502 0.712575 7.26685 0.882998 7.31354 1.07743C7.33096 1.15174 7.3394 1.22788 7.33867 1.3042C7.34002 3.31121 7.34002 5.31812 7.33867 7.32494V7.42576L7.35832 7.43703" fill="#1F2133"/>
+                                            </g>
+                                            </svg>
+                                            </span>
+                                        <?php } ?>   
+                                    </a> 
+                                </div>            
+                                <?php endif; ?>
+                            <?php endforeach; ?>
+                        </div>
+                        <?php endif; ?>  
+                </div>            
+                <div class="<?php echo esc_attr($content_width); ?>" <?php if($reverse_desktop){ ?> data-aos="fade-left" <?php }else{ ?> data-aos="fade-right" <?php } ?>  >  
+                    <div class="w-full lg:h-full md:h-[25em] h-[18em] relative sm:rounded-[10px] rounded-video bg-cover bg-center bg-no-repeat" <?php if($media_type['value'] == "image"){ ?> style="background-image: url('<?php echo esc_url($image['url']); ?>');" <?php } ?>>
+                        <?php if($media_type['value'] == "video"){   ?>   
+                                
+                                <?php if($video_type['value'] == "file"){  ?>   
+
+                                    <video class="player" playsinline controls <?php if( !empty($poster) ): ?> data-poster="<?php echo esc_url($poster); ?>" <?php endif; ?>>  
+                                        <?php if($videomp4): ?>
+                                            <source src="<?php echo $videomp4; ?>" type="video/mp4">
+                                        <?php endif; ?>  
+                                        <?php if($video_webm): ?>
+                                            <source src="<?php echo $video_webm; ?>" type="video/webm">
+                                        <?php endif; ?>                              
+                                        Your browser does not support the video tag.
+                                    </video>  
+
+                                    <?php }elseif($video_type['value'] == "youtube"){   ?>   
+                                        <div class="player" data-plyr-provider="youtube" data-plyr-embed-id="<?php echo $youtube_id;?>" <?php if( !empty($poster) ): ?> data-poster="<?php echo esc_url($poster); ?>" <?php endif; ?>></div>
+
+                                        <?php }elseif($video_type['value'] == "vimeo"){   ?>   
+                                            <div class="player" data-plyr-provider="vimeo" data-plyr-embed-id="<?php echo $vimeo_id;?>" <?php if( !empty($poster) ): ?> data-poster="<?php echo esc_url($poster); ?>" <?php endif; ?>></div>
+                                    <?php } ?>  
+                            <?php } ?>    
+                    </div>
+                </div>           
+            </div>          
+            </div>
+        </div>
+      </div>
+   <?php $i++; endforeach; endif; ?>     
+  <?php if ($gallery): 
+    // Simple 3-pattern repeat: small_left, big_center, small_right
+    $patterns = ['small_left', 'big_center', 'small_right'];
+    
+    // Pattern CSS classes - Modified for alignment
+    $pattern_classes = [
+        'small_left' => 'col-span-3 row-span-4 row-start-3', // Starts at row 4 (bottom aligned)
+        'big_center' => 'col-span-6 row-span-6 row-start-1', // Starts at row 1 (full height)
+        'small_right' => 'col-span-3 row-span-4 row-start-1' // Starts at row 1 (top aligned)
+    ];
+    
+    // Pattern image sizes
+    $pattern_sizes = [
+        'small_left' => 'medium_large',
+        'big_center' => 'large',
+        'small_right' => 'medium'
+    ];
+?>
+
+    <!-- Gallery Container - Hidden on mobile, visible on tablet and up -->
+    <div class="hidden md:block w-full px-[30px] xl:pl-[38px] xl:pr-[90px] mx-auto pt-[33px] relative z-2" data-aos="fade-up">
+        
+        <!-- Gallery Grid -->
+        <div class="space-y-6">
+            
+            <?php 
+            // Group images into rows of 3
+            $image_chunks = array_chunk($gallery, 3);
+            
+            foreach ($image_chunks as $row_images): ?>
+                
+                <div class="grid-gallery grid grid-cols-12 grid-rows-6 gap-x-[25px] xl:gap-x-[35px] md:h-[20em] lg:h-95 xl:h-[340px]">
+                    
+                    <?php foreach ($row_images as $index => $image):
+                        $pattern = $patterns[$index]; // 0=small_left, 1=big_center, 2=small_right
+                        $container_class = $pattern_classes[$pattern];
+                    ?>
+                        
+                        <div class="<?php echo esc_attr($container_class); ?> relative overflow-hidden rounded-[10px]">
+                            <img 
+                                src="<?php echo esc_url($image['url']); ?>" 
+                                alt="<?php echo esc_attr($image['alt'] ?: 'Gallery image'); ?>"
+                                class="w-full h-full object-cover object-top">
+                        </div>
+                        
+                    <?php endforeach; ?>
+                    
+                </div>
+                
+            <?php endforeach; ?>
+            
+        </div>
+    </div>
+<?php endif; ?>
+    <?php } 

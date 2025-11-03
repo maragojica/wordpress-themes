@@ -1,0 +1,15 @@
+{
+    "name": "acf/backforth-mediafulllist",
+    "title": "Back & Forth Media Full List",
+    "description": "A versatile back-and-forth content for full width block that supports images, videos, and text sections with buttons. The column order is reversible for flexible layout options.",
+    "category": "virginia-interfaith",
+    "icon": "align-pull-left",
+    "keywords": ["content block", "back and forth media full list", "media video and text"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "back-forth-media-full-list.php"
+    },
+    "supports": {
+        "anchor": true
+    } 
+}

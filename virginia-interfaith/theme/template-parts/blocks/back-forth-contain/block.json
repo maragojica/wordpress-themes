@@ -1,0 +1,15 @@
+{
+    "name": "acf/backforth-contain",
+    "title": "Back & Forth Contain",
+    "description": "A versatile back-and-forth content for full width block that supports images, videos, and text sections with buttons. The column order is reversible for flexible layout options.",
+    "category": "virginia-interfaith",
+    "icon": "align-left",
+    "keywords": ["content block", "back and forth contain", "media video and text"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "back-forth-contain.php"
+    },
+    "supports": {
+        "anchor": true
+    } 
+}
